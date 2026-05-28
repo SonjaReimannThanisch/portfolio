@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        min-height: 100vh;
+    }
+}
