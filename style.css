@@ -1,3 +1,32 @@
+@font-face {
+    font-family: "Quantico";
+    src: url("./assets/fonts/Quantico,Roboto_Mono/Quantico/Quantico-Regular.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Quantico";
+    src: url("assets/fonts/Quantico,Roboto_Mono/Quantico/Quantico-Bold.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --background-main: #001E16;
+    
+    --highlight-main: #38D1C4;
+    --highlight-hover: #2CB9AE;
+
+    --text-dark: #001E16;
+    --text-light: #FFFFFF;
+
+    --border-color: rgba(56, 209, 196, 0.3);
+}
+
+
 main {
     display: flex;
     height: 100vh;
@@ -7,6 +36,45 @@ body {
     margin: 0;
     overflow-x: auto;
     overflow-y: hidden;
+    font-family: "Quantico", sans-serif;
+    background-color: var(--background-main);
+    color: var(--text-light);
+}
+
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-sidebar {
+    width: 172px;
+    height: 100vh;
+    background-color: var(--highlight-main);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    width: 172px;
+    height: 900px;
+    background-color: var(--highlight-main);
+    color: var(--text-dark);
+}
+
+.hero-name {
+    font-family: "Quantico", sans-serif;
 }
 
 #portfolio {
@@ -14,9 +82,117 @@ body {
     height: 100vh;
 }
 
+.hero {
+    width: 1440px;
+    max-height: 900px;
+    
+}
+
+.hero-image {
+    position: absolute;
+    height: 90vh;
+    width: auto;
+    left: 53%;
+    bottom: 43px;
+    transform: translateX(-50%);
+    object-fit: contain;
+}
+
 section,
 footer {
     width: 100vw;
     height: 100vh;
     flex-shrink: 0;
+}
+
+.logo {
+    margin-top: 40px;
+    width: 130px;
+    height: 110px;
+    border: none;
+}
+
+.logo-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.logo-arc-text {
+    font-family: "Quantico", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    fill: var(--text-dark);
+}
+
+.logo-initials {
+    font-family: "Quantico", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    fill: transparent;
+    stroke: var(--text-dark);
+    stroke-width: 1.5px;
+    letter-spacing: -8px;
+}
+
+#main-nav {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav ul {
+    height: 554px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hero-naming {
+    position: absolute;
+    left: 50%;
+    bottom: 180px;
+    transform: translateX(-50%);
+    text-align: end;
+    z-index: 2;
+    width: max-content;
+}
+
+.name {
+    display: block;
+    width: max-content;
+    gap: 10px;
+}
+
+.name h1 {
+    margin: 0;
+    font-family: "Quantico", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--highlight-main);
+    white-space: nowrap;
+}
+
+.designation h2 {
+    margin-top: 24px;
+    font-family: "Quantico", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--highlight-main);
 }
