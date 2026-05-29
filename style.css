@@ -3,7 +3,19 @@ main {
     height: 100vh;
 }
 
-section {
+body {
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#portfolio {
+    display: flex;
+    height: 100vh;
+}
+
+section,
+footer {
     width: 100vw;
     height: 100vh;
     flex-shrink: 0;
