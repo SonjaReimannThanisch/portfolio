@@ -92,7 +92,7 @@ aside {
     position: absolute;
     height: 90vh;
     width: auto;
-    left: 53%;
+    left: 48%;
     bottom: 43px;
     transform: translateX(-50%);
     object-fit: contain;
@@ -151,8 +151,8 @@ footer {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    gap: 48px;
 }
 
 .nav-item {
@@ -191,8 +191,35 @@ footer {
 .designation h2 {
     margin-top: 24px;
     font-family: "Quantico", sans-serif;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 400;
     color: transparent;
     -webkit-text-stroke: 1px var(--highlight-main);
+}
+
+.social-links {
+    position: absolute;
+    top: 53px;
+    right: 150px;
+    z-index: 10;
+}
+
+.social-links ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.language-link {
+    width: 62px;
+    height: 25px;
 }
