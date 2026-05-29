@@ -93,7 +93,7 @@ aside {
     height: 90vh;
     width: auto;
     left: 48%;
-    bottom: 43px;
+    bottom: 0;
     transform: translateX(-50%);
     object-fit: contain;
 }
@@ -222,4 +222,12 @@ footer {
 .language-link {
     width: 62px;
     height: 25px;
+}
+
+.next-section-link {
+    position: absolute;
+    top: 314px;
+    right: 43px;
+    transform: rotate(-180deg);
+    filter: hue-rotate(110deg);
 }
