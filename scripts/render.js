@@ -29,6 +29,7 @@ function renderWhyMe() {
             </div>
 
             <a class="contact-button" href="#contact">Contact me</a>
+            <a class="why-me-next-link" href="#skills"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
         </div>
     `;
 }
