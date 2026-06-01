@@ -59,8 +59,8 @@
 }
 
 .fact-card img {
-    width: 228px;
-    height: 121px;
+    width: 200px;
+    height: 100px;
     filter: hue-rotate(110deg);
 }
 
