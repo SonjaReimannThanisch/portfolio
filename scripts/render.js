@@ -31,15 +31,13 @@ renderWhyMe();
 
 function renderMySkills() {
     let skillsSection = document.getElementById("skills");
+    skillsSection.classList.add("skills-section");
     skillsSection.innerHTML = `
     <h2 class="skills-title">My Skill Set</h2>
-    
     <div class="skills-content">
-
         <p class="skills-text">
             Ich lerne gerne neue Technologien und arbeite mich selbstständig in unbekannte Themen ein. Herausforderungen motivieren mich, meine Fähigkeiten weiterzuentwickeln und kreative Lösungen zu finden.
         </p>
-
         <div class="skills-grid">
             <img src="./assets/icons/Property 1=Angular.png">
             <img src="./assets/icons/Property 1=HTML.png">
@@ -53,17 +51,12 @@ function renderMySkills() {
             <img src="./assets/icons/Property 1=Scrum.png">
             <img src="./assets/icons/Property 1=Challenge me.png">
         </div>
-
         <div class="skills-side-text">
             <p class="skills-text">
                 Mich motiviert die Möglichkeit, jeden Tag etwas Neues zu lernen. Ob neue Technologien, bessere Lösungswege oder ungewohnte Herausforderungen: Ich habe Freude daran, mich kontinuierlich weiterzuentwickeln und mein Wissen durch praktische Projekte auszubauen.
             </p>
         </div>
-
-        <a class="skills-next-link" href="#projects">
-            <img src="./assets/icons/Property 1=Default.png">
-        </a>
-
+        <a class="skills-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
 
     `;

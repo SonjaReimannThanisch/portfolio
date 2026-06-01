@@ -89,7 +89,10 @@
 .why-me-next-link {
     position: absolute;
     right: 60px;
-    bottom: 140px;
+    bottom: 80px;
     transform: rotate(-180deg);
+}
+
+.why-me-next-link img {
     filter: hue-rotate(110deg);
 }
