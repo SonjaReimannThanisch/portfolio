@@ -131,7 +131,7 @@ function renderMyWork() {
             What is it about and what technologies are you using? Emphasise that good planning and execution are essential to the success of your work and to achieving great results.</p>
             <a href="#">Lets Talk</a>
         </div>
-        <a class="projects-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
+        <a class="projects-next-link" href="#references"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
     <div class="project">
         <img src="" alt="">
@@ -144,3 +144,44 @@ function renderMyWork() {
 }
 
 renderMyWork();
+
+function renderReferences() {
+    let referencesSection = document.getElementById("references");
+    referencesSection.classList.add("references-section");
+    referencesSection.innerHTML = `
+    <h2 class="references-title">References</h2>
+    <div>
+        <div>
+            <p>hier kommt di reference rein</p>
+        </div>
+        <hr>
+        <div>
+            <p>Name</p>
+            <p>Project</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p>hier kommt di reference rein</p>
+        </div>
+        <hr>
+        <div>
+            <p>Name</p>
+            <p>Project</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p>hier kommt di reference rein</p>
+        </div>
+        <hr>
+        <div>
+            <p>Name</p>
+            <p>Project</p>
+        </div>
+    </div>
+    <a class="references-next-link" href="#contact"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
+    `;
+}
+
+renderReferences();
