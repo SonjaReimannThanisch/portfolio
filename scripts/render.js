@@ -50,10 +50,8 @@ function renderMySkills() {
             <img src="./assets/icons/Property 1=GIT.png">
             <img src="./assets/icons/Property 1=Scrum.png">
             <img src="./assets/icons/Property 1=Challenge me.png">
-        </div>
-        <div class="skills-side-text">
             <p class="skills-side-text">
-                Mich motiviert die Möglichkeit, jeden Tag etwas Neues zu lernen. Ob neue Technologien, bessere Lösungswege oder ungewohnte Herausforderungen: Ich habe Freude daran, mich kontinuierlich weiterzuentwickeln und mein Wissen durch praktische Projekte auszubauen.
+                Neugier und kontinuierliche Weiterentwicklung treiben mich an.         
             </p>
         </div>
         <a class="skills-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
