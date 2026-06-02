@@ -56,8 +56,91 @@ function renderMySkills() {
         </div>
         <a class="skills-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
-
     `;
 }
 
 renderMySkills();
+
+function renderMyWork() {
+    let workSection = document.getElementById("projects");
+    workSection.classList.add("work-section");
+    workSection.innerHTML = `
+    <h2 class="work-title">My Work</h2>
+    <div class="project-grid">
+        <div class="work-grid">
+            <p>1</p>
+            <h2>Project Join</h2>
+
+            <h3>About the project</h3>
+            <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+
+            <h3>Technologies i have used</h3>
+            <p>Angular, TypeScript, HTML, CSS, Firebase</p>
+
+            <h3>What I have learned</h3>
+            <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
+
+            <p></p>
+            <img src="./assets/img/Property 1=Join.png" alt="Join App">
+            <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
+            <a href="https://join-business-app.netlify.app/">Live Test</a>
+        </div>
+
+        <div class="work-grid">
+            <p>1</p>
+            <h2>Project Join</h2>
+
+            <h3>About the project</h3>
+            <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+
+            <h3>Technologies i have used</h3>
+            <p>Angular, TypeScript, HTML, CSS, Firebase</p>
+
+            <h3>What I have learned</h3>
+            <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
+
+            <p></p>
+            <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Join App">
+            <a href="https://github.com/SonjaReimannThanisch/Sharky_recover">GitHub</a>
+            <a href="https://sharky-the-happy-shark.netlify.app//">Live Test</a>
+        </div>
+
+        <div class="work-grid">
+            <p>3</p>
+            <h2>Project Sharky</h2>
+
+            <h3>About the project</h3>
+            <p>Jump, run and throw game based on object-oriented approach. Help Sharky to find coins and poison bottles to fight against the big whale.</p>
+
+            <h3>Technologies i have used</h3>
+            <p>JavaScript , HTML,  CSS</p>
+
+            <h3>What I have learned</h3>
+            <p>How many people were in the team and what was your role?  Describe your tasks  in 1-2 sentences. It is nice to mention a good teamwork and cooperation.</p>
+
+            <p></p>
+            <img src="./assets/img/Property 1=Join.png" alt="Join App">
+            <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
+            <a href="https://join-business-app.netlify.app/">Live Test</a>
+        </div>
+
+        <div class="work-grid">
+            <p>4</p>
+            <h3>Ongoing Projects</h3>
+            <p>Are you currently working on a project?
+            What is it about and what technologies are you using? Emphasise that good planning and execution are essential to the success of your work and to achieving great results.</p>
+            <a href="#">Lets Talk</a>
+        </div>
+        <a class="projects-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
+    </div>
+    <div class="project">
+        <img src="" alt="">
+        <div>
+
+        </div>
+    </div>
+    <div class="project"></div>
+    `;
+}
+
+renderMyWork();
