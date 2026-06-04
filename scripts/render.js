@@ -187,3 +187,38 @@ function renderReferences() {
 }
 
 renderReferences();
+
+function renderContact() {
+    let contactsection = document.getElementById("contact");
+    contactsection.classList.add("contact-section");
+    contactsection.innerHTML = `
+    <h2 class="contact-title">Contact me</h2>
+
+    <div class="contact-content">
+        <form class="contact-form">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your e-mail" required>
+            <textarea placeholder="Your message" required></textarea>
+
+            <label>
+                <input type="checkbox" required>
+                I have read the privacy policy...
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Lass uns zusammenarbeiten.</p>
+            <p>Email: <a href="mailto:sonja.reimann.thanisch@gmail.com">sonja.reimann.thanisch@gmail.com</a></p>
+            <p>Tel: <a href="tel:+491788286541">0178 828 65 41</a></p>
+        </div>
+
+        <a class="contact-back-link" href="#references">
+            <img src="./assets/icons/Property 1=Default.png" alt="Back">
+        </a>
+    </div>
+    `;
+}
+
+renderContact();
