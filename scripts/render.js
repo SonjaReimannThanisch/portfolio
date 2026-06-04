@@ -150,34 +150,36 @@ function renderReferences() {
     referencesSection.classList.add("references-section");
     referencesSection.innerHTML = `
     <h2 class="references-title">References</h2>
-    <div>
-        <div>
-            <p>hier kommt di reference rein</p>
+    <div class="reference-grid">
+        <div class="grid-item">
+            <div class="reference-item">
+                <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+            </div>
+            <div class="separator"></div>
+            <div class="project-item">
+                <p>Name Nachname</p>
+                <p> Project irgendwas</p>
+            </div>
         </div>
-        <hr>
-        <div>
-            <p>Name</p>
-            <p>Project</p>
+        <div class="grid-item">
+            <div class="reference-item">
+                <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+            </div>
+            <div class="separator"></div>
+            <div class="project-item">
+                <p>Name Nachname</p>
+                <p>Project irgendwas</p>
+            </div>
         </div>
-    </div>
-    <div>
-        <div>
-            <p>hier kommt di reference rein</p>
-        </div>
-        <hr>
-        <div>
-            <p>Name</p>
-            <p>Project</p>
-        </div>
-    </div>
-    <div>
-        <div>
-            <p>hier kommt di reference rein</p>
-        </div>
-        <hr>
-        <div>
-            <p>Name</p>
-            <p>Project</p>
+        <div class="grid-item">
+            <div class="reference-item">
+                <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+            </div>
+            <div class="separator"></div>
+            <div class="project-item">
+                <p>Name Nachname</p>
+                <p>Project irgendwas</p>
+            </div>
         </div>
     </div>
     <a class="references-next-link" href="#contact"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>

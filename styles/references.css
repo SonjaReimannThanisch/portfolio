@@ -1,48 +1,93 @@
 .references-section {
     position: relative;
-    width: 100%;
+    width: 800px;
     height: 100vh;
-    background-color: #1f1f1f;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    padding: 0 120px 0 80px;
+    grid-template-columns: 120px 560px 1fr;
+    align-items: flex-end;
     box-sizing: border-box;
+    padding: 80px 20px;
 }
 
 .references-title {
-    margin: 0 24px 0 0;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 54px;
+    font-weight: 400;
     color: transparent;
     -webkit-text-stroke: 2px var(--highlight-main);
+    margin: 0 20px;
 }
 
-.references-section > div {
-    width: 420px;
+.reference-grid {
+    width: 500px;
     min-height: 110px;
+    gap: 18px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-item {
+    height: 182px;
     border: 1px solid var(--highlight-main);
     border-radius: 22px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1px 220px;
     align-items: center;
-    gap: 24px;
-    padding: 20px 28px;
-    box-sizing: border-box;
-    margin-bottom: 18px;
 }
 
 .references-section hr {
-    height: 72px;
+    height: 113px;
     border: none;
     border-left: 1px solid var(--highlight-main);
+    display: flex;
+    align-self: anchor-center;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.project-item p:first-child {
+    font-size: 24px;
+    color: var(--highlight-main);
+}
+
+.project-item p {
+    margin: 0;
+}
+
+.reference-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+.project-item h3,
+.project-item p {
+    margin: 0;
+}
+
+.separator {
+    width: 1px;
+    height: 110px;
+    background-color: var(--highlight-main);
 }
 
 .references-next-link {
     position: absolute;
-    right: 60px;
+    right: 0;
     top: 42%;
     transform: rotate(-180deg);
 }
