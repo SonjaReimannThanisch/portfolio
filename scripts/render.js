@@ -133,7 +133,6 @@ function renderMyWork() {
         </div>
         <a class="projects-next-link" href="#references"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
-    <div class="project"></div>
     `;
 }
 
@@ -143,40 +142,40 @@ function renderReferences() {
     let referencesSection = document.getElementById("references");
     referencesSection.classList.add("references-section");
     referencesSection.innerHTML = `
-    <h2 class="references-title">References</h2>
-    <div class="reference-grid">
-        <div class="grid-item">
-            <div class="reference-item">
-                <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+        <h2 class="references-title">References</h2>
+        <div class="reference-grid">
+            <div class="grid-item">
+                <div class="reference-item">
+                    <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+                </div>
+                <div class="separator"></div>
+                <div class="project-item">
+                    <p>Name Nachname</p>
+                    <p> Project irgendwas</p>
+                </div>
             </div>
-            <div class="separator"></div>
-            <div class="project-item">
-                <p>Name Nachname</p>
-                <p> Project irgendwas</p>
+            <div class="grid-item">
+                <div class="reference-item">
+                    <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+                </div>
+                <div class="separator"></div>
+                <div class="project-item">
+                    <p>Name Nachname</p>
+                    <p>Project irgendwas</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="reference-item">
+                    <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+                </div>
+                <div class="separator"></div>
+                <div class="project-item">
+                    <p>Name Nachname</p>
+                    <p>Project irgendwas</p>
+                </div>
             </div>
         </div>
-        <div class="grid-item">
-            <div class="reference-item">
-                <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
-            </div>
-            <div class="separator"></div>
-            <div class="project-item">
-                <p>Name Nachname</p>
-                <p>Project irgendwas</p>
-            </div>
-        </div>
-        <div class="grid-item">
-            <div class="reference-item">
-                <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
-            </div>
-            <div class="separator"></div>
-            <div class="project-item">
-                <p>Name Nachname</p>
-                <p>Project irgendwas</p>
-            </div>
-        </div>
-    </div>
-    <a class="references-next-link" href="#contact"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
+        <a class="references-next-link" href="#contact"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     `;
 }
 
