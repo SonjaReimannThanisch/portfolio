@@ -134,7 +134,7 @@ function renderMyWork() {
         <a class="projects-next-link" href="#references"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
     <div class="project">
-        <img src="" alt="">
+        
         <div>
 
         </div>
@@ -202,21 +202,38 @@ function renderContact() {
 
             <label>
                 <input type="checkbox" required>
-                I have read the privacy policy...
+                I have read the privacy policy and agree to the processing of my data as outlined
             </label>
-
             <button type="submit">Send</button>
         </form>
 
         <div class="contact-info">
             <p>Lass uns zusammenarbeiten.</p>
-            <p>Email: <a href="mailto:sonja.reimann.thanisch@gmail.com">sonja.reimann.thanisch@gmail.com</a></p>
-            <p>Tel: <a href="tel:+491788286541">0178 828 65 41</a></p>
+            <p class="contact-description">
+                Ich suche nach Möglichkeiten, mich als Entwicklerin
+                weiterzuentwickeln und an spannenden Projekten
+                mitzuwirken. Besonders interessieren mich moderne
+                Webanwendungen, saubere Lösungen und die Möglichkeit,
+                jeden Tag etwas Neues zu lernen.
+            </p>
+            <div class="contact-item">
+                <img src="./assets/icons/🦆 icon _email_.png" alt="Email">
+                <a href="mailto:sonja.reimann.thanisch@gmail.com">
+                    E-mail: sonja.reimann.thanisch@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="tel:+491788286541">
+                    Tel: 0178 828 65 41
+                </a>
+            </div>
+            <a class="contact-back-link" href="#references">
+                <img src="./assets/icons/Property 1=Default.png" alt="Back">
+            </a>
         </div>
 
-        <a class="contact-back-link" href="#references">
-            <img src="./assets/icons/Property 1=Default.png" alt="Back">
-        </a>
+
     </div>
     `;
 }
