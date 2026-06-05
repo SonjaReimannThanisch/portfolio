@@ -79,7 +79,8 @@ aside {
 
 #portfolio {
     display: flex;
-    height: 100vh;
+    width: 9640px;
+    height: 900px;
 }
 
 .hero {

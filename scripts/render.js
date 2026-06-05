@@ -239,3 +239,13 @@ function renderContact() {
 }
 
 renderContact();
+
+function renderFooter() {
+    let footerSection = document.getElementById("footer");
+    footerSection.classlist.add("footer-section");
+    footerSection.innerHTML = `
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <p>© Sonja Reimann-Thanisch 2026</p>
+    `;
+}
