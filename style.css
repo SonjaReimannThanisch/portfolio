@@ -99,8 +99,7 @@ aside {
     object-fit: contain;
 }
 
-section,
-footer {
+section {
     width: 100vw;
     height: 100vh;
     flex-shrink: 0;

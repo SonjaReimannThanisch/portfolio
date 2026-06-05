@@ -133,12 +133,6 @@ function renderMyWork() {
         </div>
         <a class="projects-next-link" href="#references"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
-    <div class="project">
-        
-        <div>
-
-        </div>
-    </div>
     <div class="project"></div>
     `;
 }
@@ -192,60 +186,51 @@ function renderContact() {
     let contactsection = document.getElementById("contact");
     contactsection.classList.add("contact-section");
     contactsection.innerHTML = `
-    <h2 class="contact-title">Contact me</h2>
+        <h2 class="contact-title">Contact me</h2>
+        <div class="contact-content">
+            <form class="contact-form">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your e-mail" required>
+                <textarea placeholder="Your message" required></textarea>
 
-    <div class="contact-content">
-        <form class="contact-form">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Your e-mail" required>
-            <textarea placeholder="Your message" required></textarea>
+                <label>
+                    <input type="checkbox" required>
+                    I have read the privacy policy and agree to the processing of my data as outlined
+                </label>
+                <button type="submit">Send</button>
+            </form>
 
-            <label>
-                <input type="checkbox" required>
-                I have read the privacy policy and agree to the processing of my data as outlined
-            </label>
-            <button type="submit">Send</button>
-        </form>
-
-        <div class="contact-info">
-            <p>Lass uns zusammenarbeiten.</p>
-            <p class="contact-description">
-                Ich suche nach Möglichkeiten, mich als Entwicklerin
-                weiterzuentwickeln und an spannenden Projekten
-                mitzuwirken. Besonders interessieren mich moderne
-                Webanwendungen, saubere Lösungen und die Möglichkeit,
-                jeden Tag etwas Neues zu lernen.
-            </p>
-            <div class="contact-item">
-                <img src="./assets/icons/🦆 icon _email_.png" alt="Email">
-                <a href="mailto:sonja.reimann.thanisch@gmail.com">
-                    E-mail: sonja.reimann.thanisch@gmail.com
+            <div class="contact-info">
+                <p>Lass uns zusammenarbeiten.</p>
+                <p class="contact-description">
+                    Ich suche nach Möglichkeiten, mich als Entwicklerin
+                    weiterzuentwickeln und an spannenden Projekten
+                    mitzuwirken. Besonders interessieren mich moderne
+                    Webanwendungen, saubere Lösungen und die Möglichkeit,
+                    jeden Tag etwas Neues zu lernen.
+                </p>
+                <div class="contact-item">
+                    <img src="./assets/icons/🦆 icon _email_.png" alt="Email">
+                    <a href="mailto:sonja.reimann.thanisch@gmail.com">
+                        E-mail: sonja.reimann.thanisch@gmail.com
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="tel:+491788286541">
+                        Tel: 0178 828 65 41
+                    </a>
+                </div>
+                <a class="contact-back-link" href="#references">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
                 </a>
+                <div class="contact-footer">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <p>© Sonja Reimann-Thanisch 2026</p>
+                </div>
             </div>
-
-            <div class="contact-item">
-                <a href="tel:+491788286541">
-                    Tel: 0178 828 65 41
-                </a>
-            </div>
-            <a class="contact-back-link" href="#references">
-                <img src="./assets/icons/Property 1=Default.png" alt="Back">
-            </a>
         </div>
-
-
-    </div>
     `;
 }
 
 renderContact();
-
-function renderFooter() {
-    let footerSection = document.getElementById("footer");
-    footerSection.classlist.add("footer-section");
-    footerSection.innerHTML = `
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-        <p>© Sonja Reimann-Thanisch 2026</p>
-    `;
-}

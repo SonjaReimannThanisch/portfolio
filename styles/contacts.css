@@ -154,3 +154,27 @@
     height: 100%;
     background-color: var(--highlight-main);
 }
+
+.contact-footer {
+    position: absolute;
+    right: 145px;
+    bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+    font-size: 16px;
+}
+
+.contact-footer a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.contact-footer a:hover {
+    color: var(--highlight-main);
+}
+
+.contact-footer p {
+    margin: 0;
+}
