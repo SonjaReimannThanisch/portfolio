@@ -222,14 +222,34 @@ function renderContact() {
                 <a class="contact-back-link" href="#references">
                     <img src="./assets/icons/Property 1=Default.png" alt="Back">
                 </a>
-                <div class="contact-footer">
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
-                    <p>© Sonja Reimann-Thanisch 2026</p>
-                </div>
+            </div>
+            <div class="contact-footer">
+                <a href="#legal-notice">Impressum</a>
+                <a href="#privacy-policy">Datenschutz</a>
+                <p>© Sonja Reimann-Thanisch 2026</p>
             </div>
         </div>
     `;
 }
 
 renderContact();
+
+function renderLegalNotice() {
+    let legalNoticeSection = document.getElementById("legal-notice");
+    legalNoticeSection.classList.add("legal-notice-section");
+    legalNoticeSection.innerHTML = `
+        <h2>Legal Notice</h2>
+    `;
+}
+
+renderLegalNotice();
+
+function renderPrivacyPolicy() {
+    let privacyPolicySection = document.getElementById("privacy-policy");
+    privacyPolicySection.classList.add("privacy-policy-section");
+    privacyPolicySection.innerHTML = `
+         <h2>Privacy Policy</h2>
+    `;
+}
+
+renderPrivacyPolicy();
