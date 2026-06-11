@@ -260,6 +260,7 @@ function showPrivacyPolicy() {
     `;
 }
 
+
 function backToPortfolio() {
     document.getElementById("legal-view").innerHTML = "";
     document.getElementById("portfolio").style.display = "flex";
