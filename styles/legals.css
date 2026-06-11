@@ -1,0 +1,63 @@
+.legal-notice-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #001E16;
+}
+
+.legal-page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--background-main);
+    color: var(--text-light);
+}
+
+.legal-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 900px;
+    padding: 96px 120px;
+}
+
+.legal-card {
+    width: 450px;
+    border: 1px solid var(--highlight-main);
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.legal-content h1,
+.legal-content h2 {
+    color: var(--highlight-main);
+}
+
+.legal-content a {
+    color: var(--highlight-main);
+}
+
+.legal-back-button {
+    width: 140px;
+    height: 48px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--highlight-main);
+    color: var(--text-dark);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.legal-text-column {
+    width: 620px;
+}
+
+.legal-layout {
+    display: flex;
+    gap: 80px;
+    padding: 80px;
+}
+
+.legal-column {
+    width: 500px;
+}

@@ -1,31 +1,76 @@
-function getSidebar() {
-    return `
-        <aside class="hero-sidebar">
-            <div class="logo">
-                <svg viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
-                    <defs>
-                        <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
-                    </defs>
+const LEGAL_NOTICE_TEXT = `
+    <h1>Impressum</h1>
+    <p>
+        Sonja Reimann-Thanisch<br>
+        Uerdinger Str. 782<br>
+        47800 Krefeld
+    </p>
 
-                    <text class="logo-arc-text">
-                        <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
-                            frontend developer
-                        </textPath>
-                    </text>
+    <h2>Kontakt</h2>
+    <p>
+        Telefon: 0178 8286541<br>
+        E-Mail: sonja.reimann.thanisch@gmail.com
+    </p>
 
-                    <text class="logo-initials" x="60" y="70" text-anchor="middle">
-                        SR
-                    </text>
-                </svg>
-            </div>
-            <nav id="main-nav">
-                <ul>
-                    <li class="nav-item" data-section="projects">Why me</li>
-                    <li class="nav-item" data-section="skills">Skills</li>
-                    <li class="nav-item" data-section="about">My Work</li>
-                    <li class="nav-item" data-section="contact">Contact</li>
-                </ul>
-            </nav>
-        </aside>
-    `;
-}
+    <p>
+        Quelle:
+        <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer">
+            eRecht24
+        </a>
+    </p>
+`;
+
+const PRIVACY_POLICY_TEXT = `
+    <div class="legal-column">
+        <h1>Datenschutzerklärung</h1>
+
+        <h2>1. Datenschutz auf einen Blick</h2>
+        <p>
+            Die folgenden Hinweise geben einen einfachen Überblick darüber,
+            was mit Ihren personenbezogenen Daten passiert, wenn Sie diese
+            Website besuchen.
+        </p>
+
+        <h2>2. Hosting</h2>
+        <p>
+            Diese Website wird über Netlify gehostet.
+        </p>
+
+        <h2>3. Verantwortliche Stelle</h2>
+        <p>
+            Sonja Reimann-Thanisch<br>
+            Uerdinger Str. 782<br>
+            47800 Krefeld<br><br>
+            Telefon: 0178 8286541<br>
+            E-Mail: sonja.reimann.thanisch@gmail.com
+        </p>
+    </div>
+
+    <div class="legal-column">
+        <h2>4. Kontaktformular</h2>
+        <p>
+            Wenn Sie uns über das Kontaktformular kontaktieren,
+            werden die von Ihnen eingegebenen Daten zur Bearbeitung
+            Ihrer Anfrage gespeichert.
+        </p>
+
+        <h2>5. Google Fonts</h2>
+        <p>
+            Diese Website nutzt lokal eingebundene Google Fonts.
+        </p>
+
+        <h2>6. Font Awesome</h2>
+        <p>
+            Diese Website nutzt lokal eingebundene Font Awesome Dateien.
+        </p>
+
+        <p>
+            Quelle:
+            <a href="https://www.e-recht24.de"
+               target="_blank"
+               rel="noopener noreferrer">
+                eRecht24
+            </a>
+        </p>
+    </div>
+`;
