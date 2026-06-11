@@ -116,7 +116,7 @@ function renderMyWork() {
             <p>JavaScript , HTML,  CSS</p>
 
             <h3>What I have learned</h3>
-            <p>How many people were in the team and what was your role?  Describe your tasks  in 1-2 sentences. It is nice to mention a good teamwork and cooperation.</p>
+            <p>How many people were in the team and what was your role? Describe your tasks  in 1-2 sentences. It is nice to mention a good teamwork and cooperation.</p>
 
             <p></p>
             <img src="./assets/img/Property 1=Join.png" alt="Join App">
@@ -224,8 +224,8 @@ function renderContact() {
                 </a>
             </div>
             <div class="contact-footer">
-                <a href="#legal-notice">Impressum</a>
-                <a href="#privacy-policy">Datenschutz</a>
+                <a href="#" onclick="showLegalNotice()">Impressum</a>
+                <a href="#" onclick="showPrivacyPolicy()">Datenschutz</a>
                 <p>© Sonja Reimann-Thanisch 2026</p>
             </div>
         </div>
@@ -234,49 +234,33 @@ function renderContact() {
 
 renderContact();
 
-function renderLegalNotice() {
-    let legalNoticeSection = document.getElementById("legal-notice");
-    legalNoticeSection.classList.add("legal-notice-section");
-    legalNoticeSection.innerHTML = `
-        <aside class="hero-sidebar">
-            <div class="logo">
-                <svg viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
-                    <defs>
-                        <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
-                    </defs>
 
-                    <text class="logo-arc-text">
-                        <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
-                            frontend developer
-                        </textPath>
-                    </text>
+function showLegalNotice() {
+    document.getElementById("portfolio").style.display = "none";
 
-                    <text class="logo-initials" x="60" y="70" text-anchor="middle">
-                        SR
-                    </text>
-                </svg>
-            </div>
-            <nav id="main-nav">
-                <ul>
-                    <li class="nav-item" data-section="projects">Why me</li>
-                    <li class="nav-item" data-section="skills">Skills</li>
-                    <li class="nav-item" data-section="about">My Work</li>
-                    <li class="nav-item" data-section="contact">Contact</li>
-                </ul>
-            </nav>
-        </aside>
-        <h2 style="color: red">Privacy Policy</h2>
+    let legalView = document.getElementById("legal-view");
+    legalView.innerHTML = `
+        <section class="legal-page">
+            ${getSidebar()}
+            <h2>Impressum</h2>
+        </section>
     `;
 }
 
-renderLegalNotice();
+function showPrivacyPolicy() {
+    document.getElementById("portfolio").style.display = "none";
 
-function renderPrivacyPolicy() {
-    let privacyPolicySection = document.getElementById("privacy-policy");
-    privacyPolicySection.classList.add("privacy-policy-section");
-    privacyPolicySection.innerHTML = `
-         <h2>Privacy Policy</h2>
+    let legalView = document.getElementById("legal-view");
+    legalView.innerHTML = `
+        <section class="legal-page">
+            ${getSidebar()}
+            <h2>Datenschutz</h2>
+            <a href="#" onclick="backToPortfolio()">Zurück</a>
+        </section>
     `;
 }
 
-renderPrivacyPolicy();
+function backToPortfolio() {
+    document.getElementById("legal-view").innerHTML = "";
+    document.getElementById("portfolio").style.display = "flex";
+}
