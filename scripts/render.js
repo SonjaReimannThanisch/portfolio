@@ -224,8 +224,8 @@ function renderContact() {
                 </a>
             </div>
             <div class="contact-footer">
-                <a href="#" onclick="showLegalNotice()">Impressum</a>
-                <a href="#" onclick="showPrivacyPolicy()">Datenschutz</a>
+                <a href="#" onclick="showLegalNotice(); return false;">Impressum</a>
+                <a href="#" onclick="showPrivacyPolicy(); return false;">Datenschutz</a>
                 <p>© Sonja Reimann-Thanisch 2026</p>
             </div>
         </div>
@@ -267,40 +267,47 @@ function getSidebar() {
 }
 
 function showLegalNotice() {
-    document.getElementById("portfolio").style.display = "none";
-
-    document.getElementById("legal-view").innerHTML = `
-        <section class="legal-page">
-            ${getSidebar()}
-            <div class="legal-content">
-                ${LEGAL_NOTICE_TEXT}
-                <button onclick="backToPortfolio()" class="legal-back-button">
-                    Zurück
-                </button>
-            </div>
-        </section>
-    `;
+    showLegalView("impressum");
 }
 
 function showPrivacyPolicy() {
+    showLegalView("privacy");
+}
+
+function showLegalView(startPage) {
     document.getElementById("portfolio").style.display = "none";
 
     document.getElementById("legal-view").innerHTML = `
-        <section class="legal-page">
-            ${getSidebar()}
+        <section class="legal-slider">
+            <article id="impressum" class="legal-page">
+                ${getSidebar()}
+                <div class="legal-content">
+                    ${LEGAL_NOTICE_TEXT}
+                </div>
+                <a class="legal-next-link" href="#privacy">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
+                </a>
+            </article>
 
-        <div class="legal-layout">
-            ${PRIVACY_POLICY_TEXT}
-                <button
-                    class="legal-back-button"
-                    onclick="backToPortfolio()">
-                    Zurück
-                </button>
-            </div>
+            <article id="privacy" class="legal-page privacy-page">
+                <div class="legal-content legal-layout">
+                    ${PRIVACY_POLICY_TEXT}
+                </div>
+
+                <aside class="legal-right-footer">
+                    <p>© Sonja Reimann-Thanisch 2026</p>
+                    <button onclick="backToPortfolio()">Zurück</button>
+                </aside>
+
+                <a class="legal-prev-link" href="#impressum">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
+                </a>
+            </article>
         </section>
     `;
-}
 
+    document.getElementById(startPage).scrollIntoView();
+}
 
 function backToPortfolio() {
     document.getElementById("legal-view").innerHTML = "";
