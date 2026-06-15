@@ -1,6 +1,6 @@
 .legal-slider {
     display: flex;
-    width: 200vw;
+    width: max-content;
     height: 100vh;
     overflow-x: auto;
     overflow-y: hidden;
@@ -30,7 +30,8 @@
 
 .legal-content {
     padding: 96px 120px;
-    max-width: 950px
+    width: calc(100vw - 260px);
+    overflow: hidden;
 }
 
 .legal-layout {

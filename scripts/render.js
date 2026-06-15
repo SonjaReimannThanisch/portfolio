@@ -224,8 +224,8 @@ function renderContact() {
                 </a>
             </div>
             <div class="contact-footer">
-                <a href="#" onclick="showLegalNotice(); return false;">Impressum</a>
-                <a href="#" onclick="showPrivacyPolicy(); return false;">Datenschutz</a>
+                <a href="index.html?legal=impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
+                <a href="index.html?legal=privacy" target="_blank" rel="noopener noreferrer">Datenschutz</a>
                 <p>© Sonja Reimann-Thanisch 2026</p>
             </div>
         </div>
@@ -266,17 +266,8 @@ function getSidebar() {
     `;
 }
 
-function showLegalNotice() {
-    showLegalView("impressum");
-}
-
-function showPrivacyPolicy() {
-    showLegalView("privacy");
-}
-
 function showLegalView(startPage) {
     document.getElementById("portfolio").style.display = "none";
-
     document.getElementById("legal-view").innerHTML = `
         <section class="legal-slider">
             <article id="impressum" class="legal-page">
@@ -288,10 +279,48 @@ function showLegalView(startPage) {
                     <img src="./assets/icons/Property 1=Default.png" alt="Next">
                 </a>
             </article>
-
             <article id="privacy" class="legal-page privacy-page">
-                <div class="legal-content legal-layout">
-                    ${PRIVACY_POLICY_TEXT}
+                <div class="legal-content">
+                    ${PRIVACY_POLICY_TEXT_ONE}
+                </div>
+
+                <a class="legal-next-link" href="#privacy-two">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
+                </a>
+
+            </article>
+
+            <article id="privacy-two" class="legal-page privacy-page">
+                <div class="legal-content">
+                    ${PRIVACY_POLICY_TEXT_TWO}
+                </div>
+
+                <a class="legal-next-link" href="#privacy-three">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
+                </a>
+
+                <a class="legal-prev-link" href="#privacy">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
+                </a>
+            </article>
+
+            <article id="privacy-three" class="legal-page privacy-page">
+                <div class="legal-content">
+                    ${PRIVACY_POLICY_TEXT_THREE}
+                </div>
+
+                <a class="legal-next-link" href="#privacy-four">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
+                </a>
+
+                <a class="legal-prev-link" href="#privacy-two">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
+                </a>
+            </article>
+
+            <article id="privacy-four" class="legal-page privacy-page">
+                <div class="legal-content">
+                    ${PRIVACY_POLICY_TEXT_FOUR}
                 </div>
 
                 <aside class="legal-right-footer">
@@ -299,7 +328,7 @@ function showLegalView(startPage) {
                     <button onclick="backToPortfolio()">Zurück</button>
                 </aside>
 
-                <a class="legal-prev-link" href="#impressum">
+                <a class="legal-prev-link" href="#privacy-three">
                     <img src="./assets/icons/Property 1=Default.png" alt="Back">
                 </a>
             </article>
@@ -309,8 +338,20 @@ function showLegalView(startPage) {
     document.getElementById(startPage).scrollIntoView();
 }
 
+
+
 function backToPortfolio() {
     document.getElementById("legal-view").innerHTML = "";
     document.getElementById("portfolio").style.display = "flex";
 }
 
+function openLegalFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const legal = params.get("legal");
+
+    if (legal === "impressum" || legal === "privacy") {
+        showLegalView(legal);
+    }
+}
+
+openLegalFromUrl();
