@@ -272,22 +272,32 @@ function showLegalView(startPage) {
         <section class="legal-slider">
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
-                <div class="legal-content">
-                    ${LEGAL_NOTICE_TEXT}
+
+                <div class="impressum-layout">
+                    <h2 class="legal-title">Legal Notice</h2>
+
+                    <div class="legal-content">
+                        ${LEGAL_NOTICE_TEXT}
+                    </div>
+
+                    <a class="legal-next-link" href="#privacy">
+                        <img src="./assets/icons/Property 1=Default.png" alt="Next">
+                    </a>
                 </div>
-                <a class="legal-next-link" href="#privacy">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
-                </a>
             </article>
             <article id="privacy" class="legal-page privacy-page">
-                <div class="legal-content">
-                    ${PRIVACY_POLICY_TEXT_ONE}
+                    <div class="legal-content">
+                        ${PRIVACY_POLICY_TEXT_ONE}
+                    </div>
+
+                    <a class="legal-prev-link" href="#impressum">
+                        <img src="./assets/icons/Property 1=Default.png" alt="Bak">
+                    </a>
+
+                    <a class="legal-next-link" href="#privacy-two">
+                        <img src="./assets/icons/Property 1=Default.png" alt="Next">
+                    </a>
                 </div>
-
-                <a class="legal-next-link" href="#privacy-two">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
-                </a>
-
             </article>
 
             <article id="privacy-two" class="legal-page privacy-page">
@@ -295,13 +305,14 @@ function showLegalView(startPage) {
                     ${PRIVACY_POLICY_TEXT_TWO}
                 </div>
 
+                <a class="legal-prev-link" href="#privacy">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
+                </a>
+
                 <a class="legal-next-link" href="#privacy-three">
                     <img src="./assets/icons/Property 1=Default.png" alt="Next">
                 </a>
 
-                <a class="legal-prev-link" href="#privacy">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
-                </a>
             </article>
 
             <article id="privacy-three" class="legal-page privacy-page">
@@ -309,13 +320,14 @@ function showLegalView(startPage) {
                     ${PRIVACY_POLICY_TEXT_THREE}
                 </div>
 
+                <a class="legal-prev-link" href="#privacy-two">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
+                </a>
+
                 <a class="legal-next-link" href="#privacy-four">
                     <img src="./assets/icons/Property 1=Default.png" alt="Next">
                 </a>
 
-                <a class="legal-prev-link" href="#privacy-two">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
-                </a>
             </article>
 
             <article id="privacy-four" class="legal-page privacy-page">
