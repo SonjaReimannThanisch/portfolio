@@ -286,18 +286,17 @@ function showLegalView(startPage) {
                 </div>
             </article>
             <article id="privacy" class="legal-page privacy-page">
-                    <div class="legal-content">
-                        ${PRIVACY_POLICY_TEXT_ONE}
-                    </div>
-
-                    <a class="legal-prev-link" href="#impressum">
-                        <img src="./assets/icons/Property 1=Default.png" alt="Bak">
-                    </a>
-
-                    <a class="legal-next-link" href="#privacy-two">
-                        <img src="./assets/icons/Property 1=Default.png" alt="Next">
-                    </a>
+                <div class="legal-content">
+                    ${PRIVACY_POLICY_TEXT_ONE}
                 </div>
+
+                <a class="legal-prev-link" href="#impressum">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
+                </a>
+
+                <a class="legal-next-link" href="#privacy-two">
+                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
+                    </a>
             </article>
 
             <article id="privacy-two" class="legal-page privacy-page">
@@ -315,24 +314,11 @@ function showLegalView(startPage) {
 
             </article>
 
-            <article id="privacy-three" class="legal-page privacy-page">
-                <div class="legal-content">
-                    ${PRIVACY_POLICY_TEXT_THREE}
-                </div>
 
-                <a class="legal-prev-link" href="#privacy-two">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
-                </a>
-
-                <a class="legal-next-link" href="#privacy-four">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
-                </a>
-
-            </article>
 
             <article id="privacy-four" class="legal-page privacy-page">
                 <div class="legal-content">
-                    ${PRIVACY_POLICY_TEXT_FOUR}
+                    ${PRIVACY_POLICY_TEXT_THREE}
                 </div>
 
                 <aside class="legal-right-footer">
@@ -349,7 +335,6 @@ function showLegalView(startPage) {
 
     document.getElementById(startPage).scrollIntoView();
 }
-
 
 
 function backToPortfolio() {

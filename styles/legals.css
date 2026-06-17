@@ -5,6 +5,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .legal-page {
@@ -16,6 +17,7 @@
     background-color: var(--background-main);
     color: var(--text-light);
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .impressum-layout {
@@ -38,6 +40,12 @@
     justify-content: flex-end;
 }
 
+.privacy-page {
+    padding-top: 96px;
+    padding-left: 70px;
+}
+
+
 .privacy-page::after {
     content: none;
 }
@@ -53,8 +61,8 @@
 }
 
 .legal-content {
-    width: 65vw;
-    height: 65vh;
+    width: 940px;
+    height: 645px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -62,7 +70,7 @@
 
 .legal-layout {
     display: flex;
-    gap: 120px;
+    gap: 42pxpx;
 }
 
 .legal-column {
@@ -76,6 +84,11 @@
 .legal-column h3 {
     color: var(--highlight-main);
     margin: 0;
+    font-size: 18px;
+}
+
+.legal-content p {
+    font-size: 18px;
 }
 
 .legal-right-footer {
