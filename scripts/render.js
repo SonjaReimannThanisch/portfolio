@@ -70,16 +70,12 @@ function renderMyWork() {
         <div class="work-grid">
             <p>1</p>
             <h2>Project Join</h2>
-
             <h3>About the project</h3>
             <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
-
             <h3>Technologies i have used</h3>
             <p>Angular, TypeScript, HTML, CSS, Firebase</p>
-
             <h3>What I have learned</h3>
             <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
-
             <p></p>
             <img src="./assets/img/Property 1=Join.png" alt="Join App">
             <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
@@ -89,16 +85,12 @@ function renderMyWork() {
         <div class="work-grid">
             <p>1</p>
             <h2>Project Join</h2>
-
             <h3>About the project</h3>
             <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
-
             <h3>Technologies i have used</h3>
             <p>Angular, TypeScript, HTML, CSS, Firebase</p>
-
             <h3>What I have learned</h3>
             <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
-
             <p></p>
             <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Join App">
             <a href="https://github.com/SonjaReimannThanisch/Sharky_recover">GitHub</a>
@@ -108,22 +100,17 @@ function renderMyWork() {
         <div class="work-grid">
             <p>3</p>
             <h2>Project Sharky</h2>
-
             <h3>About the project</h3>
             <p>Jump, run and throw game based on object-oriented approach. Help Sharky to find coins and poison bottles to fight against the big whale.</p>
-
             <h3>Technologies i have used</h3>
             <p>JavaScript , HTML,  CSS</p>
-
             <h3>What I have learned</h3>
             <p>How many people were in the team and what was your role? Describe your tasks  in 1-2 sentences. It is nice to mention a good teamwork and cooperation.</p>
-
             <p></p>
             <img src="./assets/img/Property 1=Join.png" alt="Join App">
             <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
             <a href="https://join-business-app.netlify.app/">Live Test</a>
         </div>
-
         <div class="work-grid">
             <p>4</p>
             <h3>Ongoing Projects</h3>
@@ -265,19 +252,33 @@ function getSidebar() {
     `;
 }
 
+function getSocialLinks() {
+    return `
+        <div id="social-links" class="social-links">
+            <nav>
+                <ul>
+                    <li><img src="./assets/icons/Vector (1).png" alt="Email"></li>
+                    <li><img src="./assets/icons/Vector.png" alt="LinedIn"></li>
+                    <li><img src="./assets/icons/Vector (2).png" alt="GitHub"></li>
+                    <li id="languageLink" class="language-link">DE | EN</li>
+                </ul>
+            </nav>
+        </div
+    `;
+}
+
 function showLegalView(startPage) {
     document.getElementById("portfolio").style.display = "none";
     document.getElementById("legal-view").innerHTML = `
         <section class="legal-slider">
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
+                ${getSocialLinks()}
                 <div class="impressum-layout">
                     <h2 class="legal-title">Legal Notice</h2>
-
                     <div class="legal-content">
                         ${LEGAL_NOTICE_TEXT}
                     </div>
-
                     <a class="legal-next-link" href="#privacy">
                         <img src="./assets/icons/Property 1=Default.png" alt="Next">
                     </a>

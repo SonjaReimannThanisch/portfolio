@@ -27,6 +27,13 @@
     padding-top: 96px;
 }
 
+#impressum .social-links {
+    position: absolute;
+    top: 53px;
+    right: 150px;
+    z-index: 10;
+}
+
 .legal-title {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
