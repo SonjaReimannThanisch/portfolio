@@ -123,19 +123,25 @@
     margin-top: 18px;
 }
 
-.contact-item img {
-    width: 30px;
-    height: 30px;
-}
-
-.contact-item img:hover {
-    filter: hue-rotate(110deg);
-}
-
 .contact-item a {
     margin: 0;
     text-decoration: none;
     color: var(--text-light);
+}
+
+.contact-item i,
+.contact-item a {
+    color: var(--text-light);
+    transition: color 150ms ease, transform 150ms ease;
+}
+
+.contact-item:hover i,
+.contact-item:hover a {
+    color: var(--highlight-main);
+}
+
+.contact-item:hover i {
+    transform: scale(1.15);
 }
 
 .contact-back-link {
