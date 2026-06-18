@@ -10,9 +10,10 @@
 
 .legal-page {
     position: relative;
+    min-width: 100vw;
     width: 100vw;
     height: 100vh;
-    flex-shrink: 0;
+    flex: 0 0 100vw;
     display: flex;
     background-color: var(--background-main);
     color: var(--text-light);
@@ -41,8 +42,18 @@
 }
 
 .privacy-page {
-    padding-top: 96px;
-    padding-left: 70px;
+    padding: 96px 0 80px 0;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.privacy-page .legal-content {
+    margin-left: 120px;
+}
+
+#privacy-four .legal-content {
+    margin-left: 120px;
+    margin-right: 180px;
 }
 
 
@@ -61,8 +72,8 @@
 }
 
 .legal-content {
-    width: 940px;
-    height: 645px;
+    max-width: 1000px;
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -70,7 +81,7 @@
 
 .legal-layout {
     display: flex;
-    gap: 42pxpx;
+    gap: 42px;
 }
 
 .legal-column {
@@ -125,17 +136,19 @@
 .legal-next-link {
     position: absolute;
     top: 50%;
+    right: 120px;
     z-index: 5;
     transform: translateY(-50%);
-    right: 145px;
+
 }
 
 .legal-prev-link {
     position: absolute;
-    top: 49%;
+    top: 48.5%;
+    right: 135px;
     z-index: 5;
     transform: translateY(-50%);
-    right: 165px;
+
 }
 
 .legal-next-link img,

@@ -209,12 +209,13 @@ function renderContact() {
                     jeden Tag etwas Neues zu lernen.
                 </p>
                 <div class="contact-item">
-                    <img src="./assets/icons/🦆 icon _email_.png" alt="Email">
+                    <i class="bi bi-envelope-fill"></i>
                     <a href="mailto:sonja.reimann.thanisch@gmail.com">
                         E-mail: sonja.reimann.thanisch@gmail.com
                     </a>
                 </div>
                 <div class="contact-item">
+                    <i class="bi bi-telephone-fill"></i>
                     <a href="tel:+491788286541">
                         Tel: 0178 828 65 41
                     </a>
@@ -242,13 +243,11 @@ function getSidebar() {
                     <defs>
                         <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
                     </defs>
-
                     <text class="logo-arc-text">
                         <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
                             frontend developer
                         </textPath>
                     </text>
-
                     <text class="logo-initials" x="60" y="70" text-anchor="middle">
                         SR
                     </text>
@@ -272,7 +271,6 @@ function showLegalView(startPage) {
         <section class="legal-slider">
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
-
                 <div class="impressum-layout">
                     <h2 class="legal-title">Legal Notice</h2>
 
@@ -285,47 +283,29 @@ function showLegalView(startPage) {
                     </a>
                 </div>
             </article>
-            <article id="privacy" class="legal-page privacy-page">
+            <article id="privacy-four" class="legal-page privacy-page">
                 <div class="legal-content">
                     ${PRIVACY_POLICY_TEXT_ONE}
                 </div>
-
-                <a class="legal-prev-link" href="#impressum">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
-                </a>
-
-                <a class="legal-next-link" href="#privacy-two">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
-                    </a>
-            </article>
-
-            <article id="privacy-two" class="legal-page privacy-page">
-                <div class="legal-content">
-                    ${PRIVACY_POLICY_TEXT_TWO}
-                </div>
-
-                <a class="legal-prev-link" href="#privacy">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
-                </a>
-
-                <a class="legal-next-link" href="#privacy-three">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Next">
-                </a>
-
-            </article>
-
-
-
-            <article id="privacy-four" class="legal-page privacy-page">
-                <div class="legal-content">
-                    ${PRIVACY_POLICY_TEXT_THREE}
-                </div>
-
                 <aside class="legal-right-footer">
-                    <p>© Sonja Reimann-Thanisch 2026</p>
-                    <button onclick="backToPortfolio()">Zurück</button>
-                </aside>
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:sonja.reimann.thanisch@gmail.com">
+                            E-mail: sonja.reimann.thanisch@gmail.com
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel:+491788286541">
+                            Tel: 0178 828 65 41
+                        </a>
+                    </div>
+                    <button onclick="backToPortfolio()">
+                        ← Zurück zum Portfolio
+                    </button>
 
+                    <p>© Sonja Reimann-Thanisch 2026</p>
+                </aside>
                 <a class="legal-prev-link" href="#privacy-three">
                     <img src="./assets/icons/Property 1=Default.png" alt="Back">
                 </a>
