@@ -283,11 +283,11 @@ function showLegalView(startPage) {
                     </a>
                 </div>
             </article>
-            <article id="privacy-four" class="legal-page privacy-page">
+            <article id="privacy" class="legal-page privacy-page">
                 <div class="legal-content">
                     ${PRIVACY_POLICY_TEXT_ONE}
                 </div>
-                <aside class="legal-right-footer">
+                <div class="legal-contact-info">
                     <div class="contact-item">
                         <i class="bi bi-envelope-fill"></i>
                         <a href="mailto:sonja.reimann.thanisch@gmail.com">
@@ -300,8 +300,10 @@ function showLegalView(startPage) {
                             Tel: 0178 828 65 41
                         </a>
                     </div>
+                </div>
+                <aside class="legal-right-footer">
                     <button onclick="backToPortfolio()">
-                        ← Zurück zum Portfolio
+                        Zurück zum Portfolio
                     </button>
 
                     <p>© Sonja Reimann-Thanisch 2026</p>

@@ -51,7 +51,7 @@
     margin-left: 120px;
 }
 
-#privacy-four .legal-content {
+#privacy .legal-content {
     margin-left: 120px;
     margin-right: 180px;
 }
@@ -61,7 +61,7 @@
     content: none;
 }
 
-#privacy-four::after {
+#privacy::after {
     content: "";
     position: absolute;
     right: 0;
@@ -100,6 +100,17 @@
 
 .legal-content p {
     font-size: 18px;
+}
+
+.legal-contact-info {
+    position: absolute;
+    top: 96px;
+    right: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    z-index: 2;
 }
 
 .legal-right-footer {
