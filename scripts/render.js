@@ -257,13 +257,13 @@ function getSocialLinks() {
         <div id="social-links" class="social-links">
             <nav>
                 <ul>
-                    <li><img src="./assets/icons/Vector (1).png" alt="Email"></li>
-                    <li><img src="./assets/icons/Vector.png" alt="LinedIn"></li>
-                    <li><img src="./assets/icons/Vector (2).png" alt="GitHub"></li>
-                    <li id="languageLink" class="language-link">DE | EN</li>
+                <li><img src="./assets/icons/Vector (1).png" alt="Email"></li>
+                <li><img src="./assets/icons/Vector.png" alt="LinedIn"></li>
+                <li><img src="./assets/icons/Vector (2).png" alt="GitHub"></li>              
+                <li id="languageLink" class="language-link">DE | EN</li>
                 </ul>
             </nav>
-        </div
+        </div>
     `;
 }
 
@@ -274,15 +274,16 @@ function showLegalView(startPage) {
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
                 ${getSocialLinks()}
-                <div class="impressum-layout">
-                    <h2 class="legal-title">Legal Notice</h2>
-                    <div class="legal-content">
-                        ${LEGAL_NOTICE_TEXT}
-                    </div>
-                    <a class="legal-next-link" href="#privacy">
-                        <img src="./assets/icons/Property 1=Default.png" alt="Next">
-                    </a>
-                </div>
+                
+        <div id="impressum-layout" class="impressum-layout">
+            <h2 class="legal-title">Legal Notice</h2>
+            <div class="legal-content">
+                ${LEGAL_NOTICE_TEXT}
+            </div>
+            <a class="legal-next-link" href="#privacy">
+                <img src="./assets/icons/Property 1=Default.png" alt="Next">
+            </a>
+        </div>
             </article>
             <article id="privacy" class="legal-page privacy-page">
                 <div class="legal-content">
@@ -309,7 +310,7 @@ function showLegalView(startPage) {
 
                     <p>© Sonja Reimann-Thanisch 2026</p>
                 </aside>
-                <a class="legal-prev-link" href="#privacy-three">
+                <a class="legal-prev-link" href="#impressum">
                     <img src="./assets/icons/Property 1=Default.png" alt="Back">
                 </a>
             </article>

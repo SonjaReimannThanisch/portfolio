@@ -32,6 +32,12 @@ main {
     height: 100vh;
 }
 
+main,
+#portfolio,
+.legal-slider {
+    margin-left: 22px;
+}
+
 body {
     margin: 0;
     overflow-x: auto;
@@ -57,6 +63,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
 }
 
 .hero-content {
@@ -162,6 +172,21 @@ section {
     font-size: 24px;
 }
 
+.nav-item,
+.logo-arc-text {
+    color: #4A4A4A;
+    fill: #4A4A4A;
+}
+
+.nav-item:hover {
+    color: #FFFFFF;
+}
+
+.nav-item.active {
+    color: transparent;
+    -webkit-text-stroke: 1px #4A4A4A;
+}
+
 .hero-naming {
     position: absolute;
     left: 50%;
@@ -198,10 +223,10 @@ section {
 }
 
 .social-links {
-    position: absolute;
+    position: fixed;
     top: 53px;
     right: 150px;
-    z-index: 10;
+    z-index: 100;
 }
 
 .social-links ul {
@@ -214,9 +239,16 @@ section {
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
+    transition: all 125ms ease;
+}
+
+.social-links img:hover {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(28%)
+            saturate(1033%) hue-rotate(125deg) brightness(93%)
+            contrast(88%);
 }
 
 .language-link {
