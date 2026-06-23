@@ -1,6 +1,6 @@
 .references-section {
     position: relative;
-    width: 100vw;
+    width: calc(100vw - 172px);
     height: 100vh;
     overflow: hidden;
     display: grid;

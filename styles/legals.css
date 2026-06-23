@@ -1,6 +1,6 @@
 .legal-slider {
     display: flex;
-    width: max-content;
+    width: calc(100vw - 172px);
     height: 100vh;
     overflow-x: auto;
     overflow-y: hidden;

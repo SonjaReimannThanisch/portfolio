@@ -3,7 +3,7 @@ function renderWhyMe() {
 
     aboutSection.innerHTML = `
         <h2 class="why-me-title">Why me</h2>
-        <div class="why-me-content">
+        <div id="whyMe" class="why-me-content">
             <p class="why-me-text">
                 Was mich an der Softwareentwicklung begeistert, ist die Möglichkeit, komplexe Probleme in kleine, lösbare Schritte zu zerlegen. Ich habe Freude daran, neue Technologien zu verstehen, Fehler zu analysieren und so lange an einer Lösung zu arbeiten, bis sie funktioniert.
                 Als Quereinsteigerin habe ich gelernt, dass Fortschritt nicht immer geradlinig verläuft. Viele Herausforderungen haben mich Geduld, Ausdauer und strukturiertes Arbeiten gelehrt. Gerade diese Erfahrungen haben meinen Wunsch gestärkt, mich kontinuierlich weiterzuentwickeln und mein Wissen auszubauen.
@@ -34,7 +34,7 @@ function renderMySkills() {
     skillsSection.classList.add("skills-section");
     skillsSection.innerHTML = `
     <h2 class="skills-title">My Skill Set</h2>
-    <div class="skills-content">
+    <div id="mySkills" class="skills-content">
         <p class="skills-text">
             Ich lerne gerne neue Technologien und arbeite mich selbstständig in unbekannte Themen ein. Herausforderungen motivieren mich, meine Fähigkeiten weiterzuentwickeln und kreative Lösungen zu finden.
         </p>
@@ -66,7 +66,7 @@ function renderMyWork() {
     workSection.classList.add("work-section");
     workSection.innerHTML = `
     <h2 class="work-title">My Work</h2>
-    <div class="project-grid">
+    <div id="myWork" class="project-grid">
         <div class="work-grid">
             <p>1</p>
             <h2>Project Join</h2>
@@ -173,7 +173,7 @@ function renderContact() {
     contactsection.classList.add("contact-section");
     contactsection.innerHTML = `
         <h2 class="contact-title">Contact me</h2>
-        <div class="contact-content">
+        <div id="contact" class="contact-content">
             <form class="contact-form">
                 <input type="text" placeholder="Your name" required>
                 <input type="email" placeholder="Your e-mail" required>

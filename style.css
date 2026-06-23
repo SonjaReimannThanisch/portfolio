@@ -32,11 +32,8 @@ main {
     height: 100vh;
 }
 
-main,
-#portfolio,
-.legal-slider {
-    margin-left: 0;
-}
+
+
 
 body {
     margin: 0;
@@ -132,15 +129,14 @@ section {
     font-family: "Quantico", sans-serif;
     font-size: 13px;
     letter-spacing: 2px;
-    fill: var(--text-dark);
 }
 
 .logo-initials {
     font-family: "Quantico", sans-serif;
     font-size: 42px;
     font-weight: 700;
+    stroke: #4A4A4A;;
     fill: transparent;
-    stroke: var(--text-dark);
     stroke-width: 1.5px;
     letter-spacing: -8px;
 }
@@ -172,17 +168,18 @@ section {
     font-size: 24px;
 }
 
-.nav-item,
+.nav-item a,
 .logo-arc-text {
     color: #4A4A4A;
     fill: #4A4A4A;
+    text-decoration: none;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
     color: #FFFFFF;
 }
 
-.nav-item.active {
+.nav-item a.active {
     color: transparent;
     -webkit-text-stroke: 1px #4A4A4A;
 }
