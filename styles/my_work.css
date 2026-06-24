@@ -1,40 +1,43 @@
 .work-section {
     position: relative;
-    width: calc(100vw - 172px);
-
-    height: 100vh;
-    overflow: hidden;
+    width: max-content;
+    min-width: calc(100vw - 172px);
+    overflow: visible;
     display: grid;
     grid-template-columns: 120px 1fr;
-    align-items: center;
-
+    align-items: flex-start;
     box-sizing: border-box;
+    padding-left: 172px;
 }
 
 .work-title {
-    margin: 0 24px 0 0;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 48px;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 2px var(--highlight-main);
-    justify-self: end;
+    align-self: start;
+    margin-top: 180px;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 320px) 220px;
-    gap: 24px;
-    align-items: center;
+    grid-template-columns: repeat(3, 920px) 520px;
+    gap: 48px;
+    align-self: center;
+    overflow: visible;
 }
 
 .work-grid {
-    min-height: 300px;
-    padding: 20px;
-    border-radius: 12px;
+    width: 920px;
+    min-height: 520px;
+    flex: 0 0 920px;
+    padding: 48px 56px;
+    border-radius: 28px;
     background-color: rgba(56, 209, 196, 0.18);
     color: var(--text-light);
+    box-sizing: border-box;
 }
 
 .work-grid h2,
@@ -64,6 +67,11 @@
     color: var(--text-dark);
     font-size: 12px;
     text-decoration: none;
+}
+
+.work-grid-last {
+    max-width: 345px;
+    height: 289px;
 }
 
 .projects-next-link {

@@ -1,12 +1,11 @@
 .why-me-section {
     position: relative;
     width: calc(100vw - 172px);
-
     height: 100vh;
     color: var(--text-light);
     display: grid;
     grid-template-columns: 180px minmax(0, 1fr);
-    padding: 120px 0 0 0;
+    padding: 120px 0 0 172px;
     box-sizing: border-box;
     overflow: hidden;
 }

@@ -84,7 +84,7 @@ function renderMyWork() {
             <a href="https://join-business-app.netlify.app/">Live Test</a>
         </div>
         <div class="work-grid">
-            <p>1</p>
+            <p>2</p>
             <h2>Project Join</h2>
             <h3>About the project</h3>
             <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
@@ -111,7 +111,7 @@ function renderMyWork() {
             <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
             <a href="https://join-business-app.netlify.app/">Live Test</a>
         </div>
-        <div class="work-grid">
+        <div class="work-grid-last">
             <p>4</p>
             <h3>Ongoing Projects</h3>
             <p>Are you currently working on a project?
