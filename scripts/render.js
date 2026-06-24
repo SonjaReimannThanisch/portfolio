@@ -1,6 +1,5 @@
 function renderWhyMe() {
     let aboutSection = document.getElementById("about");
-
     aboutSection.innerHTML = `
         <h2 class="why-me-title">Why me</h2>
         <div id="whyMe" class="why-me-content">
@@ -12,13 +11,16 @@ function renderWhyMe() {
             <h3>I am</h3>
             <div class="why-me-facts">
                 <div class="fact-card">
-                    <img src="./assets/icons/location.png" alt="Location">
+                    <img class="icon-default" src="./assets/icons/location.png" alt="Location">
+                    <img class="icon-hover" src="./assets/icons/Property 1=hover.png" alt="Location hover">
                 </div>
                 <div class="fact-card">
-                    <img src="./assets/icons/remote.png" alt="Remote Work">
+                    <img class="icon-default" src="./assets/icons/remote.png" alt="Remote Work">
+                    <img class="icon-hover" src="./assets/icons/Property 1=Hover (1).png" alt="Remote hover">
                 </div>
                 <div class="fact-card">
-                    <img src="./assets/icons/relocation.png" alt="Relocation">
+                    <img class="icon-default" src="./assets/icons/relocation.png" alt="Relocation">
+                    <img class="icon-hover" src="./assets/icons/Property 1=hover (2).png" alt="Relocation hover">
                 </div>
             </div>
             <a class="contact-button" href="#contact">Contact me</a>
@@ -49,7 +51,7 @@ function renderMySkills() {
             <img src="./assets/icons/Property 1=Rest-Api.png">
             <img src="./assets/icons/Property 1=GIT.png">
             <img src="./assets/icons/Property 1=Scrum.png">
-            <img src="./assets/icons/Property 1=Challenge me.png">
+            <img class="challenge-icon" src="./assets/icons/Property 1=Challenge me.png">
             <p class="skills-side-text">
                 Neugier und kontinuierliche Weiterentwicklung treiben mich an.         
             </p>
@@ -81,7 +83,6 @@ function renderMyWork() {
             <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
             <a href="https://join-business-app.netlify.app/">Live Test</a>
         </div>
-
         <div class="work-grid">
             <p>1</p>
             <h2>Project Join</h2>
@@ -96,7 +97,6 @@ function renderMyWork() {
             <a href="https://github.com/SonjaReimannThanisch/Sharky_recover">GitHub</a>
             <a href="https://sharky-the-happy-shark.netlify.app//">Live Test</a>
         </div>
-
         <div class="work-grid">
             <p>3</p>
             <h2>Project Sharky</h2>
@@ -327,9 +327,8 @@ function backToPortfolio() {
 }
 
 function openLegalFromUrl() {
-    const params = new URLSearchParams(window.location.search);
-    const legal = params.get("legal");
-
+    let params = new URLSearchParams(window.location.search);
+    let legal = params.get("legal");
     if (legal === "impressum" || legal === "privacy") {
         showLegalView(legal);
     }
