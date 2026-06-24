@@ -207,7 +207,7 @@ function renderContact() {
                         Tel: 0178 828 65 41
                     </a>
                 </div>
-                <a class="contact-back-link" href="#references">
+                <a class="contact-back-link" href="#hero">
                     <img src="./assets/icons/Property 1=Default.png" alt="Back">
                 </a>
             </div>

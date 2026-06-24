@@ -1,6 +1,6 @@
 .why-me-section {
     position: relative;
-    width: calc(100vw - 172px);
+    width: 100vw;
     height: 100vh;
     color: var(--text-light);
     display: grid;

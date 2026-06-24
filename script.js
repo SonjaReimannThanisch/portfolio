@@ -1,12 +1,30 @@
+const sections = [...document.querySelectorAll("#portfolio > section")];
+let currentSection = 0;
+let isScrolling = false;
+
 window.addEventListener(
     "wheel",
     (event) => {
         event.preventDefault();
+        if (isScrolling) return;
 
-        window.scrollBy({
-            left: event.deltaY > 0 ? window.innerWidth : -window.innerWidth,
+        isScrolling = true;
+
+        if (event.deltaY > 0) {
+            currentSection = Math.min(currentSection + 1, sections.length - 1);
+        } else {
+            currentSection = Math.max(currentSection - 1, 0);
+        }
+
+        sections[currentSection].scrollIntoView({
             behavior: "smooth",
+            inline: "start",
+            block: "nearest",
         });
+
+        setTimeout(() => {
+            isScrolling = false;
+        }, 700);
     },
     { passive: false }
 );
