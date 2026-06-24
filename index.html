@@ -26,22 +26,24 @@
     <main id="portfolio">
         <section id="hero" class="hero-section">
             <aside class="hero-sidebar">
-                <div class="logo" href="#portfolio">
-                    <svg href="#portfolio" viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
-                        <defs>
-                            <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
-                        </defs>
+                <div class="logo">
+                    <a class="logo" href="#hero">
+                        <svg href="#portfolio" viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
+                            <defs>
+                                <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
+                            </defs>
 
-                        <text class="logo-arc-text">
-                            <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
-                                frontend developer
-                            </textPath>
-                        </text>
+                            <text class="logo-arc-text">
+                                <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
+                                    frontend developer
+                                </textPath>
+                            </text>
 
-                        <text class="logo-initials" x="60" y="70" text-anchor="middle">
-                            SR
-                        </text>
-                    </svg>
+                            <text class="logo-initials" x="60" y="70" text-anchor="middle">
+                                SR
+                            </text>
+                        </svg>
+                    </a>
                 </div>
                 <nav id="main-nav">
                     <ul>
@@ -67,10 +69,26 @@
                 <div id="social-links" class="social-links">
                     <nav>
                         <ul>
-                            <li><img src="./assets/icons/Vector (1).png" alt="Email"></li>
-                            <li><img src="./assets/icons/Vector.png" alt="LinedIn"></li>
-                            <li><img src="./assets/icons/Vector (2).png" alt="GitHub"></li>
-                            <li id="languageLink" class="language-link">DE | EN</li>
+                            <li>
+                                <a href="mailto:sonja.reimann.thanisch@gmail.com">
+                                        <img src="./assets/icons/Vector (1).png" alt="Email">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/sonja-reimann-thanisch-1574881b3/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/icons/Vector.png" alt="LinkedIn">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/SonjaReimannThanisch" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/icons/Vector (2).png" alt="GitHub">
+                                    </a>
+                                </li>
+                            <li class="language-link">
+                                <span>DE</span>
+                                <span>|</span>
+                                <span>EN</span>
+                            </li>
                         </ul>
                     </nav>
                 </div>

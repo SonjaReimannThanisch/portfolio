@@ -229,7 +229,7 @@ section {
 .social-links ul {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -249,8 +249,20 @@ section {
 }
 
 .language-link {
-    width: 62px;
-    height: 25px;
+    display: flex;
+    gap: 6px;
+    color: #fff;
+    margin-left: 36px;
+}
+
+.language-link span:first-child,
+.language-link span:last-child {
+    cursor: pointer;
+}
+
+.language-link span:first-child:hover,
+.language-link span:last-child:hover {
+    color: #38D1C4;
 }
 
 .next-section-link {
