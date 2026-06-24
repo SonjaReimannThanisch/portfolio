@@ -70,19 +70,28 @@ function renderMyWork() {
     <h2 class="work-title">My Work</h2>
     <div id="myWork" class="project-grid">
         <div class="work-grid">
-            <p>1</p>
-            <h2>Project Join</h2>
-            <h3>About the project</h3>
-            <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
-            <h3>Technologies i have used</h3>
-            <p>Angular, TypeScript, HTML, CSS, Firebase</p>
-            <h3>What I have learned</h3>
-            <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
-            <p></p>
-            <img src="./assets/img/Property 1=Join.png" alt="Join App">
-            <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
-            <a href="https://join-business-app.netlify.app/">Live Test</a>
-        </div>
+            <div class="project-left">
+               <div class="project-header"> 
+                    <span class="project-number">1</span>
+                    <h2>Project Join</h2>
+                </div>
+                <h3>About the project</h3>
+                <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                
+                <h3>Technologies i have used</h3>
+                <p>Angular, TypeScript, HTML, CSS, Firebase</p>
+                
+                <h3>What I have learned</h3>
+                <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
+            </div>
+            <div class="prokect-right">
+                <img src="./assets/img/Property 1=Join.png" alt="Join App">
+                
+                <div class="project-buttons">
+                    <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
+                    <a href="https://join-business-app.netlify.app/">Live Test</a>
+                </div>
+            </div>
         <div class="work-grid">
             <p>2</p>
             <h2>Project Join</h2>
