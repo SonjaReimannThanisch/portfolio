@@ -18,6 +18,7 @@ window.addEventListener(
             inline: "start",
             block: "nearest",
         });
+
         setTimeout(() => {
             isScrolling = false;
         }, 700);
