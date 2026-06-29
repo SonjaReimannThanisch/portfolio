@@ -53,15 +53,17 @@
     object-fit: contain;
     filter: hue-rotate(110deg) saturate(55%) brightness(0.9);
     opacity: 0.99;
+    transition: filter .2s ease, transform .2s ease;
 }
 
 .skills-grid img:hover {
     filter:
         hue-rotate(110deg)
         saturate(55%)
-        brightness(1.1)
-        drop-shadow(0 0 8px rgba(56, 209, 196, 0.4))
-        drop-shadow(0 0 16px rgba(56, 209, 196, 0.25));
+        brightness(.90)
+        drop-shadow(0 0 6px rgba(56,209,196,.35))
+        drop-shadow(0 0 14px rgba(56,209,196,.25))
+        drop-shadow(0 0 28px rgba(56,209,196,.18));
 }
 
 .challenge-icon {

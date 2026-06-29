@@ -186,7 +186,7 @@
 .project-buttons a:first-child:hover {
     filter:
         drop-shadow(0 0 3px var(--highlight-main))
-        drop-shadow(0 0 6px var(--highlight-main)););
+        drop-shadow(0 0 6px var(--highlight-main))
 }
 
 .project-buttons a:last-child {
