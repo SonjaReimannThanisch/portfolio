@@ -215,7 +215,9 @@ function renderContact() {
 
                 <label>
                     <input type="checkbox" required>
-                    I have read the privacy policy and agree to the processing of my data as outlined
+                    I have read the 
+                    <a href="#l">privacy policy</a>
+                    and agree to the processing of my data as outlined
                 </label>
                 <button type="submit">Send</button>
             </form>

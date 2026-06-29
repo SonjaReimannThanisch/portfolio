@@ -110,7 +110,7 @@
 }
 
 .contact-info p:first-child {
-    color: var(--highlight-main);
+    color: var(--highlight-light);
     font-weight: 700;
     margin-bottom: 24px;
     opacity: 0.89;
@@ -132,13 +132,12 @@
 
 .contact-item i,
 .contact-item a {
-    color: var(--text-light);
     transition: color 150ms ease, transform 150ms ease;
 }
 
 .contact-item:hover i,
 .contact-item:hover a {
-    color: var(--highlight-main);
+    color: var(--highlight-light);
 }
 
 .contact-item:hover i {
@@ -183,7 +182,7 @@
 }
 
 .contact-footer a:hover {
-    color: var(--highlight-main);
+    color: var(--highlight-light);
 }
 
 .contact-footer p {
