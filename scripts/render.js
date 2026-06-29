@@ -140,11 +140,17 @@ function renderMyWork() {
             </div>
         </div>
         <div class="work-grid-last">
-            <span class="project-number">4</span>
-            <h3>Ongoing Projects</h3>
-            <p>Are you currently working on a project?
+            <div class="ongoing-header">
+                <span class="project-number-last">4</span>
+                <h2 class="grid-hero">Ongoing project</h2>
+            </div>
+            
+            <p style="margin: 0;">Are you currently working on a project?
             What is it about and what technologies are you using? Emphasise that good planning and execution are essential to the success of your work and to achieving great results.</p>
-            <a href="#">Lets Talk</a>
+
+            
+            <a class="ongoing-btn" href="#contact">Let's talk</a>
+            
         </div>
         <a class="projects-next-link" href="#references"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
