@@ -216,10 +216,10 @@ function renderContact() {
                 <label>
                     <input type="checkbox" required>
                     I have read the 
-                    <a href="#l">privacy policy</a>
+                    <a href="index.html?legal=privacy">privacy policy</a>
                     and agree to the processing of my data as outlined
                 </label>
-                <button type="submit">Send</button>
+                <button type="submit" disabled>Send</button>
             </form>
 
             <div class="contact-info">

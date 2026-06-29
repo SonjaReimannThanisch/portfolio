@@ -64,13 +64,55 @@
     align-items: flex-start;
     color: var(--highlight-main);
     line-height: 1.4;
+    white-space: nowrap;
+}
+
+.contact-form label span {
+    display: inline;
+}
+
+.contact-form label a {
+    color: var(--text-light);
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .contact-form label input {
     width: 18px;
     height: 18px;
     padding: 0;
-    accent-color: var(--highlight-main);
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--highlight-main);
+    border-radius: 2px;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+.contact-form label input:hover {
+    box-shadow:
+     inset   0 0 6px rgba(56, 209, 196, 0.45),
+     inset   0 0 16px rgba(56, 209, 196, 0.25);
+}
+
+.contact-form label input:checked::after {
+    content: "✓";
+    position: absolute;
+    left: 2px;
+    top: -5px;
+    color: var(--highlight-main);
+    font-size: 18px;
+}
+
+.contact-form label:has(input:checked) + button {
+    background-color: var(--highlight-main);
+    color: var(--text-dark);
+    cursor: pointer;
 }
 
 .contact-form button {
@@ -91,8 +133,16 @@
 }
 
 .contact-form button:hover {
-    background-color: var(--highlight-main);
-    color: var(--background-secondary);
+    /* background-color: var(--highlight-main);
+    color: var(--background-secondary); */
+    cursor: not-allowed;
+}
+
+.contact-form button:hover {
+    cursor: not-allowed;
+}
+
+.contact-form label:has(input:checked) + button:hover {
     cursor: pointer;
 }
 
