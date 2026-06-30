@@ -137,6 +137,7 @@
     border: none;
     text-decoration: none;
     cursor: pointer;
+    padding: 0;
 }
 
 .legal-right-footer a:hover,
@@ -156,7 +157,7 @@
 .legal-prev-link {
     position: absolute;
     top: 48.5%;
-    right: 135px;
+    right: 120px;
     z-index: 5;
     transform: translateY(-50%);
 
