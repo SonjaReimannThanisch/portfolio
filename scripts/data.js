@@ -40,7 +40,7 @@ const PRIVACY_POLICY_TEXT_ONE = `
         Wenn Sie mir über das Kontaktformular eine Nachricht senden, werden die von Ihnen eingegebenen Daten
         zur Bearbeitung Ihrer Anfrage verwendet. Dazu können Name, E-Mail-Adresse und Nachrichtentext gehören.
     </p>
-    <p>
+    <p style="margin-top: 0;">
         Diese Daten werden nicht ohne Ihre Einwilligung weitergegeben. Die Verarbeitung erfolgt zur Bearbeitung
         Ihrer Anfrage auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.
     </p>
@@ -63,7 +63,7 @@ const PRIVACY_POLICY_TEXT_ONE = `
         gegen die Verarbeitung Ihrer personenbezogenen Daten. Außerdem haben Sie das Recht, sich bei einer zuständigen
         Datenschutzaufsichtsbehörde zu beschweren.
     </p>
-    <p>
+    <p style="margin-top: 0;">
         Bei Fragen zum Datenschutz können Sie sich jederzeit an mich wenden.
     </p>
 

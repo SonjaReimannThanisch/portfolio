@@ -315,10 +315,26 @@ function getSocialLinks() {
         <div id="social-links" class="social-links">
             <nav>
                 <ul>
-                <li><img src="./assets/icons/Vector (1).png" alt="Email"></li>
-                <li><img src="./assets/icons/Vector.png" alt="LinedIn"></li>
-                <li><img src="./assets/icons/Vector (2).png" alt="GitHub"></li>              
-                <li id="languageLink" class="language-link">DE | EN</li>
+                    <li>
+                        <a href="mailto:sonja.reimann.thanisch@gmail.com">
+                                <img src="./assets/icons/Vector (1).png" alt="Email">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sonja-reimann-thanisch-1574881b3/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/Vector.png" alt="LinkedIn">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SonjaReimannThanisch" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/Vector (2).png" alt="GitHub">
+                            </a>
+                        </li>
+                    <li class="language-link">
+                        <span>DE</span>
+                        <span>|</span>
+                        <span>EN</span>
+                    </li>
                 </ul>
             </nav>
         </div>
