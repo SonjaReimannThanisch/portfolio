@@ -8,3 +8,26 @@
         min-height: 100vh;
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #portfolio {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-sidebar {
+        display: none;
+    }
+}
