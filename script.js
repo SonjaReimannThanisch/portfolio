@@ -36,13 +36,13 @@ navLinks.forEach((link) => {
     });
 });
 
-logoLink.addEventListener("click", (event) => {
-    event.preventDefault();
+// logoLink.addEventListener("click", (event) => {
+//     event.preventDefault();
 
-    document.getElementById("hero").scrollIntoView({
-        behavior: "smooth",
-        inline: "start",
-    });
+//     document.getElementById("hero").scrollIntoView({
+//         behavior: "smooth",
+//         inline: "start",
+//     });
 
-    navLinks.forEach((item) => item.classList.remove("active"));
-});
+//     navLinks.forEach((item) => item.classList.remove("active"));
+// });

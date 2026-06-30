@@ -60,21 +60,21 @@
 
 .contact-form label {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     align-items: flex-start;
     color: var(--highlight-main);
     line-height: 1.4;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .contact-form label span {
-    display: inline;
+    flex: 1;
+    max-width: 484px
 }
 
 .contact-form label a {
     color: var(--text-light);
     text-decoration: none;
-    white-space: nowrap;
 }
 
 .contact-form label input {
@@ -92,6 +92,10 @@
         background-color .2s ease,
         color .2s ease,
         transform .2s ease;
+}
+
+.contact-form label a:hover {
+    text-decoration: underline;
 }
 
 .contact-form label input:hover {
@@ -133,8 +137,6 @@
 }
 
 .contact-form button:hover {
-    /* background-color: var(--highlight-main);
-    color: var(--background-secondary); */
     cursor: not-allowed;
 }
 

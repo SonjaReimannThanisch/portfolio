@@ -75,21 +75,25 @@ function renderMyWork() {
                     <span class="project-number">1</span>
                     <h2>Project Join</h2>
                 </div>
-                <h3>About the project</h3>
-                <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                <h3>Über das Projekt</h3>
+                <p>
+                Eine Kanban-basierte Webanwendung zur Organisation von Aufgaben und Projekten. Nutzer können Aufgaben erstellen, Kontakte zuweisen, Kategorien verwalten und den Arbeitsfortschritt über ein interaktives Drag-and-Drop-Board verfolgen.
+                </p>
                 
-                <h3>Technologies i have used</h3>
-                <p>Angular, TypeScript, HTML, CSS, Firebase</p>
+                <h3>Verwendete Technologien</h3>
+                <p>JavaScript, HTML, CSS, Firebase</p>
                 
-                <h3>What I have learned</h3>
-                <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
+                <h3>Das habe ich gelernt</h3>
+                <p>
+                Durch dieses Teamprojekt habe ich den Umgang mit Angular und TypeScript vertieft und gelernt, größere Anwendungen strukturiert aufzubauen. Außerdem konnte ich praktische Erfahrungen mit Git, Teamarbeit und einer sauberen Komponentenstruktur sammeln.
+                </p>
             </div>
             <div class="project-right">
                 <img src="./assets/img/Property 1=Join.png" alt="Join App">
                 
                 <div class="project-buttons">
-                    <a href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
-                    <a href="https://join-business-app.netlify.app/">Live Test</a>
+                    <a href="https://github.com/SonjaReimannThanisch/project-join" target="_blank">GitHub</a>
+                    <a href="https://join-business-app.netlify.app/" target="_blank">Live Test</a>
                 </div>
             </div>
         </div>
@@ -97,23 +101,27 @@ function renderMyWork() {
             <div class="project-left">
                 <div class="project-header"> 
                     <span class="project-number">2</span>
-                    <h2>Project Join</h2>
+                    <h2>Project Sharky</h2>
                 </div>
-                <h3>About the project</h3>
-                <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                <h3>Über das Projekt</h3>
+                <p>
+                Ein browserbasiertes 2D-Spiel, das mit JavaScript und HTML5 Canvas entwickelt wurde. Der Spieler erkundet eine Unterwasserwelt, sammelt Münzen und Giftflaschen, kämpft gegen verschiedene Gegner und besiegt am Ende den Endgegner.
+                </p>
             
-                <h3>Technologies i have used</h3>
-                <p>Angular, TypeScript, HTML, CSS, Firebase</p>
+                <h3>Verwendete Technologien</h3>
+                <p>JavaScript, HTML5 Canvas, CSS</p>
             
-                <h3>What I have learned</h3>
-                <p>Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?</p>
+                <h3>Das habe ich gelernt</h3>
+                <p>
+                Dieses Projekt hat meine Kenntnisse in der objektorientierten Programmierung deutlich erweitert. Ich habe gelernt, Spiellogik zu strukturieren, Animationen zu steuern, Kollisionen zu erkennen und größere JavaScript-Projekte übersichtlich zu organisieren.
+                </p>
             </div>
             <div class="project-right">
                 <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Join App">
             
                 <div class="project-buttons">
-                    <a href="https://github.com/SonjaReimannThanisch/Sharky_recover">GitHub</a>
-                    <a href="https://sharky-the-happy-shark.netlify.app//">Live Test</a>
+                    <a href="https://github.com/SonjaReimannThanisch/Sharky_recover" target="_blank">GitHub</a>
+                    <a href="https://sharky-the-happy-shark.netlify.app//" target="_blank">Live Test</a>
                 </div>
             </div>
         </div>
@@ -121,32 +129,34 @@ function renderMyWork() {
             <div class="project-left">
                 <div class="project-header"> 
                     <span class="project-number">3</span>
-                    <h2>Project Sharky</h2>
+                    <h2>Project DA Bubble</h2>
                 </div>
-                <h3>About the project</h3>
-                <p>Jump, run and throw game based on object-oriented approach. Help Sharky to find coins and poison bottles to fight against the big whale.</p>
-                <h3>Technologies i have used</h3>
-                <p>JavaScript , HTML,  CSS</p>
-                <h3>What I have learned</h3>
-                <p>How many people were in the team and what was your role? Describe your tasks  in 1-2 sentences. It is nice to mention a good teamwork and cooperation.</p>
+                <h3>Über das Projekt</h3>
+                <p>
+                Eine Chat-Anwendung, die derzeit noch aussteht. Ziel ist es, moderne Kommunikationsfunktionen mit einer klaren Architektur und einer intuitiven Benutzeroberfläche umzusetzen.
+                </p>
+                <h3>Verwendete Technologien</h3>
+                <p>JavaScript, HTML, CSS, Firebase/p>
+                <h3>Das habe ich gelernt</h3>
+                <p>
+                Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.
+                </p>
             </div>
             <div class="project-right">
-                <img src="./assets/img/Property 1=Join.png" alt="Join App">
+                <img src="./assets/img/Screenshot DA Bubble.png" alt="Join App">
                 
-                <div class="project-buttons">
-                    <a class="git-hub-btn" href="https://github.com/SonjaReimannThanisch/project-join">GitHub</a>
-                    <a href="https://join-business-app.netlify.app/">Live Test</a>
-                </div>
+
             </div>
         </div>
         <div class="work-grid-last">
             <div class="ongoing-header">
                 <span class="project-number-last">4</span>
-                <h2 class="grid-hero">Ongoing project</h2>
+                <h2 class="grid-hero">Laufende Weiterentwicklung</h2>
             </div>
             
-            <p style="margin: 0;">Are you currently working on a project?
-            What is it about and what technologies are you using? Emphasise that good planning and execution are essential to the success of your work and to achieving great results.</p>
+            <p style="margin: 0;">
+            Ich erweitere kontinuierlich meine Kenntnisse über die Frontend-Entwicklung hinaus. Aktuell beschäftige ich mich mit Backend-Grundlagen, DevOps-Themen und modernen Entwicklungsprozessen, um Anwendungen ganzheitlich verstehen und entwickeln zu können.
+            </p>
 
             
             <a class="ongoing-btn" href="#contact">Let's talk</a>
@@ -215,10 +225,12 @@ function renderContact() {
 
                 <label>
                     <input type="checkbox" required>
+                    <span>
                     I have read the 
-                    <a href="index.html?legal=privacy">privacy policy</a>
+                    <a href="index.html?legal=privacy" target="_blank">privacy policy</a>
                     and agree to the processing of my data as outlined
-                </label>
+                    </span>
+                    </label>
                 <button type="submit" disabled>Send</button>
             </form>
 
