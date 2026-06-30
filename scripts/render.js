@@ -274,26 +274,36 @@ function getSidebar() {
     return `
         <aside class="hero-sidebar">
             <div class="logo">
-                <svg viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
-                    <defs>
-                        <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
-                    </defs>
-                    <text class="logo-arc-text">
-                        <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
-                            frontend developer
-                        </textPath>
-                    </text>
-                    <text class="logo-initials" x="60" y="70" text-anchor="middle">
-                        SR
-                    </text>
-                </svg>
+                <a class="logo" href="index.html#hero">
+                    <svg viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
+                        <defs>
+                            <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
+                        </defs>
+                        <text class="logo-arc-text">
+                            <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
+                                frontend developer
+                            </textPath>
+                        </text>
+                        <text class="logo-initials" x="60" y="70" text-anchor="middle">
+                            SR
+                        </text>
+                    </svg>
+                </a>
             </div>
             <nav id="main-nav">
                 <ul>
-                    <li class="nav-item" data-section="projects">Why me</li>
-                    <li class="nav-item" data-section="skills">Skills</li>
-                    <li class="nav-item" data-section="about">My Work</li>
-                    <li class="nav-item" data-section="contact">Contact</li>
+                    <li class="nav-item">
+                        <a href="index.html#about">Why me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -318,7 +328,7 @@ function getSocialLinks() {
 function showLegalView(startPage) {
     document.getElementById("portfolio").style.display = "none";
     document.getElementById("legal-view").innerHTML = `
-        <section class="legal-slider">
+        <section id="legal-slider" class="legal-slider">
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
                 ${getSocialLinks()}
@@ -352,8 +362,8 @@ function showLegalView(startPage) {
                     </div>
                 </div>
                 <aside class="legal-right-footer">
-                    <button onclick="backToPortfolio()">
-                        Zurück zum Portfolio
+                    <button onclick="backToPortfolio()" target="_blank">
+                      <a target="_blank">  Zurück zum Portfolio </a>
                     </button>
 
                     <p>© Sonja Reimann-Thanisch 2026</p>

@@ -1,7 +1,8 @@
 .legal-slider {
     display: flex;
-    width: calc(100vw - 172px);
+    width: 100vw;
     height: 100vh;
+    margin-left: 0;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -10,8 +11,8 @@
 
 .legal-page {
     position: relative;
-    min-width: 100vw;
     width: 100vw;
+    min-width: 100vw;
     height: 100vh;
     flex: 0 0 100vw;
     display: flex;
@@ -23,15 +24,16 @@
 
 .impressum-layout {
     display: grid;
-    grid-template-columns: 120px 1fr;
-    padding-top: 96px;
-    border: 3px solid red;
+    grid-template-columns: 120px minmax(600px, 900px);
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 96px 240px 80px 260px;
 }
 
 .social-links {
     position: absolute;
     top: 53px;
-    right: 150px;
+    right: 220px;
     z-index: 10;
 }
 
@@ -50,19 +52,19 @@
 }
 
 .privacy-page {
-    padding: 96px 0 80px 0;
+    padding: 96px 240px 80px 260px;
     box-sizing: border-box;
     align-items: flex-start;
 }
 
-.privacy-page .legal-content {
+/* .privacy-page .legal-content {
     margin-left: 120px;
 }
 
 #privacy .legal-content {
     margin-left: 120px;
     margin-right: 180px;
-}
+} */
 
 
 .privacy-page::after {
@@ -149,13 +151,13 @@
 
 .legal-right-footer a:hover,
 .legal-right-footer button:hover {
-    color: var(--highlight-main);
+    color: var(--highlight-light);
 }
 
 .legal-next-link {
     position: absolute;
     top: 50%;
-    right: 120px;
+    right: 220px;
     z-index: 5;
     transform: translateY(-50%);
 
@@ -178,4 +180,13 @@
 
 .legal-next-link img {
     transform: rotate(180deg);
+}
+
+.logo,
+.logo:focus,
+.logo:focus-visible,
+.logo:hover {
+    outline: none;
+    border: none;
+    text-decoration: none;
 }

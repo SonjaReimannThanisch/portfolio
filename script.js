@@ -38,6 +38,17 @@ function updateCurrentSection() {
 window.addEventListener(
     "wheel",
     (event) => {
+        let legalSlider = document.querySelector(".legal-slider");
+
+        if (legalSlider && document.getElementById("legal-view").innerHTML !== "") {
+            event.preventDefault();
+            legalSlider.scrollBy({
+                left: event.deltaY,
+                behavior: "smooth",
+            });
+            return;
+        }
+
         event.preventDefault();
 
         if (isScrolling) return;

@@ -32,7 +32,7 @@
 
 .grid-item {
     height: 182px;
-    border: 1px solid var(--highlight-main);
+    border: 1px solid var(--highlight-light);
     border-radius: 22px;
     display: grid;
     grid-template-columns: 1fr 1px 220px;
@@ -42,7 +42,7 @@
 .references-section hr {
     height: 113px;
     border: none;
-    border-left: 1px solid var(--highlight-main);
+    border-left: 1px solid var(--highlight-light);
     display: flex;
     align-self: anchor-center;
 }
