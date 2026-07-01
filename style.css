@@ -195,6 +195,10 @@ section {
     width: max-content;
 }
 
+.hero-location {
+    display: none;
+}
+
 .name {
     display: block;
     width: max-content;
