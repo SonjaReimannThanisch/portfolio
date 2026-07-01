@@ -30,7 +30,7 @@
     padding: 96px 240px 80px 260px;
 }
 
-.social-links {
+#legal-view .social-links  {
     position: absolute;
     top: 53px;
     right: 220px;
