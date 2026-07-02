@@ -304,7 +304,80 @@
     .challenge-icon {
         width: 81px !important;
     }
+
+    .work-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: auto;
+        padding: 48px 24px;
+        box-sizing: border-box;
+    }
+
+    .work-title {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 42px;
+        margin: 16px;
+    }
+
+    .project-grid{
+        display:flex;
+        flex-direction:column;
+        gap: 48px;
+    }
+
+    .work-grid {
+        width: 100%;
+        min-height: unset;
+        padding: 24px;
+    }
+
+    .project-right {
+        position: static;
+        width: 100%;
+        margin-top: 24px;
+    }
     
+    .project-header h2 {
+        font-size: 22px;
+    }
+
+    .project-number {
+        font-size: 56px;
+    }
+
+    .project-left h3,
+    .project-left p,
+    .project-left h3:last-of-type + p {
+        max-width: 100%;
+    }
+
+    .project-right img {
+        width: 100%;
+        max-height: 320px;
+        height: auto;
+    }
+
+    .ongoing-btn {
+        display: none;
+    }
+
+    .references-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: auto;
+        padding: 48px 24px;
+        box-sizing: border-box;
+    }
+
+    .references-title {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 42px;
+        margin: 16px;
+    }
 
 }
 

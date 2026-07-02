@@ -139,7 +139,7 @@ function renderMyWork() {
                 Eine Chat-Anwendung, die derzeit noch aussteht. Ziel ist es, moderne Kommunikationsfunktionen mit einer klaren Architektur und einer intuitiven Benutzeroberfläche umzusetzen.
                 </p>
                 <h3>Verwendete Technologien</h3>
-                <p>JavaScript, HTML, CSS, Firebase/p>
+                <p>JavaScript, HTML, CSS, Firebase</p>
                 <h3>Das habe ich gelernt</h3>
                 <p>
                 Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.
