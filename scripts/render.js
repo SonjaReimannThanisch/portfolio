@@ -209,6 +209,11 @@ function renderReferences() {
                 </div>
             </div>
         </div>
+        <div class="reference-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
         <a class="references-next-link" href="#contact"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     `;
 }

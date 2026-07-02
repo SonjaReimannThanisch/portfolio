@@ -97,3 +97,7 @@
     width: 110px;
     filter: hue-rotate(110deg);
 }
+
+.reference-dots {
+    display: none;
+}
