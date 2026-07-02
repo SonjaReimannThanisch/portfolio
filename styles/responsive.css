@@ -62,9 +62,9 @@
         position: static;
         transform: none;
         width: 88%;
-        max-width: 310px;
-        height: 360px;
-        margin-top: 101px;
+        max-width: 327px;
+        height: 420px;
+        margin-top: 48px;
     }
 
     .hero-naming {
@@ -140,8 +140,8 @@
 
     .mobile-menu-button {
         position: absolute;
-        right: 18px;
-        top: 26px;
+        right: 20px;
+        top: 17px;
         width: 36px;
         height: 28px;
         border: none;
@@ -154,7 +154,7 @@
         width: 36px;
         height: 2px;
         margin-bottom: 14px;
-        background-color: var(--text-dark);
+        background-color: #4A4A4A;
     }
 
     .mobile-menu-button span:last-child {
