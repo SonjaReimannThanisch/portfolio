@@ -10,15 +10,15 @@ function renderWhyMe() {
             </p>
             <h3>I am</h3>
             <div class="why-me-facts">
-                <div class="fact-card">
+                <div class="fact-card first">
                     <img class="icon-default" src="./assets/icons/location.png" alt="Location">
                     <img class="icon-hover" src="./assets/icons/Property 1=hover.png" alt="Location hover">
                 </div>
-                <div class="fact-card">
+                <div class="fact-card second">
                     <img class="icon-default" src="./assets/icons/remote.png" alt="Remote Work">
                     <img class="icon-hover" src="./assets/icons/Property 1=Hover (1).png" alt="Remote hover">
                 </div>
-                <div class="fact-card">
+                <div class="fact-card third">
                     <img class="icon-default" src="./assets/icons/relocation.png" alt="Relocation">
                     <img class="icon-hover" src="./assets/icons/Property 1=hover (2).png" alt="Relocation hover">
                 </div>
@@ -56,6 +56,9 @@ function renderMySkills() {
                 Neugier und kontinuierliche Weiterentwicklung treiben mich an.         
             </p>
         </div>
+        <a class="skills-btn" href="#projects">
+            Let's talk
+        </a>
         <a class="skills-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
     `;

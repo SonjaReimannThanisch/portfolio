@@ -90,3 +90,7 @@
     width: 110px;
     filter: hue-rotate(110deg);
 }
+
+.skills-btn {
+    display: none;
+}
