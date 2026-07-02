@@ -138,7 +138,6 @@
         text-decoration: none;
     }
 
-
     .mobile-menu-button {
         position: absolute;
         right: 18px;
@@ -154,7 +153,7 @@
         display: block;
         width: 36px;
         height: 2px;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
         background-color: var(--text-dark);
     }
 
