@@ -239,3 +239,7 @@
 .contact-footer p {
     margin: 0;
 }
+
+.mobile-footer-logo {
+    display: none;
+}

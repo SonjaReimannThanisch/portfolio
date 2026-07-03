@@ -177,6 +177,10 @@ function renderReferences() {
     referencesSection.classList.add("references-section");
     referencesSection.innerHTML = `
         <h2 class="references-title">References</h2>
+        <div class="mobile-text">
+            <h3>Teamplayer gesucht?</h3>
+            <p>Was meine Kollegen über mich sagen</p>
+        </div>
         <div class="reference-grid">
             <div class="grid-item">
                 <div class="reference-item">
