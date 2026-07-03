@@ -266,12 +266,36 @@ function renderContact() {
                 <a class="contact-back-link" href="#hero">
                     <img src="./assets/icons/Property 1=Default.png" alt="Back">
                 </a>
+                ${getSocialLinks()}
             </div>
             <div class="contact-footer">
-                <a href="index.html?legal=impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
-                <a href="index.html?legal=privacy" target="_blank" rel="noopener noreferrer">Datenschutz</a>
-                <p>© Sonja Reimann-Thanisch 2026</p>
+                <div class="mobile-footer-logo">
+                    <a class="footer-logo-link" href="index.html#hero">
+                        <svg viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
+                            <defs>
+                                <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
+                            </defs>
+                            <text class="logo-arc-text">
+                                <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
+                                    frontend developer
+                                </textPath>
+                            </text>
+                            <text class="logo-initials" x="60" y="70" text-anchor="middle">
+                                SR
+                            </text>
+                        </svg>
+                    </a>
+                </div>
+
+            <div class="footer-links">
+                <a>Impressum</a>
+                <a>Datenschutz</a>
             </div>
+
+            <p class="footer-copyright">
+                © Sonja Reimann-Thanisch 2026
+            </p>
+
         </div>
     `;
 }
