@@ -9,15 +9,6 @@
     }
 }
 
-
-@media (max-width: 1200px) {
-    /* kleine Laptops / große Tablets */
-}
-
-@media (max-width: 1024px) {
-    /* Tablets */
-}
-
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -47,17 +38,16 @@
     }
 
     .hero-section {
-        width: 100%;
-        height: auto;
-        min-height: 760px;
         display: block;
+        width: 100%;
+        min-height: 760px;
         overflow: hidden;
     }
 
     .hero-content {
         width: 100%;
-        min-height: unset;
         height: auto;
+        min-height: unset;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -121,13 +111,13 @@
     }
 
     .mobile-header {
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 9999;
         width: 100vw;
         height: 80px;
-        display: block;
         background-color: var(--highlight-main);
     }
 
@@ -163,22 +153,46 @@
         margin-bottom: 0;
     }
 
-    .why-me-section {
+
+    .hero-section,
+    .why-me-section,
+    .skills-section,
+    .work-section,
+    .references-section,
+    .contact-section {
         display: flex;
         flex-direction: column;
         width: 100%;
-        min-height: 100vh;
-        height: auto;
-        padding: 6px 24px 48px;
         box-sizing: border-box;
+        height: auto;
+    }
+
+    .why-me-title,
+    .skills-title,
+    .work-title,
+    .contact-title {
+        writing-mode: horizontal-tb;
+        transform: none;
+        align-self: flex-start;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .why-me-next-link,
+    .skills-next-link,
+    .projects-next-link,
+    .references-next-link,
+    .next-section-link {
+        display: none;
+    }
+
+    .why-me-section {
+        min-height: 100vh;
+        padding: 6px 24px 48px;
         overflow: visible;
     }
 
     .why-me-title {
-        writing-mode: horizontal-tb;
-        transform: none;
-        font-size: 40px;
-        justify-content: flex-start;
         margin-bottom: 18px;
     }
 
@@ -218,14 +232,6 @@
         margin-top: 32px;
     }
 
-    .why-me-next-link,
-    .skills-next-link,
-    .projects-next-link,
-    .references-next-link,
-    .next-section-link {
-        display: none;
-    }
-
     .first {
         display: none;
     }
@@ -239,22 +245,13 @@
     }
 
     .skills-section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
         min-height: unset;
-        height: auto;
         padding: 6px 24px;
-        box-sizing: border-box;
         overflow: visible;
     }
 
     .skills-title {
-        writing-mode: horizontal-tb;
-        transform: none;
-        font-size: 40px;
         margin: 0 0 24px;
-        align-self: flex-start;
     }
 
     .skills-content {
@@ -272,12 +269,6 @@
         text-align: justify;
     } 
 
-    .skills-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px 89px;
-    }
-
     .skills-grid img {
         width: 68px;
         height: auto;
@@ -288,7 +279,6 @@
     }
 
     .skills-btn {
-        display: block;
         width: 130px;
         height: 54px;
         display: flex;
@@ -309,18 +299,10 @@
     }
 
     .work-section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        min-height: auto;
         padding: 48px 24px;
-        box-sizing: border-box;
     }
 
     .work-title {
-        writing-mode: horizontal-tb;
-        transform: none;
-        font-size: 42px;
         margin: 16px;
     }
 
@@ -358,8 +340,8 @@
 
     .project-right img {
         width: 100%;
-        max-height: 320px;
         height: auto;
+        max-height: 320px;
     }
 
     .ongoing-btn {
@@ -367,13 +349,9 @@
     }
 
     .references-section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
         height: 36vh;
         min-height: unset;
         padding: 8px 24px;
-        box-sizing: border-box;
         overflow: hidden;
     }
 
@@ -433,14 +411,7 @@
     }
 
     .contact-section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        min-height: auto;
-        height: fit-content;
         padding-bottom: 0;
-        box-sizing: border-box;
-        overflow: hidden;
     }
 
     .contact-content {
@@ -462,23 +433,11 @@
         display: none;
     }
 
-    .contact-title {
-        writing-mode: horizontal-tb;
-        transform: none;
-        font-size: 32px;
-        margin: 0;
-    }
-
     .contact-info {
-        position: static;
-        width: 100%;
-        height: 320px;
-        text-align: left;
-        align-items: flex-start;
         order: 1;
-        gap: 8px;
         font-size: 16px;
         display: contents;
+        text-align: left;
     }
 
     .contact-info .social-links ul {
@@ -531,22 +490,21 @@
         gap: 12px;
     }
 
-    .mobile-footer-logo {
-        display: flex;
-        justify-content: center;
-    }
-
     .footer-logo-link {
+        display: block;
         width: 110px;
         height: 90px;
-        display: block;
+    }
+
+    .mobile-footer-logo,
+    .footer-links {
+        display: flex;
+        justify-content: center;
     }
 
     .footer-links {
         order: 1;
-        display: flex;
         gap: 18px;
-        justify-content: center;
         padding-bottom: 16px;
     }
 
@@ -597,8 +555,4 @@
         text-align: left;
     }
 
-}
-
-@media (max-width: 480px) {
-    /* kleine Smartphones */
 }
