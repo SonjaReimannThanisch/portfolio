@@ -292,8 +292,8 @@ function renderContact() {
                 </div>
 
             <div class="footer-links">
-                <a>Impressum</a>
-                <a>Datenschutz</a>
+                <a href="index.html?legal=impressum" target="_blank">Impressum</a>
+                <a href="index.html?legal=privacy" target="_blank">Datenschutz</a>
             </div>
 
             <p class="footer-copyright">
