@@ -12,15 +12,12 @@
         width: 100%;
         min-width: 100%;
         height: auto;
-        min-height: 100vh;
         display: block;
         overflow: visible;
     }
 
     #legal-view .hero-sidebar,
-    #legal-view .social-links,
     .legal-next-link,
-    .legal.prev-link,
     #privacy::after {
         display: none;
     }
@@ -29,8 +26,17 @@
     .privacy-page {
         display: block;
         height: auto;
-        padding: 104px 24px 48px;
+        padding: 4px 24px 0;
         box-sizing: border-box;
+    }
+
+    .privacy-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .privacy-page .legal-content {
+        order: 1;
     }
 
     .legal-title {
@@ -49,6 +55,7 @@
         overflow: visible;
         font-size: 16px;
         line-height: 1.45;
+        height: auto;
     }
 
     .legal-content p {
@@ -72,11 +79,82 @@
         width: 100%;
     }
 
-    .legal-contact-info,
     .legal-right-footer {
         position: static;
         align-items: flex-start;
         margin-top: 32px;
+    }
+
+    .legal-right-footer {
+        order: 5;
+        position: static;
+        width: 100%;
+        margin: 0 -24px;
+        padding: 24px;
+        background-color: var(--highlight-main);
+        color: #4a4a4a;
+        align-items: center;
+        text-align: center;
+    }
+
+    .legal-right-footer a,
+    .legal-right-footer button,
+    .legal-right-footer p {
+        color: #4a4a4a;
+    }
+
+    .legal-right-footer button {
+        font-family: inherit;
+        font-size: 14px;
+    }
+
+    .legal-contact-info {
+        display: none;
+        order: 2;
+    }
+
+    .legal-content ul {
+        padding-left: 18px;
+        margin-top: 8px 0 16px;
+    }
+
+    .legal-content li {
+        margin-bottom: 4px;
+    }
+
+    .legal-prev-link {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        position: static;
+        transform: rotate(90deg);
+        margin: 120px 0 124px;
+        align-self: center;
+        /* margin-bottom: 118px; */
+    }
+
+    .legal-prev-link img {
+        width: 54px;
+    }
+
+    #legal-view .social-links {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 1820px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #legal-view .social-links ul {
+        display: flex;
+        gap: 24px;
+    }
+
+    #legal-view .language-link {
+        display: none;
     }
 
 }
