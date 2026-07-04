@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+    .skills-section {
+        min-height: unset;
+        padding: 6px 24px;
+        overflow: visible;
+    }
+
+    .skills-title {
+        margin: 0 0 24px;
+    }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 0;
+        align-self: flex-start;
+    }
+
+    .skills-text {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.45;
+        text-align: justify;
+    } 
+
+    .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 89px;
+    }
+
+    .skills-grid img {
+        width: 68px;
+        height: auto;
+    }
+
+    .skills-side-text {
+        width: 100%;
+    }
+
+    .skills-btn {
+        width: 130px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-top: 32px;
+        border-radius: 999px;
+        background-color: var(--highlight-main);
+        color: #4A4A4A;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .challenge-icon {
+        width: 81px !important;
+    }
+
+}

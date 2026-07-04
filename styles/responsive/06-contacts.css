@@ -1,0 +1,124 @@
+
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding-bottom: 0;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-info .social-links {
+        order: 4;
+        display: flex;
+        position: static;
+        width: 100%;
+        margin: 67px 0 0;
+        justify-content: center;
+    }
+
+    .contact-content .language-link {
+        display: none;
+    }
+
+    .contact-info {
+        order: 1;
+        font-size: 16px;
+        display: contents;
+        text-align: left;
+    }
+
+    .contact-info .social-links ul {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .contact-item {
+        justify-content: flex-start;
+        margin-bottom: 14px;
+    }
+
+    .contact-info .social-links img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .contact-info .language-link {
+        display: none;
+    }
+
+    .contact-description {
+        margin: 0 0 16px;
+    }
+
+    .contact-form {
+        order: 2;
+        margin-bottom: 32px;
+    }
+
+    .contact-section::after {
+        display:none;
+    }
+
+    .contact-footer {
+        order: 5;
+        width: calc(100% + 48px);
+        position: static;
+        margin-top: 30px;
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+        box-sizing: border-box;
+        background-color: var(--highlight-main);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer-logo-link {
+        display: block;
+        width: 110px;
+        height: 90px;
+    }
+
+    .mobile-footer-logo,
+    .footer-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-links {
+        order: 1;
+        gap: 18px;
+        padding-bottom: 16px;
+    }
+
+    .footer-copyright {
+        margin: 0;
+    }
+
+    .contact-footer a,
+    .contact-footer p {
+        color: #4a4a4a;
+    }
+
+    .contact-back-link {
+        order: 3;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        transform: rotate(90deg);
+        position: static;
+        margin: 32px 0 24px;
+    }
+
+    .contact-back-link img {
+        width: 56px;
+    }
+}

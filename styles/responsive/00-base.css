@@ -1,0 +1,68 @@
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #portfolio {
+        display: block;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #portfolio,
+    main,
+    .contact-section {
+        height: max-content;
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hero-section,
+    .why-me-section,
+    .skills-section,
+    .work-section,
+    .references-section,
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .why-me-title,
+    .skills-title,
+    .work-title,
+    .contact-title {
+        writing-mode: horizontal-tb;
+        transform: none;
+        align-self: flex-start;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .why-me-next-link,
+    .skills-next-link,
+    .projects-next-link,
+    .references-next-link,
+    .next-section-link {
+        display: none;
+    }
+
+}

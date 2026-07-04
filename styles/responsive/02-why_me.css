@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+    .why-me-section {
+        min-height: 100vh;
+        padding: 6px 24px 48px;
+        overflow: visible;
+    }
+
+    .why-me-title {
+        margin-bottom: 18px;
+    }
+
+    .why-me-content {
+        width: 100%;
+        max-width: 340px;
+        align-items: center;
+    }
+
+    .why-me-text {
+        font-size: 16px;
+        line-height: 1.45;
+        text-align: left;
+    }
+
+    .why-me-content h3 {
+        font-size: 36px;
+        margin: 0 32px 0 16px;
+    }
+
+        .why-me-facts {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .facts-card {
+        width: 100%;
+    }
+
+    .facts-card img {
+        width: 220px;
+        height: auto;
+    }
+
+    .contact-button {
+        align-self: center;
+        margin-top: 32px;
+    }
+
+    .first {
+        display: none;
+    }
+
+    .second {
+        order: 1;
+    }
+
+    .third {
+        order: 0;
+    }
+}
