@@ -420,9 +420,13 @@ function showLegalView(startPage) {
 
                     <p>© Sonja Reimann-Thanisch 2026</p>
                 </aside>
-                <a class="legal-prev-link" href="#impressum">
-                    <img src="./assets/icons/Property 1=Default.png" alt="Back">
-                </a>
+                <div class="legal-mobile-actions">
+                    <a class="legal-prev-link" href="#impressum">
+                        <img src="./assets/icons/Property 1=Default.png" alt="Back">
+                    </a>
+                    ${getSocialLinks()}
+                </div>
+                ${getSocialLinks()}
             </article>
         </section>
     `;

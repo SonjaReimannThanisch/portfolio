@@ -123,4 +123,8 @@
     .contact-back-link img {
         width: 56px;
     }
+
+    .legal-mobile-actions {
+        display: none;
+    }
 }
