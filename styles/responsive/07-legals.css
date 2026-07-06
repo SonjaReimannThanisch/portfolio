@@ -81,14 +81,7 @@
     }
 
     .legal-right-footer {
-        position: static;
-        align-items: flex-start;
         order: 99;
-        margin-top: 32px;
-    }
-
-    .legal-right-footer {
-        order: 5;
         position: static;
         width: 100%;
         margin: 0 -24px;
@@ -97,6 +90,8 @@
         color: #4a4a4a;
         align-items: center;
         text-align: center;
+
+        margin-top: 32px;
     }
 
     .legal-right-footer a,
@@ -132,7 +127,6 @@
         transform: rotate(90deg);
         margin: 120px 0 124px;
         align-self: center;
-        margin: 0;
     }
 
     .legal-prev-link img {
@@ -146,20 +140,27 @@
     .legal-mobile-actions {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-self: anchor-center;
         order: 98;
         margin: 48px 0 32px;
     }
 
-    .legal-mobile-actions .social-links {
+    .legal-mobile-actions .social-links,
+    #legal-view .social-links {
         display: flex;
         position: static;
-        margin: 0;
+    }
+
+    .legal-mobile-actions .social-links nav,
+    .legal-mobile-actions .social-links ul {
+        display: flex;
+        justify-content: center;
     }
 
     .legal-mobile-actions .social-links ul {
-        display: flex;
         gap: 24px;
+        margin: 0;
+        padding: 0;
     }
 
     .legal-mobile-actions .language-link {
