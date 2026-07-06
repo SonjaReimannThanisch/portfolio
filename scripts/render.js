@@ -413,20 +413,19 @@ function showLegalView(startPage) {
                         </a>
                     </div>
                 </div>
-                <aside class="legal-right-footer">
-                    <button onclick="backToPortfolio()" target="_blank">
-                      <a target="_blank">  Zurück zum Portfolio </a>
-                    </button>
-
-                    <p>© Sonja Reimann-Thanisch 2026</p>
-                </aside>
                 <div class="legal-mobile-actions">
                     <a class="legal-prev-link" href="#impressum">
                         <img src="./assets/icons/Property 1=Default.png" alt="Back">
                     </a>
                     ${getSocialLinks()}
                 </div>
-                ${getSocialLinks()}
+                <aside class="legal-right-footer">
+                    <button onclick="backToPortfolio()" target="_blank">
+                    <a target="_blank">  Zurück zum Portfolio </a>
+                    </button>
+                    <p>© Sonja Reimann-Thanisch 2026</p>
+                </aside>
+
             </article>
         </section>
     `;
