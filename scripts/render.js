@@ -377,13 +377,23 @@ function getSocialLinks() {
     `;
 }
 
+function getMobileHeader() {
+    return`
+        <header class="mobile-header">
+        
+    
+    `;
+}
+
 function showLegalView(startPage) {
     document.getElementById("portfolio").style.display = "none";
     document.getElementById("legal-view").innerHTML = `
         <section id="legal-slider" class="legal-slider">
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
-                ${getSocialLinks()}
+                <div class="legal-desktop-socials">
+                    ${getSocialLinks()}
+                </div>
                 
         <div id="impressum-layout" class="impressum-layout">
             <h2 class="legal-title">Legal Notice</h2>
@@ -417,9 +427,26 @@ function showLegalView(startPage) {
                     <a class="legal-prev-link" href="#impressum">
                         <img src="./assets/icons/Property 1=Default.png" alt="Back">
                     </a>
-                    ${getSocialLinks()}
-                </div>
+                        ${getSocialLinks()}
+                    </div>
                 <aside class="legal-right-footer">
+                    <div class="mobile-footer-logo">
+                        <a class="footer-logo-link" href="index.html#hero">
+                            <svg viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
+                                <defs>
+                                    <path id="logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
+                                </defs>
+                                <text class="logo-arc-text">
+                                    <textPath href="#logo-arc" startOffset="50%" text-anchor="middle">
+                                        frontend developer
+                                    </textPath>
+                                </text>
+                                <text class="logo-initials" x="60" y="70" text-anchor="middle">
+                                    SR
+                                </text>
+                            </svg>
+                        </a>
+                    </div>
                     <button onclick="backToPortfolio()" target="_blank">
                     <a target="_blank">  Zurück zum Portfolio </a>
                     </button>

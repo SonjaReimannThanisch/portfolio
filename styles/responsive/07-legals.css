@@ -31,6 +31,10 @@
         box-sizing: border-box;
     }
 
+    .impressum-layout {
+        padding-top: 96px;
+    }
+
     .privacy-page {
         display: flex;
         flex-direction: column;
@@ -85,12 +89,16 @@
         position: static;
         width: 100%;
         margin: 0 -24px;
-        padding: 24px;
-        background-color: var(--highlight-main);
+        padding: 0 24px 41px;
+        background: linear-gradient(
+            to top,
+            #5c817f,
+            var(--highlight-main)
+        );
         color: #4a4a4a;
         align-items: center;
         text-align: center;
-
+        gap: 6px;
         margin-top: 32px;
     }
 
@@ -98,11 +106,13 @@
     .legal-right-footer button,
     .legal-right-footer p {
         color: #4a4a4a;
+        margin: 0;
     }
 
     .legal-right-footer button {
         font-family: inherit;
         font-size: 14px;
+        order: 2;
     }
 
     .legal-contact-info {
@@ -120,12 +130,11 @@
     }
 
     .legal-prev-link {
-        order: 3;
         display: flex;
         justify-content: center;
         position: static;
         transform: rotate(90deg);
-        margin: 120px 0 124px;
+        margin: 0 0 24px;
         align-self: center;
     }
 
@@ -140,15 +149,19 @@
     .legal-mobile-actions {
         display: flex;
         flex-direction: column;
-        align-self: anchor-center;
+        align-self: center;
         order: 98;
-        margin: 48px 0 32px;
+        margin: 48px 0 0;
+        gap: 54px;
     }
 
-    .legal-mobile-actions .social-links,
-    #legal-view .social-links {
+    #legal-view .legal-mobile-actions .social-links {
         display: flex;
+        flex-direction: row-reverse;
         position: static;
+        top: auto;
+        right: auto;
+        order: 2;
     }
 
     .legal-mobile-actions .social-links nav,
@@ -164,6 +177,10 @@
     }
 
     .legal-mobile-actions .language-link {
+        display: none;
+    }
+
+    .legal-desktop-socials {
         display: none;
     }
 

@@ -30,7 +30,14 @@
     padding: 96px 240px 80px 260px;
 }
 
-#legal-view .social-links  {
+/* #legal-view .social-links  {
+    position: absolute;
+    top: 53px;
+    right: 220px;
+    z-index: 10;
+} */
+
+.legal-desktop-socials .social-links {
     position: absolute;
     top: 53px;
     right: 220px;
@@ -180,4 +187,16 @@
     outline: none;
     border: none;
     text-decoration: none;
+}
+
+.mobile-footer-logo {
+    display: none;
+}
+
+.legal-desktop-socials {
+    display: block;
+}
+
+.legal-mobile-actions {
+    display: none;
 }
