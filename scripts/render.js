@@ -380,8 +380,27 @@ function getSocialLinks() {
 function getMobileHeader() {
     return`
         <header class="mobile-header">
-        
-    
+            <a class="mobile-logo" href="index.html#hero">
+                <svg viewBox="0 0 130 110" class="logo-svg" aria-label="Frontend Developer SR Logo">
+                    <defs>
+                        <path id="legal-mobile-logo-arc" d="M 20 70 A 45 45 0 0 1 110 70" />
+                    </defs>
+                    <text class="logo-arc-text">
+                        <textPath href="#legal-mobile-logo-arc" startOffset="50%" text-anchor="middle">
+                            frontend developer
+                        </textPath>
+                    </text>
+                    <text class="logo-initials" x="60" y="70" text-anchor="middle">
+                        SR
+                    </text>
+                </svg>
+            </a>
+            <button class="mobile-menu-button" type="button" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
     `;
 }
 
@@ -389,6 +408,7 @@ function showLegalView(startPage) {
     document.getElementById("portfolio").style.display = "none";
     document.getElementById("legal-view").innerHTML = `
         <section id="legal-slider" class="legal-slider">
+            ${getMobileHeader()}
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
                 <div class="legal-desktop-socials">
