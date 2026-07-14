@@ -118,4 +118,12 @@
     .mobile-menu-button span:last-child {
         margin-bottom: 0;
     }
+
+    .mobile-menu-overlay {
+        display: none;
+    }
+
+    .mobile-menu-overlay.open {
+        display: flex;
+    }
 }
