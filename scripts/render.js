@@ -395,13 +395,13 @@ function getMobileHeader() {
                     </text>
                 </svg>
             </a>
-            <button class="mobile-menu-button" type="button" aria-label="Open menu">
-                ${getBurgerMenuOverlay()}
+            <button class="mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false" onclick="openMobileMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </header>
+        ${getBurgerMenuOverlay()}
     `;
 }
 
