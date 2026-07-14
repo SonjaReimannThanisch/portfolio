@@ -396,6 +396,7 @@ function getMobileHeader() {
                 </svg>
             </a>
             <button class="mobile-menu-button" type="button" aria-label="Open menu">
+                ${getBurgerMenuOverlay()}
                 <span></span>
                 <span></span>
                 <span></span>
@@ -409,6 +410,7 @@ function showLegalView(startPage) {
     document.getElementById("legal-view").innerHTML = `
         <section id="legal-slider" class="legal-slider">
             ${getMobileHeader()}
+            
             <article id="impressum" class="legal-page">
                 ${getSidebar()}
                 <div class="legal-desktop-socials">
