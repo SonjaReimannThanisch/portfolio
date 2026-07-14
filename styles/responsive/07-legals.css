@@ -5,7 +5,6 @@
         height: auto;
         overflow-x: hidden;
         overflow-y: visible;
-        scroll-snap-type: none;
     }
 
     .legal-page {
@@ -17,22 +16,24 @@
     }
 
     #legal-view .hero-sidebar,
-    #privacy::after {
+    #privacy::after,
+    .legal-next-link {
         display: none;
     }
 
-    .legal-next-link {
+    .portfolio-back-link {
         display: flex;
+        position: absolute;
+        top: 113px;
         left: 20px;
-        top: 101px;
-        transform: none;
-        margin: 0 0 32px;
-        align-self: flex-start;
+        width: 32px;
+        height: 32px;
+        align-items: center;
+        justify-content: center;
     }
 
-    .legal-next-link img {
-        width: 60px;
-        transform: rotate(360deg);
+    .portfolio-back-link img {
+        width: 18px;
     }
 
     .impressum-layout,
@@ -45,7 +46,7 @@
     }
 
     .impressum-layout {
-        padding-top: 92px;
+        padding-top: 100px;
     }
 
     .privacy-page {
@@ -78,7 +79,7 @@
 
     .legal-content p {
         font-size: 16px;
-        margin: 0 0 14px;
+        margin: 0;
         line-height: 1.2;
     }
 
@@ -86,7 +87,7 @@
     .legal-content h4,
     .legal-column h3 {
         font-size: 23px;
-        margin: 18px 0 8px;
+        margin: 18px 0 2px;
         color: var(--highlight-main);
     }
 

@@ -60,7 +60,7 @@ function renderMySkills() {
             Let's talk
         </a>
         <a class="skills-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
-    </div>
+        </div>
     `;
 }
 
@@ -416,13 +416,13 @@ function showLegalView(startPage) {
                 </div>
                 
         <div id="impressum-layout" class="impressum-layout">
+            <a class="portfolio-back-link" href="index.html#hero">
+                <img src="./assets/icons/arrow_back.png" alt="Zurück zum Portfolio">
+            </a>
             <h2 class="legal-title">Legal Notice</h2>
             <div class="legal-content">
                 ${LEGAL_NOTICE_TEXT}
             </div>
-            <a class="legal-next-link" href="#privacy">
-                <img src="./assets/icons/Property 1=Default.png" alt="Next">
-            </a>
         </div>
             </article>
             <article id="privacy" class="legal-page privacy-page">
