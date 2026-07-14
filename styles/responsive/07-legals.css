@@ -63,9 +63,9 @@
         width: auto;
         display: block;
         font-size: 32px;
-        margin: 0 0 24px;
+        font-weight: 100;
+        margin: 84px 0 0;
         color: transparent;
-        -webkit-text-stroke: 1px var(--background-main);
     }
 
     .legal-content {
@@ -77,14 +77,15 @@
     }
 
     .legal-content p {
-        font-size: 14px;
+        font-size: 16px;
         margin: 0 0 14px;
+        line-height: 1.2;
     }
 
     .legal-content h3,
     .legal-content h4,
     .legal-column h3 {
-        font-size: 16px;
+        font-size: 23px;
         margin: 18px 0 8px;
         color: var(--highlight-main);
     }
