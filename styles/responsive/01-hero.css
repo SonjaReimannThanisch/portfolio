@@ -120,28 +120,40 @@
     }
 
     .mobile-menu-overlay {
-        display: none;
+        display: flex;
         position: fixed;
         top: 0;
         width: 100vw;
         padding: 84px 24px 28px;
         box-sizing: border-box;
-        background:
-            linear-gradient(
+
+        background: linear-gradient(
             180deg,
-            #38D1C4 0%,
+            #38d1c4 0%,
             #40cbc7 35%,
             #4e8582 100%
         );
+
         border-radius: 0 0 22px 22px;
         z-index: 100000;
         flex-direction: column;
         align-items: center;
-        opacity: 0.96;
+        opacity: 0;
+        transform: translateY(-24px);
+        visibility: hidden;
+        pointer-events: none;
+
+        transition:
+            opacity 0.18s ease,
+            transform 0.18s ease,
+            visibility 0.18s ease;
     }
 
     .mobile-menu-overlay.open {
-        display: flex;
+        opacity: 0.96;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
     }
     
     .mobile-menu-close {
