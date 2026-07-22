@@ -104,4 +104,8 @@
         overflow: visible;
     }
 
+    .project-buttons {
+        justify-content: center;
+    }
+
 }
