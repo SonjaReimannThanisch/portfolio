@@ -470,7 +470,7 @@ function showLegalView(startPage) {
                         </a>
                     </div>
                     <button onclick="backToPortfolio()" target="_blank">
-                    <a target="_blank">  Zurück zum Portfolio </a>
+                        Zurück zum Portfolio
                     </button>
                     <p>© Sonja Reimann-Thanisch 2026</p>
                 </aside>

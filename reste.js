@@ -151,3 +151,17 @@ const PRIVACY_POLICY_TEXT = `
         </a>
     </p>
 `;
+
+
+
+<div class="mobile-menu-language">
+    <a href="#" class="language-link active">DE</a>
+    <span>|</span>
+    <a href="#" class="language-link">EN</a>
+</div>
+
+<div class="mobile-menu-language">
+    <button class="language-link active">DE</button>
+    <span>|</span>
+    <button class="language-link">EN</button>
+</div>

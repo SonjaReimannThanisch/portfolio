@@ -14,12 +14,9 @@ function getMobileMenuButton() {
 
 function openMobileMenu() {
     const overlay = getMobileMenuOverlay();
-    const button = getMobileMenuButton();
-
-    if (!overlay) return;
-
+    if (!overlay) {return;}
     overlay.classList.add("open");
-    button?.setAttribute("aria-expanded", "true");
+    console.log(overlay.className);
 }
 
 function closeMobileMenu() {
@@ -47,24 +44,22 @@ function toggleMobileMenu() {
 function getBurgerMenuOverlay() {
     return `
         <div class="mobile-menu-overlay">
-            <button
-                class="mobile-menu-close"
-                type="button"
-                aria-label="Menü schließen"
-                onclick="closeMobileMenu()"
-            >
-                ×
+
+            <button class="mobile-menu-close" type="button" aria-label="Menü schließen"onclick="closeMobileMenu()">
+                <span></span>
+                <span></span>
             </button>
 
             <nav>
-                <a href="index.html#about" onclick="closeMobileMenu()">Why me</a>
-                <a href="index.html#skills" onclick="closeMobileMenu()">My Skill Set</a>
-                <a href="index.html#projects" onclick="closeMobileMenu()">My Work</a>
-                <a href="index.html#contact" onclick="closeMobileMenu()">Contact me</a>
+                <a class="mobile-nav-link" href="index.html#about">Why me</a>
+                <a class="mobile-nav-link" href="index.html#skills">Skills</a>
+                <a class="mobile-nav-link" href="index.html#projects">My Work</a>
+                <a class="mobile-nav-link" href="index.html#contact">Contact</a>
             </nav>
-
             <div class="mobile-menu-language">
-                DE | EN
+                <button class="language-link">DE</button>
+                <span>|</span>
+                <button class="language-link">EN</button>
             </div>
         </div>
     `;
