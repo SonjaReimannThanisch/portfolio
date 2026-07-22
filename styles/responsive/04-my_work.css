@@ -48,4 +48,60 @@
     .ongoing-btn {
         display: none;
     }
+
+    .project-details,
+    .project-right {
+        display: none;
+    }
+
+    .project-preview {
+        display: block;
+    }
+
+    .show-less-text {
+        display: none;
+    }
+
+    .project-extra,
+    .project-right{
+        display:none;
+    }
+
+    .work-grid.open .project-extra,
+    .work-grid.open .project-right{
+        display:block;
+    }
+
+    .work-grid.open .show-more-text {
+        display: none;
+    }
+
+    .work-grid.open .show-less-text {
+        display: inline;
+    }
+
+    .project-toggle {
+        display: block;
+        margin: 20px auto 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: var(--highlight-main);
+        font: inherit;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .project-left p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+
+    .work-grid.open .project-left p {
+        display: block;
+        overflow: visible;
+    }
+
 }

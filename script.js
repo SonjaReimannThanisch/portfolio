@@ -85,13 +85,6 @@ navLinks.forEach((link) => {
     });
 });
 
-// logoLink.addEventListener("click", (event) => {
-//     event.preventDefault();
-
-//     document.getElementById("hero").scrollIntoView({
-//         behavior: "smooth",
-//         inline: "start",
-//     });
-
-//     navLinks.forEach((item) => item.classList.remove("active"));
-// });
+function toggleProject(project) {
+    project.classList.toggle("open");
+}

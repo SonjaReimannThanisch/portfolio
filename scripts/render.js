@@ -74,7 +74,7 @@ function renderMyWork() {
     <div id="myWork" class="project-grid">
         <div class="work-grid">
             <div class="project-left">
-               <div class="project-header"> 
+               <div class="project-header" onclick="toggleProject(this.closest('.work-grid'))"> 
                     <span class="project-number">1</span>
                     <h2>Project Join</h2>
                 </div>
@@ -82,14 +82,15 @@ function renderMyWork() {
                 <p>
                 Eine Kanban-basierte Webanwendung zur Organisation von Aufgaben und Projekten. Nutzer können Aufgaben erstellen, Kontakte zuweisen, Kategorien verwalten und den Arbeitsfortschritt über ein interaktives Drag-and-Drop-Board verfolgen.
                 </p>
-                
-                <h3>Verwendete Technologien</h3>
-                <p>JavaScript, HTML, CSS, Firebase</p>
-                
-                <h3>Das habe ich gelernt</h3>
-                <p>
-                Durch dieses Teamprojekt habe ich den Umgang mit Angular und TypeScript vertieft und gelernt, größere Anwendungen strukturiert aufzubauen. Außerdem konnte ich praktische Erfahrungen mit Git, Teamarbeit und einer sauberen Komponentenstruktur sammeln.
-                </p>
+                <div class="project-extra">
+                    <h3>Verwendete Technologien</h3>
+                    <p>JavaScript, HTML, CSS, Firebase</p>
+                    
+                    <h3>Das habe ich gelernt</h3>
+                    <p>
+                    Durch dieses Teamprojekt habe ich den Umgang mit Angular und TypeScript vertieft und gelernt, größere Anwendungen strukturiert aufzubauen. Außerdem konnte ich praktische Erfahrungen mit Git, Teamarbeit und einer sauberen Komponentenstruktur sammeln.
+                    </p>
+                </div>
             </div>
             <div class="project-right">
                 <img src="./assets/img/Property 1=Join.png" alt="Join App">
@@ -99,10 +100,18 @@ function renderMyWork() {
                     <a href="https://join-business-app.netlify.app/" target="_blank">Live Test</a>
                 </div>
             </div>
+            <button
+                class="project-toggle"
+                type="button"
+                onclick="toggleProject(this.closest('.work-grid'))"
+            >
+                <span class="show-more-text">Show me more ▼</span>
+                <span class="show-less-text">Show me less ▲</span>
+            </button>
         </div>
         <div class="work-grid">
             <div class="project-left">
-                <div class="project-header"> 
+                <div class="project-header" onclick="toggleProject(this.closest('.work-grid'))"> 
                     <span class="project-number">2</span>
                     <h2>Project Sharky</h2>
                 </div>
@@ -130,7 +139,7 @@ function renderMyWork() {
         </div>
         <div class="work-grid">
             <div class="project-left">
-                <div class="project-header"> 
+                <div class="project-header" onclick="toggleProject(this.closest('.work-grid'))"> 
                     <span class="project-number">3</span>
                     <h2>Project DA Bubble</h2>
                 </div>
