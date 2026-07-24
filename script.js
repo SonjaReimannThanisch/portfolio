@@ -88,3 +88,48 @@ navLinks.forEach((link) => {
 function toggleProject(project) {
     project.classList.toggle("open");
 }
+
+function initReferenceCarousel() {
+    let grid = document.querySelector(".reference-grid");
+    let cards = grid?.querySelectorAll(".grid-item");
+    let dots = document.querySelectorAll(".reference-dots .dot");
+
+    if (!grid || !cards?.length || dots.length === 0) return;
+
+    addReferenceScrollListener(grid, cards, dots);
+    addReferenceDotListeners(cards, dots);
+}
+
+function addReferenceScrollListener(grid, cards, dots) {
+    grid.addEventListener("scroll", () => {
+        updateActiveReferenceDot(grid, cards, dots);
+    });
+}
+
+function updateActiveReferenceDot(grid, cards, dots) {
+    let cardWidth = cards[0].offsetWidth;
+    let activeIndex = Math.round(grid.scrollLeft / cardWidth);
+
+    dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === activeIndex);
+    });
+}
+
+function addReferenceDotListeners(cards, dots) {
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            scrollToReferenceCard(cards[index]);
+        });
+    });
+}
+
+function scrollToReferenceCard(card) {
+    card.scrollIntoView({
+        behavior: "smooth",
+        inline: "start",
+        block: "nearest",
+    });
+}
+
+initReferenceCarousel();
+
