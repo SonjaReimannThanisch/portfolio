@@ -119,14 +119,15 @@ function renderMyWork() {
                 <p>
                 Ein browserbasiertes 2D-Spiel, das mit JavaScript und HTML5 Canvas entwickelt wurde. Der Spieler erkundet eine Unterwasserwelt, sammelt Münzen und Giftflaschen, kämpft gegen verschiedene Gegner und besiegt am Ende den Endgegner.
                 </p>
-            
-                <h3>Verwendete Technologien</h3>
-                <p>JavaScript, HTML5 Canvas, CSS</p>
-            
-                <h3>Das habe ich gelernt</h3>
-                <p>
-                Dieses Projekt hat meine Kenntnisse in der objektorientierten Programmierung deutlich erweitert. Ich habe gelernt, Spiellogik zu strukturieren, Animationen zu steuern, Kollisionen zu erkennen und größere JavaScript-Projekte übersichtlich zu organisieren.
-                </p>
+                <div class="project-extra">
+                    <h3>Verwendete Technologien</h3>
+                    <p>JavaScript, HTML5 Canvas, CSS</p>
+                
+                    <h3>Das habe ich gelernt</h3>
+                    <p>
+                    Dieses Projekt hat meine Kenntnisse in der objektorientierten Programmierung deutlich erweitert. Ich habe gelernt, Spiellogik zu strukturieren, Animationen zu steuern, Kollisionen zu erkennen und größere JavaScript-Projekte übersichtlich zu organisieren.
+                    </p>
+                </div>
             </div>
             <div class="project-right">
                 <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Join App">
@@ -136,6 +137,14 @@ function renderMyWork() {
                     <a href="https://sharky-the-happy-shark.netlify.app//" target="_blank">Live Test</a>
                 </div>
             </div>
+            <button
+                class="project-toggle"
+                type="button"
+                onclick="toggleProject(this.closest('.work-grid'))"
+            >
+                <span class="show-more-text">Show me more ▼</span>
+                <span class="show-less-text">Show me less ▲</span>
+            </button>
         </div>
         <div class="work-grid">
             <div class="project-left">
@@ -147,18 +156,28 @@ function renderMyWork() {
                 <p>
                 Eine Chat-Anwendung, die derzeit noch aussteht. Ziel ist es, moderne Kommunikationsfunktionen mit einer klaren Architektur und einer intuitiven Benutzeroberfläche umzusetzen.
                 </p>
-                <h3>Verwendete Technologien</h3>
-                <p>JavaScript, HTML, CSS, Firebase</p>
-                <h3>Das habe ich gelernt</h3>
-                <p>
-                Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.
-                </p>
+                <div class="project-extra">
+                    <h3>Verwendete Technologien</h3>
+                    <p>JavaScript, HTML, CSS, Firebase</p>
+                    <h3>Das habe ich gelernt</h3>
+                    <p>
+                    Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.
+                    </p>
+                </div>
             </div>
             <div class="project-right">
                 <img src="./assets/img/Screenshot DA Bubble.png" alt="Join App">
                 
 
             </div>
+            <button
+                class="project-toggle"
+                type="button"
+                onclick="toggleProject(this.closest('.work-grid'))"
+            >
+                <span class="show-more-text">Show me more ▼</span>
+                <span class="show-less-text">Show me less ▲</span>
+            </button>
         </div>
         <div class="work-grid-last">
             <div class="ongoing-header">
