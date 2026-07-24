@@ -22,18 +22,14 @@ function openMobileMenu() {
 function closeMobileMenu() {
     const overlay = getMobileMenuOverlay();
     const button = getMobileMenuButton();
-
     if (!overlay) return;
-
     overlay.classList.remove("open");
     button?.setAttribute("aria-expanded", "false");
 }
 
 function toggleMobileMenu() {
     const overlay = getMobileMenuOverlay();
-
     if (!overlay) return;
-
     if (overlay.classList.contains("open")) {
         closeMobileMenu();
     } else {
@@ -51,10 +47,21 @@ function getBurgerMenuOverlay() {
             </button>
 
             <nav>
-                <a class="mobile-nav-link" href="index.html#about">Why me</a>
-                <a class="mobile-nav-link" href="index.html#skills">Skills</a>
-                <a class="mobile-nav-link" href="index.html#projects">My Work</a>
-                <a class="mobile-nav-link" href="index.html#contact">Contact</a>
+                <a class="mobile-nav-link" href="index.html#about" onclick="closeMobileMenu()">
+                    Why me
+                </a>
+
+                <a class="mobile-nav-link" href="index.html#skills" onclick="closeMobileMenu()">
+                    Skills
+                </a>
+
+                <a class="mobile-nav-link" href="index.html#projects" onclick="closeMobileMenu()">
+                    My Work
+                </a>
+
+                <a class="mobile-nav-link" href="index.html#contact" onclick="closeMobileMenu()">
+                    Contact
+                </a>
             </nav>
             <div class="mobile-menu-language">
                 <button class="language-link">DE</button>
@@ -67,10 +74,13 @@ function getBurgerMenuOverlay() {
 
 function renderBurgerMenuOverlay() {
     const root = document.getElementById("mobile-menu-root");
-
     if (!root || root.innerHTML.trim()) return;
-
     root.innerHTML = getBurgerMenuOverlay();
 }
+
+document.addEventListener("click", (event) => {
+    if (!event.target.classList.contains("mobile-nav-link")) return;
+    closeMobileMenu();
+});
 
 renderBurgerMenuOverlay();
