@@ -250,3 +250,6 @@
     align-items: flex-end;
 }
 
+.contact-info .social-links {
+    display: none;
+}
