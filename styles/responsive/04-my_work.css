@@ -7,7 +7,7 @@
         margin: 16px;
     }
 
-    .project-grid{
+    .project-grid {
         display:flex;
         flex-direction:column;
         gap: 48px;
@@ -63,13 +63,13 @@
     }
 
     .project-extra,
-    .project-right{
-        display:none;
+    .project-right {
+        display: none;
     }
 
     .work-grid.open .project-extra,
-    .work-grid.open .project-right{
-        display:block;
+    .work-grid.open .project-right {
+        display: block;
     }
 
     .work-grid.open .show-more-text {
@@ -96,6 +96,7 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
+        line-clamp: 3;
         overflow: hidden;
     }
 

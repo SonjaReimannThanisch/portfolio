@@ -206,7 +206,7 @@
 }
 
 .project-buttons a:last-child:hover {
-    box-shadow: inset 0 -6px 20px -3px rgba(0,30,22,.35);
+    box-shadow: inset 0 -6px 20px -3px rgba(0, 30, 22, 0.35);
 }
 
 .work-grid-last{
