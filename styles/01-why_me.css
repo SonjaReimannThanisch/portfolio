@@ -63,7 +63,7 @@
     height: 100px;
     object-fit: contain;
     transition: opacity 150ms ease;
-    filter: hue-rotate(110deg) saturate(0.75) brightness(0.9);
+    filter: hue-rotate(85deg) saturate(0.75) brightness(0.9);
 }
 
 .fact-card p {

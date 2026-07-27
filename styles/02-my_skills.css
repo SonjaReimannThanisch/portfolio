@@ -51,7 +51,7 @@
     width: 87px;
     height: 99px;
     object-fit: contain;
-    filter: hue-rotate(110deg) saturate(55%) brightness(0.9);
+    filter: hue-rotate(85deg) saturate(55%) brightness(0.9);
     opacity: 0.99;
     transition: filter .2s ease, transform .2s ease;
 }
