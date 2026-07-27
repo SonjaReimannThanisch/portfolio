@@ -140,9 +140,55 @@ function initContactForm() {
     form.addEventListener("input", () => {
         updateContactSubmitButton(form, submitButton);
     });
+    form.addEventListener("submit", submitContactForm);
+}
+
+async function submitContactForm(event) {
+    event.preventDefault();
+    let form = event.target;
+    let submitButton = form.querySelector('button[type="submit"]');
+    setSubmitButtonLoading(submitButton);
+    let success = await sendContactForm(form);
+    handleContactFormResponse(success, form, submitButton);
+}
+
+async function sendContactForm(form) {
+    let response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+            Accept: "application/json",
+        },
+    });
+    return response.ok;
+}
+
+function handleContactFormResponse(success, form, submitButton) {
+    if (success) {
+        showContactSuccess(form, submitButton);
+        return;
+    }
+    showContactError(submitButton);
+}
+
+function setSubmitButtonLoading(button) {
+    button.disabled = true;
+    button.textContent = "Sending...";
+}
+
+function showContactError(button) {
+    button.disabled = false;
+    button.textContent = "Send";
+}
+
+function showContactSuccess(form, button) {
+    form.reset();
+    button.textContent = "✓ Thank you!";
+    button.disabled = true;
 }
 
 function updateContactSubmitButton(form, submitButton) {
+    submitButton.textContent = "Send";
     submitButton.disabled = !form.checkValidity();
 }
 

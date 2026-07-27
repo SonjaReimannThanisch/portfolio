@@ -258,20 +258,25 @@ function renderContact() {
     contactsection.innerHTML = `
         <h2 class="contact-title">Contact me</h2>
         <div id="contact" class="contact-content">
-            <form class="contact-form">
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your e-mail" required>
-                <textarea placeholder="Your message" required></textarea>
-
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xwvgagbw" method="POST">
+                <div class="form-message form-success" data-fs-success></div>
+                <div class="form-message form-error" data-fs-error></div>
+                <input type="text" name="name" placeholder="Your name" data-fs-field required>
+                <input type="email" name="email" placeholder="Your e-mail" data-fs-field required>
+                <textarea name="message" placeholder="Your message" data-fs-field required></textarea>
                 <label>
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="privacy" required>
                     <span>
-                    I have read the 
-                    <a href="index.html?legal=privacy" target="_blank">privacy policy</a>
-                    and agree to the processing of my data as outlined
+                        I have read the
+                        <a href="index.html?legal=privacy" target="_blank">
+                            privacy policy
+                        </a>
+                        and agree to the processing of my data as outlined
                     </span>
-                    </label>
-                <button type="submit" disabled>Send</button>
+                </label>
+                <button type="submit" data-fs-submit-btn disabled>
+                    Send
+                </button>
             </form>
 
             <div class="contact-info">
