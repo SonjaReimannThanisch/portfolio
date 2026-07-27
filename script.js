@@ -133,3 +133,17 @@ function scrollToReferenceCard(card) {
 
 initReferenceCarousel();
 
+function initContactForm() {
+    let form = document.querySelector(".contact-form");
+    let submitButton = form?.querySelector('button[type="submit"]');
+    if (!form || !submitButton) return;
+    form.addEventListener("input", () => {
+        updateContactSubmitButton(form, submitButton);
+    });
+}
+
+function updateContactSubmitButton(form, submitButton) {
+    submitButton.disabled = !form.checkValidity();
+}
+
+initContactForm();
