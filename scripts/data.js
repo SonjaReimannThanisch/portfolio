@@ -48,8 +48,8 @@ const translations = {
                 technologiesTitle: "Verwendete Technologien",
                 technologies: "JavaScript, HTML, CSS, Firebase",
 
-                learnedTitle: "Das habe ich gelernt",
-                learnedText: "Durch dieses Teamprojekt habe ich den Umgang mit Angular und TypeScript vertieft und gelernt, größere Anwendungen strukturiert aufzubauen. Außerdem konnte ich praktische Erfahrungen mit Git, Teamarbeit und einer sauberen Komponentenstruktur sammeln.",
+                learningTitle: "Das habe ich gelernt",
+                learningText: "Durch dieses Teamprojekt habe ich den Umgang mit Angular und TypeScript vertieft und gelernt, größere Anwendungen strukturiert aufzubauen. Außerdem konnte ich praktische Erfahrungen mit Git, Teamarbeit und einer sauberen Komponentenstruktur sammeln.",
 
                 github: "GitHub",
                 liveTest: "Live Test",
@@ -66,8 +66,8 @@ const translations = {
                 technologiesTitle: "Verwendete Technologien",
                 technologies: "JavaScript, HTML5 Canvas, CSS",
 
-                learnedTitle: "Das habe ich gelernt",
-                learnedText: "Dieses Projekt hat meine Kenntnisse in der objektorientierten Programmierung deutlich erweitert. Ich habe gelernt, Spiellogik zu strukturieren, Animationen zu steuern, Kollisionen zu erkennen und größere JavaScript-Projekte übersichtlich zu organisieren.",
+                learningTitle: "Das habe ich gelernt",
+                learningText: "Dieses Projekt hat meine Kenntnisse in der objektorientierten Programmierung deutlich erweitert. Ich habe gelernt, Spiellogik zu strukturieren, Animationen zu steuern, Kollisionen zu erkennen und größere JavaScript-Projekte übersichtlich zu organisieren.",
 
                 github: "GitHub",
                 liveTest: "Live Test",
@@ -84,8 +84,8 @@ const translations = {
                 technologiesTitle: "Verwendete Technologien",
                 technologies: "JavaScript, HTML, CSS, Firebase",
 
-                learnedTitle: "Das habe ich gelernt",
-                learnedText: "Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.",
+                learningTitle: "Das habe ich gelernt",
+                learningText: "Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.",
 
                 github: "GitHub",
                 liveTest: "Live Test",
@@ -98,12 +98,35 @@ const translations = {
                 title: "Laufende Weiterentwicklung",
                 text: "Ich erweitere kontinuierlich meine Kenntnisse über die Frontend-Entwicklung hinaus. Aktuell beschäftige ich mich mit Backend-Grundlagen, DevOps-Themen und modernen Entwicklungsprozessen, um Anwendungen ganzheitlich verstehen und entwickeln zu können.",
                 button: "Lass uns Austauschen!"
-            }
+            },
         },
 
         references: {
+            title: "Referenzen",
 
-        },
+            mobile: {
+                title: "Teamplayer gesucht?",
+                subtitle: "Was meine Kollegen über mich sagen"
+            },
+
+            referenceOne: {
+                text: "'Michael is a reliable and friendly person. Work in a structured way and write clear code. I recommend him as a colleague.''",
+                name: "Name Nachname",
+                project: "Project irgendwas"
+            },
+
+            referenceTwo: {
+                text: "...",
+                name: "Name Nachname",
+                project: "Project irgendwas"
+            },
+
+            referenceThree: {
+                text: "...",
+                name: "Name Nachname",
+                project: "Project irgendwas"
+            }
+        }
 
         contact: {
 
@@ -161,12 +184,94 @@ const translations = {
         },
 
         projects: {
+            title: "My Work",
 
+            projectOne: {
+                title: "Project Join",
+                aboutTitle: "About the project",
+                aboutText: "A Kanban-based web application for organizing tasks and projects. Users can create tasks, assign contacts, manage categories, and track work progress using an interactive drag-and-drop board",
+
+                technologiesTitle: "Technologies I have used",
+                technologies: "JavaScript, HTML, CSS, Firebase",
+
+                learningTitle: "What I have learned",
+                learningText: "Through this team project, I deepened my understanding of Angular and TypeScript and learned how to build larger applications in a structured way. I also gained practical experience with Git, teamwork, and a clean component structure.",
+
+                github: "GitHub",
+                liveTest: "Live Test",
+
+                showMore: "Show me more ▼",
+                showLess: "Show me less ▲"
+            },
+
+            projectTwo: {
+                title: "Project Sharky",
+                aboutTitle: "About the project",
+                aboutText: "A browser-based 2D game developed using JavaScript and HTML5 Canvas. The player explores an underwater world, collects coins and poison bottles, battles various enemies, and ultimately defeats the final boss.",
+
+                technologiesTitle: "Technologies I have used",
+                technologies: "JavaScript, HTML5 Canvas, CSS",
+
+                learningTitle: "What I have learned",
+                learningText: "“This project has significantly expanded my knowledge of object-oriented programming. I've learned how to structure game logic, control animations, detect collisions, and organize larger JavaScript projects in a clear and structured way.",
+                github: "GitHub",
+                liveTest: "Live Test",
+
+                showMore: "Show me more ▼",
+                showLess: "Show me less ▲"
+            },
+
+            projectThree: {
+                title: "Project DA Bubble",
+                aboutTitle: "About the project",
+                aboutText: "A chat application that is currently still in development. The goal is to implement modern communication features with a clear architecture and an intuitive user interface.",
+
+                technologiesTitle: "Technologies I have used",
+                technologies: "JavaScript, HTML, CSS, Firebase",
+
+                learningTitle: "What I have learned",
+                learningText: "The focus is on a clean project structure, code that is easy to maintain, and further developing my skills in building modern web applications.",
+
+                github: "GitHub",
+                liveTest: "Live Test",
+
+                showMore: "Show me more ▼",
+                showLess: "Show me less ▲"
+            },
+
+            projectFour: {
+                title: "Ongoing Project",
+                text: "I'm constantly expanding my knowledge beyond front-end development. Currently, I'm focusing on back-end fundamentals, DevOps topics, and modern development processes so that I can understand and develop applications holistically.",
+                button: "Let's Talk!"
+            },
         },
 
-        references: {
+            references: {
+                title: "References",
 
-        },
+                mobile: {
+                    title: "Looking for a team player?",
+                    subtitle: "What my colleagues say about me"
+                },
+
+                referenceOne: {
+                    text: "...",
+                    name: "Name Surname",
+                    project: "Project ..."
+                },
+
+                referenceTwo: {
+                    text: "...",
+                    name: "Name Surname",
+                    project: "Project ..."
+                },
+
+                referenceThree: {
+                    text: "...",
+                    name: "Name Surname",
+                    project: "Project ..."
+                }
+            }
 
         contact: {
 
@@ -182,7 +287,7 @@ const translations = {
 
         privacy: {
 
-        }
+        },
     }
 
 };
