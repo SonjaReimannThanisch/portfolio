@@ -126,11 +126,39 @@ const translations = {
                 name: "Name Nachname",
                 project: "Project irgendwas"
             }
-        }
-
-        contact: {
-
         },
+
+            contact: {
+                title: "Kontakt",
+
+                form: {
+                    name: "Dein Name",
+                    email: "Deine E-Mail",
+                    message: "Deine Nachricht",
+
+                    privacyBefore: "Ich habe die",
+                    privacyLink: "Datenschutzerklärung",
+                    privacyAfter: "gelesen und stimme der Verarbeitung meiner Daten zu.",
+
+                    send: "Senden",
+                    sending: "Senden...",
+                    success: "✓ Vielen Dank!",
+                    error: "Etwas ist schiefgelaufen."
+                },
+
+                info: {
+                    title: "Lass uns zusammenarbeiten.",
+                    text: `
+                        Ich suche nach Möglichkeiten, mich als Entwicklerin
+                        weiterzuentwickeln und an spannenden Projekten
+                        mitzuwirken. Besonders interessieren mich moderne
+                        Webanwendungen, saubere Lösungen und die Möglichkeit,
+                        jeden Tag etwas Neues zu lernen.
+                    `,
+                    email: "E-Mail",
+                    phone: "Tel"
+                }
+            },
 
         footer: {
 
@@ -271,10 +299,38 @@ const translations = {
                     name: "Name Surname",
                     project: "Project ..."
                 }
-            }
+            },
 
         contact: {
+            title: "Contact me",
 
+            form: {
+                name: "Your name",
+                email: "Your e-mail",
+                message: "Your message",
+
+                privacyBefore: "I have read the",
+                privacyLink: "privacy policy",
+                privacyAfter: "and agree to the processing of my data as outlined",
+
+                send: "Send",
+                sending: "Sending...",
+                success: "✓ Thank you!",
+                error: "Something went wrong."
+            },
+
+            info: {
+                title: "Let us work together.",
+                text: `
+                    I'm looking for opportunities to grow as a developer
+                    and to contribute to exciting projects.
+                    I'm particularly interested in modern
+                    web applications, clean solutions, and the chance to
+                    learn something new every day.
+                `,
+                email: "E-mail",
+                phone: "Tel"
+            }
         },
 
         footer: {
