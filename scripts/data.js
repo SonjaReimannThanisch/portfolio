@@ -1,3 +1,193 @@
+const translations = {
+
+    de: {
+
+        sidebar: {
+            about: "Warum ich",
+            skills: "Fähigkeiten",
+            projects: "Meine Projekte",
+            contact: "Kontakt"
+        },
+
+        hero: {
+            designation: "Frontend-Entwicklerin",
+            location: "Krefeld"
+        },
+
+        about: {
+            title: "Warum ich",
+            text: `
+                Was mich an der Softwareentwicklung begeistert, ist die Möglichkeit, komplexe Probleme in kleine, lösbare Schritte zu zerlegen. Ich habe Freude daran, neue Technologien zu verstehen, Fehler zu analysieren und so lange an einer Lösung zu arbeiten, bis sie funktioniert.
+                Als Quereinsteigerin habe ich gelernt, dass Fortschritt nicht immer geradlinig verläuft. Viele Herausforderungen haben mich Geduld, Ausdauer und strukturiertes Arbeiten gelehrt. Gerade diese Erfahrungen haben meinen Wunsch gestärkt, mich kontinuierlich weiterzuentwickeln und mein Wissen auszubauen.
+                Für mich bedeutet Programmieren, jeden Tag etwas Neues zu lernen und Ideen in funktionierende Anwendungen zu verwandeln. Genau diese Kombination aus Kreativität, Logik und lebenslangem Lernen macht diesen Bereich für mich so spannend.
+            `,
+            subtitle: "Ich bin",
+            contactButton: "Kontaktiere mich"
+        },
+
+        skills: {
+            title: "Meine Fähigkeiten",
+            text: `
+                Ich lerne gerne neue Technologien und arbeite mich
+                selbstständig in unbekannte Themen ein. Herausforderungen
+                motivieren mich, meine Fähigkeiten weiterzuentwickeln
+                und kreative Lösungen zu finden.
+            `,
+            sideText: "Neugier und kontinuierliche Weiterentwicklung treiben mich an.",
+            button: "Lass uns sprechen"
+        },
+
+        projects: {
+            title: "Meine Arbeit",
+
+            projectOne: {
+                title: "Projekt Join",
+                aboutTitle: "Über das Projekt",
+                aboutText: "Eine Kanban-basierte Webanwendung zur Organisation von Aufgaben und Projekten. Nutzer können Aufgaben erstellen, Kontakte zuweisen, Kategorien verwalten und den Arbeitsfortschritt über ein interaktives Drag-and-Drop-Board verfolgen.",
+
+                technologiesTitle: "Verwendete Technologien",
+                technologies: "JavaScript, HTML, CSS, Firebase",
+
+                learnedTitle: "Das habe ich gelernt",
+                learnedText: "Durch dieses Teamprojekt habe ich den Umgang mit Angular und TypeScript vertieft und gelernt, größere Anwendungen strukturiert aufzubauen. Außerdem konnte ich praktische Erfahrungen mit Git, Teamarbeit und einer sauberen Komponentenstruktur sammeln.",
+
+                github: "GitHub",
+                liveTest: "Live Test",
+
+                showMore: "Zeige mehr ▼",
+                showLess: "Zeige weniger ▲"
+            },
+
+            projectTwo: {
+                title: "Projekt Sharky",
+                aboutTitle: "Über das Projekt",
+                aboutText: "Ein browserbasiertes 2D-Spiel, das mit JavaScript und HTML5 Canvas entwickelt wurde. Der Spieler erkundet eine Unterwasserwelt, sammelt Münzen und Giftflaschen, kämpft gegen verschiedene Gegner und besiegt am Ende den Endgegner.",
+
+                technologiesTitle: "Verwendete Technologien",
+                technologies: "JavaScript, HTML5 Canvas, CSS",
+
+                learnedTitle: "Das habe ich gelernt",
+                learnedText: "Dieses Projekt hat meine Kenntnisse in der objektorientierten Programmierung deutlich erweitert. Ich habe gelernt, Spiellogik zu strukturieren, Animationen zu steuern, Kollisionen zu erkennen und größere JavaScript-Projekte übersichtlich zu organisieren.",
+
+                github: "GitHub",
+                liveTest: "Live Test",
+
+                showMore: "Zeige mehr ▼",
+                showLess: "Zeige weniger ▲"
+            },
+
+            projectThree: {
+                title: "Projekt DA Bubble",
+                aboutTitle: "Über das Projekt",
+                aboutText: "Eine Chat-Anwendung, die derzeit noch aussteht. Ziel ist es, moderne Kommunikationsfunktionen mit einer klaren Architektur und einer intuitiven Benutzeroberfläche umzusetzen.",
+
+                technologiesTitle: "Verwendete Technologien",
+                technologies: "JavaScript, HTML, CSS, Firebase",
+
+                learnedTitle: "Das habe ich gelernt",
+                learnedText: "Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.",
+
+                github: "GitHub",
+                liveTest: "Live Test",
+
+                showMore: "Zeige mehr ▼",
+                showLess: "Zeige weniger ▲"
+            },
+
+            projectFour: {
+                title: "Laufende Weiterentwicklung",
+                text: "Ich erweitere kontinuierlich meine Kenntnisse über die Frontend-Entwicklung hinaus. Aktuell beschäftige ich mich mit Backend-Grundlagen, DevOps-Themen und modernen Entwicklungsprozessen, um Anwendungen ganzheitlich verstehen und entwickeln zu können.",
+                button: "Lass uns Austauschen!"
+            }
+        },
+
+        references: {
+
+        },
+
+        contact: {
+
+        },
+
+        footer: {
+
+        },
+
+        legal: {
+
+        },
+
+        privacy: {
+
+        }
+
+    },
+
+    en: {
+
+        sidebar: {
+            about: "Why me",
+            skills: "Skills",
+            projects: "My Work",
+            contact: "Contact"
+        },
+
+        hero: {
+            designation: "Frontend Developer",
+            location: "Krefeld"
+        },
+
+        about: {
+            title: "Why me",
+            text: `
+                What excites me about software development is the opportunity to break down complex problems into small, manageable steps. I enjoy understanding new technologies, analyzing bugs, and working on a solution until it works.
+                As someone who switched careers, I’ve learned that progress isn’t always a straight path. Many challenges have taught me patience, perseverance, and how to work in a structured way. It is precisely these experiences that have strengthened my desire to continuously develop myself and expand my knowledge.
+                For me, programming means learning something new every day and turning ideas into working applications. It is exactly this combination of creativity, logic, and lifelong learning that makes this field so exciting to me.
+        `,
+            subtitle: "I am",
+            contactButton: "Contact me"
+        },
+
+        skills: {
+            title: "My Skill Set",
+            text: `
+                I enjoy learning about new technologies and
+                familiarizing myself with unfamiliar topics on my own. Challenges
+                motivate me to further develop my skills
+                and find creative solutions.
+            `,
+            sideText: "Curiosity and continuous growth are what drive me.",
+            button: "Let's talk"
+        },
+
+        projects: {
+
+        },
+
+        references: {
+
+        },
+
+        contact: {
+
+        },
+
+        footer: {
+
+        },
+
+        legal: {
+
+        },
+
+        privacy: {
+
+        }
+    }
+
+};
+
+
 const LEGAL_NOTICE_TEXT = `
     <h4>Impressum</h4>
     <p>
