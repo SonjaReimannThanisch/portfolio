@@ -82,6 +82,9 @@ function getSidebar() {
 }
 
 function getSocialLinks() {
+    let text = translations[currentLanguage];
+    let activeDe = currentLanguage === "de" ? "active" : "";
+    let activeEn = currentLanguage === "en" ? "active" : "";
     return `
         <div id="social-links" class="social-links">
             <nav>
@@ -102,9 +105,9 @@ function getSocialLinks() {
                             </a>
                         </li>
                     <li class="language-link">
-                        <span>DE</span>
+                        <button class="${activeDe}" onclick="switchLanguage('de')">DE</button>
                         <span>|</span>
-                        <span>EN</span>
+                        <button class="${activeEn}" onclick="switchLanguage('en')">EN</button>
                     </li>
                 </ul>
             </nav>
@@ -138,4 +141,14 @@ function getMobileHeader() {
         </header>
         ${getBurgerMenuOverlay()}
     `;
+}
+
+function switchLanguage(language) {
+    currentLanguage = language;
+    renderHero();
+    renderWhyMe();
+    renderMySkills();
+    renderMyWork();
+    renderReferences();
+    renderContact();
 }

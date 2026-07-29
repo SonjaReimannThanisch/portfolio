@@ -253,21 +253,23 @@ section {
             contrast(88%);
 }
 
-.language-link {
-    display: flex;
-    gap: 6px;
-    color: #fff;
-    margin-left: 36px;
-}
-
-.language-link span:first-child,
-.language-link span:last-child {
+.language-link button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: var(--text-light);
     cursor: pointer;
+    transition: color 125ms ease;
 }
 
-.language-link span:first-child:hover,
-.language-link span:last-child:hover {
-    color: #38D1C4;
+.language-link button:hover {
+    color: var(--highlight-main);
+}
+
+.language-link button.active {
+    color: var(--highlight-main);
 }
 
 .next-section-link {
