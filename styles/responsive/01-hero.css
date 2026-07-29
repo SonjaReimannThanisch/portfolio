@@ -55,8 +55,10 @@
 
     .designation h2 {
         font-size: 28px;
-        margin: 8px;
-        white-space: nowrap;
+        margin: 8px 0;
+        white-space: normal;
+        line-height: 1.15;
+        text-align: center;
         -webkit-text-stroke-width: 0;
         color: var(--highlight-main);
         order: 1;

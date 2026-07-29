@@ -159,6 +159,9 @@ section {
 }
 
 .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     cursor: pointer;
@@ -170,6 +173,7 @@ section {
     color: #4A4A4A;
     fill: #4A4A4A;
     text-decoration: none;
+    text-align: center;
 }
 
 .nav-item a:hover {
