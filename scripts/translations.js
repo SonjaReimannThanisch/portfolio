@@ -249,7 +249,7 @@ const translations = {
                 technologies: "JavaScript, HTML5 Canvas, CSS",
 
                 learningTitle: "What I have learned",
-                learningText: "“This project has significantly expanded my knowledge of object-oriented programming. I've learned how to structure game logic, control animations, detect collisions, and organize larger JavaScript projects in a clear and structured way.",
+                learningText: "This project has significantly expanded my knowledge of object-oriented programming. I've learned how to structure game logic, control animations, detect collisions, and organize larger JavaScript projects in a clear and structured way.",
                 github: "GitHub",
                 liveTest: "Live Test",
 

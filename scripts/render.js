@@ -42,13 +42,14 @@ function renderWhyMe() {
 renderWhyMe();
 
 function renderMySkills() {
+    let text = translations[currentLanguage].skills;
     let skillsSection = document.getElementById("skills");
     skillsSection.classList.add("skills-section");
     skillsSection.innerHTML = `
-    <h2 class="skills-title">My Skill Set</h2>
+    <h2 class="skills-title">${text.title}</h2>
     <div id="mySkills" class="skills-content">
         <p class="skills-text">
-            Ich lerne gerne neue Technologien und arbeite mich selbstständig in unbekannte Themen ein. Herausforderungen motivieren mich, meine Fähigkeiten weiterzuentwickeln und kreative Lösungen zu finden.
+            ${text.text}
         </p>
         <div class="skills-grid">
             <img src="./assets/icons/Property 1=Angular.png">
@@ -63,11 +64,11 @@ function renderMySkills() {
             <img src="./assets/icons/Property 1=Scrum.png">
             <img class="challenge-icon" src="./assets/icons/Property 1=Challenge me.png">
             <p class="skills-side-text">
-                Neugier und kontinuierliche Weiterentwicklung treiben mich an.         
+                ${text.sideText}
             </p>
         </div>
         <a class="skills-btn" href="#projects">
-            Let's talk
+            ${text.button}
         </a>
         <a class="skills-next-link" href="#projects"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
         </div>
@@ -77,28 +78,29 @@ function renderMySkills() {
 renderMySkills();
 
 function renderMyWork() {
+    let text = translations[currentLanguage].projects;
     let workSection = document.getElementById("projects");
     workSection.classList.add("work-section");
     workSection.innerHTML = `
-    <h2 class="work-title">My Work</h2>
+    <h2 class="work-title">${text.title}</h2>
     <div id="myWork" class="project-grid">
         <div class="work-grid">
             <div class="project-left">
                <div class="project-header" onclick="toggleProject(this.closest('.work-grid'))"> 
                     <span class="project-number">1</span>
-                    <h2>Project Join</h2>
+                    <h2>${text.projectOne.title}</h2>
                 </div>
-                <h3>Über das Projekt</h3>
+                <h3>${text.projectOne.aboutTitle}</h3>
                 <p>
-                Eine Kanban-basierte Webanwendung zur Organisation von Aufgaben und Projekten. Nutzer können Aufgaben erstellen, Kontakte zuweisen, Kategorien verwalten und den Arbeitsfortschritt über ein interaktives Drag-and-Drop-Board verfolgen.
+                    ${text.projectOne.aboutText}
                 </p>
                 <div class="project-extra">
-                    <h3>Verwendete Technologien</h3>
-                    <p>JavaScript, HTML, CSS, Firebase</p>
+                    <h3>${text.projectOne.technologiesTitle}</h3>
+                    <p>${text.projectOne.technologies}</p>
                     
-                    <h3>Das habe ich gelernt</h3>
+                    <h3>${text.projectOne.learningTitle}</h3>
                     <p>
-                    Durch dieses Teamprojekt habe ich den Umgang mit Angular und TypeScript vertieft und gelernt, größere Anwendungen strukturiert aufzubauen. Außerdem konnte ich praktische Erfahrungen mit Git, Teamarbeit und einer sauberen Komponentenstruktur sammeln.
+                        ${text.projectOne.learningText}
                     </p>
                 </div>
             </div>
@@ -106,8 +108,8 @@ function renderMyWork() {
                 <img src="./assets/img/Property 1=Join.png" alt="Join App">
                 
                 <div class="project-buttons">
-                    <a href="https://github.com/SonjaReimannThanisch/project-join" target="_blank">GitHub</a>
-                    <a href="https://join-business-app.netlify.app/" target="_blank">Live Test</a>
+                    <a href="https://github.com/SonjaReimannThanisch/project-join" target="_blank">${text.projectOne.github}</a>
+                    <a href="https://join-business-app.netlify.app/" target="_blank">${text.projectOne.liveTest}</a>
                 </div>
             </div>
             <button
@@ -115,27 +117,27 @@ function renderMyWork() {
                 type="button"
                 onclick="toggleProject(this.closest('.work-grid'))"
             >
-                <span class="show-more-text">Show me more ▼</span>
-                <span class="show-less-text">Show me less ▲</span>
+                <span class="show-more-text">${text.projectOne.showMore}</span>
+                <span class="show-less-text">${text.projectOne.showLess}</span>
             </button>
         </div>
         <div class="work-grid">
             <div class="project-left">
                 <div class="project-header" onclick="toggleProject(this.closest('.work-grid'))"> 
                     <span class="project-number">2</span>
-                    <h2>Project Sharky</h2>
+                    <h2>${text.projectTwo.title}</h2>
                 </div>
-                <h3>Über das Projekt</h3>
+                <h3>${text.projectTwo.aboutTitle}</h3>
                 <p>
-                Ein browserbasiertes 2D-Spiel, das mit JavaScript und HTML5 Canvas entwickelt wurde. Der Spieler erkundet eine Unterwasserwelt, sammelt Münzen und Giftflaschen, kämpft gegen verschiedene Gegner und besiegt am Ende den Endgegner.
+                    ${text.projectTwo.aboutText}
                 </p>
                 <div class="project-extra">
-                    <h3>Verwendete Technologien</h3>
-                    <p>JavaScript, HTML5 Canvas, CSS</p>
-                
-                    <h3>Das habe ich gelernt</h3>
+                    <h3>${text.projectTwo.technologiesTitle}</h3>
+                    <p>${text.projectTwo.technologies}</p>
+                    
+                    <h3>${text.projectTwo.learningTitle}</h3>
                     <p>
-                    Dieses Projekt hat meine Kenntnisse in der objektorientierten Programmierung deutlich erweitert. Ich habe gelernt, Spiellogik zu strukturieren, Animationen zu steuern, Kollisionen zu erkennen und größere JavaScript-Projekte übersichtlich zu organisieren.
+                        ${text.projectTwo.learningText}
                     </p>
                 </div>
             </div>
@@ -143,8 +145,8 @@ function renderMyWork() {
                 <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Join App">
             
                 <div class="project-buttons">
-                    <a href="https://github.com/SonjaReimannThanisch/Sharky_recover" target="_blank">GitHub</a>
-                    <a href="https://sharky-the-happy-shark.netlify.app//" target="_blank">Live Test</a>
+                    <a href="https://github.com/SonjaReimannThanisch/Sharky_recover" target="_blank">${text.projectTwo.github}</a>
+                    <a href="https://sharky-the-happy-shark.netlify.app//" target="_blank">${text.projectTwo.liveTest}</a>
                 </div>
             </div>
             <button
@@ -152,56 +154,52 @@ function renderMyWork() {
                 type="button"
                 onclick="toggleProject(this.closest('.work-grid'))"
             >
-                <span class="show-more-text">Show me more ▼</span>
-                <span class="show-less-text">Show me less ▲</span>
+                <span class="show-more-text">${text.projectTwo.showMore}</span>
+                <span class="show-less-text">${text.projectTwo.showLess}</span>
             </button>
         </div>
         <div class="work-grid">
             <div class="project-left">
                 <div class="project-header" onclick="toggleProject(this.closest('.work-grid'))"> 
                     <span class="project-number">3</span>
-                    <h2>Project DA Bubble</h2>
+                    <h2>${text.projectThree.title}</h2>
                 </div>
-                <h3>Über das Projekt</h3>
+                 <h3>${text.projectThree.aboutTitle}</h3>
                 <p>
-                Eine Chat-Anwendung, die derzeit noch aussteht. Ziel ist es, moderne Kommunikationsfunktionen mit einer klaren Architektur und einer intuitiven Benutzeroberfläche umzusetzen.
+                    ${text.projectThree.aboutText}
                 </p>
                 <div class="project-extra">
-                    <h3>Verwendete Technologien</h3>
-                    <p>JavaScript, HTML, CSS, Firebase</p>
-                    <h3>Das habe ich gelernt</h3>
+                     <h3>${text.projectThree.technologiesTitlet}</h3>
+                    <p>${text.projectThree.technologies}</p>
+                    
+                    <h3>${text.projectThree.learningTitle}</h3>
                     <p>
-                    Im Mittelpunkt stehen eine saubere Projektstruktur, gut wartbarer Code und die Weiterentwicklung meiner Kenntnisse in der Entwicklung moderner Webanwendungen.
+                        ${text.projectThree.learningText}
                     </p>
                 </div>
             </div>
             <div class="project-right">
                 <img src="./assets/img/Screenshot DA Bubble.png" alt="Join App">
-                
-
             </div>
             <button
                 class="project-toggle"
                 type="button"
                 onclick="toggleProject(this.closest('.work-grid'))"
             >
-                <span class="show-more-text">Show me more ▼</span>
-                <span class="show-less-text">Show me less ▲</span>
+                <span class="show-more-text">${text.projectThree.showMore}</span>
+                <span class="show-less-text">${text.projectThree.showLess}</span>
             </button>
         </div>
         <div class="work-grid-last">
             <div class="ongoing-header">
                 <span class="project-number-last">4</span>
-                <h2 class="grid-hero">Laufende Weiterentwicklung</h2>
+                <h2>${text.projectFour.title}</h2>
             </div>
-            
             <p style="margin: 0;">
-            Ich erweitere kontinuierlich meine Kenntnisse über die Frontend-Entwicklung hinaus. Aktuell beschäftige ich mich mit Backend-Grundlagen, DevOps-Themen und modernen Entwicklungsprozessen, um Anwendungen ganzheitlich verstehen und entwickeln zu können.
+                ${text.projectFour.text}
             </p>
+            <a class="ongoing-btn" href="#contact">${text.projectFour.button}</a>
 
-            
-            <a class="ongoing-btn" href="#contact">Let's talk</a>
-            
         </div>
         <a class="projects-next-link" href="#references"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
     </div>
