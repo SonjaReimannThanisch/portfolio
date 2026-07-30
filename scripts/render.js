@@ -9,7 +9,7 @@ function renderWhyMe() {
             </p>
             <h3>${text.subtitle}</h3>
             <div class="why-me-facts">
-                <div class="fact-card first">
+                <div class="fact-card first" onclick="this.classList.toggle('active')">
                     <div class="fact-icon">
                         <img class="icon-default" src="./assets/icons/location.png" alt="">
                         <img class="icon-hover" src="./assets/icons/locationHover.png" alt="">
@@ -17,7 +17,7 @@ function renderWhyMe() {
                     <p>${text.location}</p>
                 </div>
 
-                <div class="fact-card second">
+                <div class="fact-card second" onclick="this.classList.toggle('active')">
                     <div class="fact-icon">
                         <img class="icon-default" src="./assets/icons/Icon Remote.png" alt="">
                         <img class="icon-hover" src="./assets/icons/remoteVector.png" alt="">
@@ -25,7 +25,7 @@ function renderWhyMe() {
                     <p>${text.remote}</p>
                 </div>
 
-                <div class="fact-card third">
+                <div class="fact-card third" onclick="this.classList.toggle('active')">
                     <div class="fact-icon">
                         <img class="icon-default" src="./assets/icons/relocate.png" alt="">
                         <img class="icon-hover" src="./assets/icons/reloacteHover.png" alt="">

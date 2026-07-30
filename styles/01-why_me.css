@@ -139,6 +139,21 @@
     opacity: 1;
 }
 
+.fact-card:hover .icon-hover,
+.fact-card.active .icon-hover {
+    opacity: 1;
+}
+
+.fact-card:hover p,
+.fact-card.active p {
+    color: var(--highlight-main);
+}
+
+.third:hover .icon-default,
+.third.active .icon-default {
+    opacity: 0;
+}
+
 .fact-card p {
     margin: 0;
     font-size: 18px;
