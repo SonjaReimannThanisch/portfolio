@@ -22,6 +22,9 @@ const translations = {
                 Für mich bedeutet Programmieren, jeden Tag etwas Neues zu lernen und Ideen in funktionierende Anwendungen zu verwandeln. Genau diese Kombination aus Kreativität, Logik und lebenslangem Lernen macht diesen Bereich für mich so spannend.
             `,
             subtitle: "Ich bin",
+            location: "Standort Krefeld",
+            remote: "Offen für Remote-Arbeit",
+            relocation: "Bereit für einen Umzug",
             contactButton: "Kontaktiere mich"
         },
 
@@ -33,8 +36,10 @@ const translations = {
                 motivieren mich, meine Fähigkeiten weiterzuentwickeln
                 und kreative Lösungen zu finden.
             `,
+
             sideText: "Neugier und kontinuierliche Weiterentwicklung treiben mich an.",
-            button: "Lass uns sprechen"
+            button: "Lass uns sprechen",
+            
         },
 
         projects: {
@@ -196,6 +201,9 @@ const translations = {
                 For me, programming means learning something new every day and turning ideas into working applications. It is exactly this combination of creativity, logic, and lifelong learning that makes this field so exciting to me.
         `,
             subtitle: "I am",
+            location: "Located in Krefeld",
+            remote: "Open to remote work",
+            relocation: "Open to relocation",
             contactButton: "Contact me"
         },
 

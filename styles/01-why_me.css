@@ -53,35 +53,101 @@
 
 .fact-card {
     width: 220px;
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
 }
 
-.fact-card img {
-    width: 200px;
-    height: 100px;
+.fact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.fact-icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.fact-icon img {
+    position: absolute;
+    inset: 0;
+}
+
+.fact-icon img {
+    position: absolute;
+    inset: 0;
+    width: 64px;
+    height: 64px;
     object-fit: contain;
     transition: opacity 150ms ease;
     filter: hue-rotate(85deg) saturate(0.75) brightness(0.9);
 }
 
-.fact-card p {
-    margin: 0;
-    font-size: 20px;
+.icon-default {
+    opacity: 1;
 }
 
 .icon-hover {
-    position: absolute;
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    transform: translateY(8px);
+    transition: opacity 125ms ease;
+}
+
+.fact-icon .icon-hover {
     opacity: 0;
 }
 
 .fact-card:hover .icon-default {
-    opacity: 0;
+    opacity: 1;
 }
 
 .fact-card:hover .icon-hover {
     opacity: 1;
+}
+
+.second .icon-hover {
+    width: 28px;
+    height: 28px;
+    transform: translateY(4.5px);
+}
+
+.first .icon-hover {
+    width: 28px;
+    height: 28px;
+    transform: translateY(52px) translateX(17.5px);
+}
+
+.third .icon-hover {
+    width: 64px;
+    height: 64px;
+    transform: none;
+}
+
+.third:hover .icon-default {
+    opacity: 0;
+}
+
+.third:hover .icon-hover {
+    opacity: 1;
+}
+
+.fact-card p {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    transition: color 125ms ease;
+}
+
+.fact-card:hover p {
+    color: var(--highlight-main);
 }
 
 .contact-button {

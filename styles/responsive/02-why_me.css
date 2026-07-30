@@ -26,7 +26,7 @@
         margin: 0 32px 0 16px;
     }
 
-        .why-me-facts {
+    .why-me-facts {
         flex-direction: column;
         gap: 16px;
     }

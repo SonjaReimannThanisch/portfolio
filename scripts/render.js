@@ -10,16 +10,27 @@ function renderWhyMe() {
             <h3>${text.subtitle}</h3>
             <div class="why-me-facts">
                 <div class="fact-card first">
-                    <img class="icon-default" src="./assets/icons/location.png" alt="Location">
-                    <img class="icon-hover" src="./assets/icons/Property 1=hover.png" alt="Location hover">
+                    <div class="fact-icon">
+                        <img class="icon-default" src="./assets/icons/location.png" alt="">
+                        <img class="icon-hover" src="./assets/icons/locationHover.png" alt="">
+                    </div>
+                    <p>${text.location}</p>
                 </div>
+
                 <div class="fact-card second">
-                    <img class="icon-default" src="./assets/icons/remote.png" alt="Remote Work">
-                    <img class="icon-hover" src="./assets/icons/Property 1=Hover (1).png" alt="Remote hover">
+                    <div class="fact-icon">
+                        <img class="icon-default" src="./assets/icons/Icon Remote.png" alt="">
+                        <img class="icon-hover" src="./assets/icons/remoteVector.png" alt="">
+                    </div>
+                    <p>${text.remote}</p>
                 </div>
+
                 <div class="fact-card third">
-                    <img class="icon-default" src="./assets/icons/relocation.png" alt="Relocation">
-                    <img class="icon-hover" src="./assets/icons/Property 1=hover (2).png" alt="Relocation hover">
+                    <div class="fact-icon">
+                        <img class="icon-default" src="./assets/icons/relocate.png" alt="">
+                        <img class="icon-hover" src="./assets/icons/reloacteHover.png" alt="">
+                    </div>
+                    <p>${text.relocation}</p>
                 </div>
             </div>
             <a class="contact-button" href="#contact">${text.contactButton}</a>
