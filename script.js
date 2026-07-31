@@ -22,7 +22,6 @@ function updateActiveNav(sectionId) {
 
 function updateCurrentSection() {
     let scrollPosition = window.scrollX;
-
     sections.forEach((section, index) => {
         let sectionStart = section.offsetLeft;
         let sectionEnd = sectionStart + section.offsetWidth;
@@ -39,7 +38,6 @@ window.addEventListener(
     "wheel",
     (event) => {
         let legalSlider = document.querySelector(".legal-slider");
-
         if (legalSlider && document.getElementById("legal-view").innerHTML !== "") {
             event.preventDefault();
             legalSlider.scrollBy({
@@ -48,27 +46,20 @@ window.addEventListener(
             });
             return;
         }
-
         event.preventDefault();
-
         if (isScrolling) return;
-
         isScrolling = true;
-
         if (event.deltaY > 0) {
             currentSection = Math.min(currentSection + 1, sections.length - 1);
         } else {
             currentSection = Math.max(currentSection - 1, 0);
         }
-
         sections[currentSection].scrollIntoView({
             behavior: "smooth",
             inline: "start",
             block: "nearest",
         });
-
         updateActiveNav(sections[currentSection].id);
-
         setTimeout(() => {
             isScrolling = false;
         }, 700);
@@ -137,10 +128,27 @@ function initContactForm() {
     let form = document.querySelector(".contact-form");
     let submitButton = form?.querySelector('button[type="submit"]');
     if (!form || !submitButton) return;
+    addContactFieldValidation(form);
     form.addEventListener("input", () => {
         updateContactSubmitButton(form, submitButton);
     });
     form.addEventListener("submit", submitContactForm);
+}
+
+function addContactFieldValidation(form) {
+    let fields = form.querySelectorAll("input, textarea");
+    fields.forEach((field) => {
+        field.addEventListener("blur", () => {
+            updateFieldValidationState(field);
+        });
+    });
+}
+
+function updateFieldValidationState(field) {
+    let isValid = field.checkValidity();
+
+    field.classList.toggle("valid", isValid);
+    field.classList.toggle("error", !isValid);
 }
 
 async function submitContactForm(event) {

@@ -262,51 +262,48 @@ function renderReferences() {
 renderReferences();
 
 function renderContact() {
+    let text = translations[currentLanguage].contact;
     let contactsection = document.getElementById("contact");
     contactsection.classList.add("contact-section");
     contactsection.innerHTML = `
-        <h2 class="contact-title">Contact me</h2>
+        <h2 class="contact-title">${text.title}</h2>
         <div id="contact" class="contact-content">
             <form id="contact-form" class="contact-form" action="https://formspree.io/f/xwvgagbw" method="POST">
                 <div class="form-message form-success" data-fs-success></div>
                 <div class="form-message form-error" data-fs-error></div>
-                <input type="text" name="name" placeholder="Your name" data-fs-field required>
-                <input type="email" name="email" placeholder="Your e-mail" data-fs-field required>
-                <textarea name="message" placeholder="Your message" data-fs-field required></textarea>
+                <input type="text" name="name" placeholder="${text.form.name}" data-fs-field required>
+                <input type="email" name="email" placeholder="${text.form.email}" data-fs-field required>
+                <textarea name="message" placeholder="${text.form.message}" data-fs-field required></textarea>
                 <label>
                     <input type="checkbox" name="privacy" required>
                     <span>
-                        I have read the
+                        ${text.form.privacyBefore}
                         <a href="index.html?legal=privacy" target="_blank">
-                            privacy policy
+                            ${text.form.privacyLink}
                         </a>
-                        and agree to the processing of my data as outlined
+                        ${text.form.privacyAfter}
                     </span>
                 </label>
                 <button type="submit" data-fs-submit-btn disabled>
-                    Send
+                    ${text.form.send}
                 </button>
             </form>
 
             <div class="contact-info">
-                <p>Lass uns zusammenarbeiten.</p>
+                <p>${text.info.title}</p>
                 <p class="contact-description">
-                    Ich suche nach Möglichkeiten, mich als Entwicklerin
-                    weiterzuentwickeln und an spannenden Projekten
-                    mitzuwirken. Besonders interessieren mich moderne
-                    Webanwendungen, saubere Lösungen und die Möglichkeit,
-                    jeden Tag etwas Neues zu lernen.
+                    ${text.info.text}
                 </p>
                 <div class="contact-item">
                     <i class="bi bi-envelope-fill"></i>
                     <a href="mailto:sonja.reimann.thanisch@gmail.com">
-                        E-mail: sonja.reimann.thanisch@gmail.com
+                        ${text.info.email}: sonja.reimann.thanisch@gmail.com
                     </a>
                 </div>
                 <div class="contact-item">
                     <i class="bi bi-telephone-fill"></i>
                     <a href="tel:+491788286541">
-                        Tel: 0178 828 65 41
+                        ${text.info.phone}: 0178 828 65 41
                     </a>
                 </div>
                 <a class="contact-back-link" href="#hero">

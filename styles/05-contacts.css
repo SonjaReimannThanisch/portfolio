@@ -1,11 +1,10 @@
 .contact-section {
     position: relative;
     width: calc(100vw - 172px);
-
     height: 100vh;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 120px 520px 420px 100px;
+    grid-template-columns: 90px 520px 420px 100px;
     align-items: flex-start;
     box-sizing: border-box;
     padding: 156px 20px;
@@ -18,7 +17,9 @@
     font-weight: 400;
     color: transparent;
     -webkit-text-stroke: 2px var(--highlight-main);
-    margin: 0 20px;
+    margin: 0 1px;
+    align-self: start;
+    margin-top: 82px;
 }
 
 .contact-content {
@@ -259,4 +260,14 @@
 
 .contact-info .social-links {
     display: none;
+}
+
+input.error,
+textarea.error {
+    border: 1px solid #ff4b4b;
+}
+
+input.valid,
+textarea.valid {
+    border: 1px solid var(--highlight-main);
 }
