@@ -169,7 +169,7 @@ function renderMyWork() {
                     ${text.projectThree.aboutText}
                 </p>
                 <div class="project-extra">
-                     <h3>${text.projectThree.technologiesTitlet}</h3>
+                     <h3>${text.projectThree.technologiesTitle}</h3>
                     <p>${text.projectThree.technologies}</p>
                     
                     <h3>${text.projectThree.learningTitle}</h3>
@@ -209,43 +209,44 @@ function renderMyWork() {
 renderMyWork();
 
 function renderReferences() {
+    let text = translations[currentLanguage].references;
     let referencesSection = document.getElementById("references");
     referencesSection.classList.add("references-section");
     referencesSection.innerHTML = `
-        <h2 class="references-title">References</h2>
+        <h2 class="references-title">${text.title}</h2>
         <div class="mobile-text">
-            <h3>Teamplayer gesucht?</h3>
-            <p>Was meine Kollegen über mich sagen</p>
+            <h3>${text.mobile.title}</h3>
+            <p>${text.mobile.subtitle}</p>
         </div>
         <div class="reference-grid">
             <div class="grid-item">
                 <div class="reference-item">
-                    <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+                    <p>"${text.referenceOne.text}"</p>
                 </div>
                 <div class="separator"></div>
                 <div class="project-item">
-                    <p>Name Nachname</p>
-                    <p> Project irgendwas</p>
+                    <p>${text.referenceOne.name}</p>
+                    <p>${text.referenceOne.project}</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="reference-item">
-                    <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+                    <p>"${text.referenceTwo.text}"</p>
                 </div>
                 <div class="separator"></div>
                 <div class="project-item">
-                    <p>Name Nachname</p>
-                    <p>Project irgendwas</p>
+                    <p>${text.referenceTwo.name}</p>
+                    <p>${text.referenceTwo.project}</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="reference-item">
-                    <p>‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.’’</p>
+                    <p>"${text.referenceThree.text}"</p>
                 </div>
                 <div class="separator"></div>
                 <div class="project-item">
-                    <p>Name Nachname</p>
-                    <p>Project irgendwas</p>
+                    <p>${text.referenceThree.name}</p>
+                    <p>${text.referenceThree.project}</p>
                 </div>
             </div>
         </div>

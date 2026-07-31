@@ -114,23 +114,23 @@ const translations = {
                 subtitle: "Was meine Kollegen über mich sagen"
             },
 
-            referenceOne: {
-                text: "'Michael is a reliable and friendly person. Work in a structured way and write clear code. I recommend him as a colleague.''",
-                name: "Name Nachname",
-                project: "Project irgendwas"
-            },
+                referenceOne: {
+                    text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
+                    name: "Marc Kletzter",
+                    project: "Projekt Join"
+                },
 
-            referenceTwo: {
-                text: "...",
-                name: "Name Nachname",
-                project: "Project irgendwas"
-            },
+                referenceTwo: {
+                    text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
+                    name: "Liane Schubert",
+                    project: "Projekt Join"
+                },
 
-            referenceThree: {
-                text: "...",
-                name: "Name Nachname",
-                project: "Project irgendwas"
-            }
+                referenceThree: {
+                    text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
+                    name: "Marcel Kleiber",
+                    project: "Projekt Join"
+                }
         },
 
             contact: {
@@ -291,21 +291,21 @@ const translations = {
                 },
 
                 referenceOne: {
-                    text: "...",
-                    name: "Name Surname",
-                    project: "Project ..."
+                    text: "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
+                    name: "Marc Kletzter",
+                    project: "Project Join"
                 },
 
                 referenceTwo: {
-                    text: "...",
-                    name: "Name Surname",
-                    project: "Project ..."
+                    text: "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
+                    name: "Liane Schubert",
+                    project: "Project Join"
                 },
 
                 referenceThree: {
-                    text: "...",
-                    name: "Name Surname",
-                    project: "Project ..."
+                    text: "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague..",
+                    name: "Marcel Kleiber",
+                    project: "Project Join"
                 }
             },
 
