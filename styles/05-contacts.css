@@ -262,12 +262,12 @@
     display: none;
 }
 
-input.error,
-textarea.error {
-    border: 1px solid #ff4b4b;
+.contact-form input.error,
+.contact-form textarea.error {
+    border: 1px solid #fd2e12;
 }
 
-input.valid,
-textarea.valid {
-    border: 1px solid var(--highlight-main);
+.contact-form input.valid,
+.contact-form textarea.valid {
+    border-color: var(--highlight-main);
 }

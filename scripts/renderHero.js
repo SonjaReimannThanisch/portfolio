@@ -156,6 +156,7 @@ function switchLanguage(language) {
     renderMyWork();
     renderReferences();
     renderContact();
+    initContactForm();
     switchLanguageLegals();
     closeMobileMenu?.();
 }

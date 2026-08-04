@@ -144,6 +144,17 @@ function addContactFieldValidation(form) {
     });
 }
 
+function validateContactForm(form) {
+    let fields = getContactFields(form);
+    fields.forEach(updateFieldValidationState);
+}
+
+function getContactFields(form) {
+    return form.querySelectorAll(
+        'input:not([type="checkbox"]), textarea'
+    );
+}
+
 function updateFieldValidationState(field) {
     let isValid = field.checkValidity();
 
@@ -151,9 +162,15 @@ function updateFieldValidationState(field) {
     field.classList.toggle("error", !isValid);
 }
 
+function isContactFormInvalid(form) {
+    return !form.checkValidity();
+}
+
 async function submitContactForm(event) {
     event.preventDefault();
     let form = event.target;
+    validateContactForm(form);
+    isContactFormInvalid(form);
     let submitButton = form.querySelector('button[type="submit"]');
     setSubmitButtonLoading(submitButton);
     let success = await sendContactForm(form);
@@ -180,23 +197,27 @@ function handleContactFormResponse(success, form, submitButton) {
 }
 
 function setSubmitButtonLoading(button) {
+    let text = translations[currentLanguage].contact.form;
     button.disabled = true;
-    button.textContent = "Sending...";
+    button.textContent = text.sending;
 }
 
 function showContactError(button) {
+    let text = translations[currentLanguage].contact.form;
     button.disabled = false;
-    button.textContent = "Send";
+    button.textContent = text.send;
 }
 
 function showContactSuccess(form, button) {
+    let text = translations[currentLanguage].contact.form;
     form.reset();
-    button.textContent = "✓ Thank you!";
+    button.textContent = text.success;
     button.disabled = true;
 }
 
 function updateContactSubmitButton(form, submitButton) {
-    submitButton.textContent = "Send";
+    let text = translations[currentLanguage].contact.form;
+    submitButton.textContent = text.send;
     submitButton.disabled = !form.checkValidity();
 }
 
