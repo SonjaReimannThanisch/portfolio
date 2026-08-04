@@ -16,7 +16,6 @@ function openMobileMenu() {
     const overlay = getMobileMenuOverlay();
     if (!overlay) {return;}
     overlay.classList.add("open");
-    console.log(overlay.className);
 }
 
 function closeMobileMenu() {
@@ -38,6 +37,9 @@ function toggleMobileMenu() {
 }
 
 function getBurgerMenuOverlay() {
+    let text = translations[currentLanguage].sidebar;
+    let activeDe = currentLanguage === "de" ? "active" : "";
+    let activeEn = currentLanguage === "en" ? "active" : "";
     return `
         <div class="mobile-menu-overlay">
 
@@ -48,25 +50,25 @@ function getBurgerMenuOverlay() {
 
             <nav>
                 <a class="mobile-nav-link" href="index.html#about" onclick="closeMobileMenu()">
-                    Why me
+                    ${text.about}
                 </a>
 
                 <a class="mobile-nav-link" href="index.html#skills" onclick="closeMobileMenu()">
-                    Skills
+                    ${text.skills}
                 </a>
 
                 <a class="mobile-nav-link" href="index.html#projects" onclick="closeMobileMenu()">
-                    My Work
+                    ${text.projects}
                 </a>
 
                 <a class="mobile-nav-link" href="index.html#contact" onclick="closeMobileMenu()">
-                    Contact
+                    ${text.contact}
                 </a>
             </nav>
             <div class="mobile-menu-language">
-                <button class="language-link">DE</button>
+                <button class="language-link ${activeDe}" onclick="switchLanguage('de')">DE</button>
                 <span>|</span>
-                <button class="language-link">EN</button>
+                <button class="language-link ${activeEn}" onclick="switchLanguage('en')">EN</button>
             </div>
         </div>
     `;

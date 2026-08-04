@@ -151,4 +151,5 @@ function switchLanguage(language) {
     renderMyWork();
     renderReferences();
     renderContact();
+    closeMobileMenu?.();
 }

@@ -263,6 +263,7 @@ renderReferences();
 
 function renderContact() {
     let text = translations[currentLanguage].contact;
+    let footerText = translations[currentLanguage].footer;
     let contactsection = document.getElementById("contact");
     contactsection.classList.add("contact-section");
     contactsection.innerHTML = `
@@ -331,12 +332,12 @@ function renderContact() {
                 </div>
 
             <div class="footer-links">
-                <a href="index.html?legal=impressum" target="_blank">Impressum</a>
-                <a href="index.html?legal=privacy" target="_blank">Datenschutz</a>
+                <a href="index.html?legal=impressum" target="_blank">${footerText.legalNotice}</a>
+                <a href="index.html?legal=privacy" target="_blank">${footerText.privacyPolicy}</a>
             </div>
 
             <p class="footer-copyright">
-                © Sonja Reimann-Thanisch 2026
+                ${footerText.copyright}
             </p>
 
         </div>

@@ -166,7 +166,9 @@ const translations = {
             },
 
         footer: {
-
+            legalNotice: "Impressum",
+            privacyPolicy: "Datenschutz",
+            copyright: "© Sonja Reimann-Thanisch 2026"
         },
 
         legal: {
@@ -342,8 +344,12 @@ const translations = {
         },
 
         footer: {
-
+          legalNotice: "Legal notice",
+          privacyPolicy: "Privacy policy",
+          copyright: "© Sonja Reimann-Thanisch 2026"
         },
+
+
 
         legal: {
 
