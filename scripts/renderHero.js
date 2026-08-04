@@ -149,7 +149,6 @@ function switchLanguageLegals() {
 }
 
 function switchLanguage(language) {
-    console.log("switch", language);
     currentLanguage = language;
     renderHero();
     renderWhyMe();
