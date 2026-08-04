@@ -168,16 +168,87 @@ const translations = {
         footer: {
             legalNotice: "Impressum",
             privacyPolicy: "Datenschutz",
-            copyright: "© Sonja Reimann-Thanisch 2026"
+            copyright: "© Sonja Reimann-Thanisch 2026",
+            backToPortfolio: "Zurück zum Portfolio",
+            legalsEmail: "E-mail: sonja.reimann.thanisch@gmail.com",
+            legalsPhone: "Tel: 0178 828 65 41"
         },
 
         legal: {
+            title: "Impressum",
+            content: `
+                <p>
+                    Sonja Reimann-Thanisch<br>
+                    Uerdinger Str. 782<br>
+                    47800 Krefeld
+                </p>
+                </br>
+                <p>
+                    Telefon: 0178 8286541<br>
+                    E-Mail: sonja.reimann.thanisch@gmail.com
+                </p>
 
+                <h4>Datenschutzerklärung</h4>
+                <h4>Datenschutz auf einen Blick</h4>
+                <p>
+                    Diese Website dient der Präsentation meines Portfolios als Frontend-Entwicklerin.
+                    Beim Besuch dieser Website werden nur die Daten verarbeitet, die für den technischen Betrieb,
+                    die Darstellung der Inhalte und die Kontaktaufnahme erforderlich sind.
+                </p>
+                <p>
+                    Diese Website verwendet keine Cookies, kein Tracking, keine Analyse-Tools, keinen Newsletter
+                    und keine Benutzerkonten.
+                </p>
+                <h4>Hosting</h4>
+                <p>
+                    Diese Website wird über Netlify gehostet. Beim Aufruf der Website können durch den Hosting-Anbieter
+                    technisch notwendige Daten verarbeitet werden. Dazu gehören zum Beispiel IP-Adresse, Zeitpunkt des Aufrufs,
+                    Browserinformationen und angeforderte Dateien.
+                </p>
+                <p>
+                    Die Verarbeitung erfolgt, um die Website sicher, stabil und fehlerfrei bereitzustellen.
+                    Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
+                </p>
+            `
         },
 
         privacy: {
+            title: "Kontaktformular",
+            content: `
+                <p>
+                    Wenn Sie mir über das Kontaktformular eine Nachricht senden, werden die von Ihnen eingegebenen Daten
+                    zur Bearbeitung Ihrer Anfrage verwendet. Dazu können Name, E-Mail-Adresse und Nachrichtentext gehören.
+                </p>
+                <p style="margin-top: 0;">
+                    Diese Daten werden nicht ohne Ihre Einwilligung weitergegeben. Die Verarbeitung erfolgt zur Bearbeitung
+                    Ihrer Anfrage auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.
+                </p>
 
-        }
+                <h4>GitHub und externe Links</h4>
+                <p>
+                    Auf dieser Website können Links zu externen Angeboten wie GitHub enthalten sein. Wenn Sie einen solchen Link
+                    anklicken, verlassen Sie diese Website. Für die Verarbeitung personenbezogener Daten auf externen Seiten
+                    ist der jeweilige Anbieter verantwortlich.
+                </p>
+                <h4>Lokale Schriftarten und Icons</h4>
+                <p>
+                    Die auf dieser Website verwendeten Schriftarten und Icons werden lokal eingebunden oder als lokale Bilddateien
+                    genutzt. Beim Laden dieser Inhalte wird keine Verbindung zu externen Schriftanbieter-Servern hergestellt.
+                </p>
+
+                <h4>Ihre Rechte</h4>
+                <p>
+                    Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch
+                    gegen die Verarbeitung Ihrer personenbezogenen Daten. Außerdem haben Sie das Recht, sich bei einer zuständigen
+                    Datenschutzaufsichtsbehörde zu beschweren.
+                </p>
+                <p style="margin-top: 0;">
+                    Bei Fragen zum Datenschutz können Sie sich jederzeit an mich wenden.
+                </p>
+
+                <p>Stand: 15. Juni 2026</p>
+            `
+        },
 
     },
 
@@ -344,19 +415,89 @@ const translations = {
         },
 
         footer: {
-          legalNotice: "Legal notice",
-          privacyPolicy: "Privacy policy",
-          copyright: "© Sonja Reimann-Thanisch 2026"
+            legalNotice: "Legal notice",
+            privacyPolicy: "Privacy policy",
+            copyright: "© Sonja Reimann-Thanisch 2026",
+            backToPortfolio: "back to Portfolio",
+            legalsEmail: "E-mail: sonja.reimann.thanisch@gmail.com",
+            legalsPhone: "Tel: 0178 828 65 41"
         },
-
 
 
         legal: {
+            title: "Legal Notice",
+            content: `
+                <p>
+                    Sonja Reimann-Thanisch<br>
+                    Uerdinger Str. 782<br>
+                    47800 Krefeld
+                </p>
+                </br>
+                <p>
+                    Telephone: 0178 8286541<br>
+                    Email: sonja.reimann.thanisch@gmail.com
+                </p>
 
+                <h4>Privacy Policy</h4>
+                <h4>Privacy at a glance</h4>
+                <p>
+                    This website serves to showcase my portfolio as a front-end developer.
+                    When you visit this website, only the data necessary for its technical operation,
+                    the display of content and for contacting me is processed.
+                </p>
+                <p>
+                    This website does not use cookies, tracking, analytics tools, newsletters
+                    or user accounts.
+                </p>
+                <h4>Hosting</h4>
+                <p>
+                    This website is hosted via Netlify. When you access the website, the hosting provider may
+                    process data that is technically necessary. This includes, for example, your IP address, the time of access,
+                    browser information and the files requested.
+                </p>
+                <p>
+                    This processing is carried out to ensure the website is provided securely, reliably and without errors.
+                    The legal basis is Article 6(1)(f) of the GDPR.
+                </p>
+            `
         },
 
         privacy: {
+            title: "Privacy Policy",
+            content: `
+                <p>
+                    If you send me a message via the contact form, the data you enter
+                    will be used to process your enquiry. This may include your name, email address and the text of your message.
+                </p>
+                <p style="margin-top: 0;">
+                    This data will not be passed on without your consent. The processing is carried out to handle
+                    your enquiry on the basis of Article 6(1)(b) of the GDPR or Article 6(1)(f) of the GDPR.
+                </p>
 
+                <h4>GitHub and external links</h4>
+                <p>
+                    This website may contain links to external services such as GitHub. If you click on such a link,
+                    you will leave this website. The respective provider is responsible for the processing of personal data on external sites
+                    .
+                </p>
+                <h4>Local fonts and icons</h4>
+                <p>
+                    The fonts and icons used on this website are embedded locally or used as local image files
+                    . No connection is established to external font provider servers when this content is loaded.
+                </p>
+                                <h4>Your rights</h4>
+                <p>
+                    You have the right to access, rectify, erase, restrict the processing of, and object
+                    to the processing of your personal data. You also have the right to lodge a complaint with a competent
+                    data protection supervisory authority.
+                </p>
+                <p style="margin-top: 0;">
+                    If you have any questions regarding data protection, please feel free to contact me at any time.
+                </p>
+
+                <p>Last updated: 15 June 2026</p>
+
+            `
         },
     }
 

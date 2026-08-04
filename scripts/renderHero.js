@@ -143,7 +143,13 @@ function getMobileHeader() {
     `;
 }
 
+function switchLanguageLegals() {
+    if (document.getElementById("legal-view"). innerHTML) 
+        openLegalFromUrl();
+}
+
 function switchLanguage(language) {
+    console.log("switch", language);
     currentLanguage = language;
     renderHero();
     renderWhyMe();
@@ -151,5 +157,6 @@ function switchLanguage(language) {
     renderMyWork();
     renderReferences();
     renderContact();
+    switchLanguageLegals();
     closeMobileMenu?.();
 }

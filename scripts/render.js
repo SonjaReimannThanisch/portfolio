@@ -347,6 +347,9 @@ function renderContact() {
 renderContact();
 
 function showLegalView(startPage) {
+    let legal = translations[currentLanguage].legal;
+    let privacy = translations[currentLanguage].privacy;
+    let footerText = translations[currentLanguage].footer;
     document.getElementById("portfolio").style.display = "none";
     document.getElementById("legal-view").innerHTML = `
         <section id="legal-slider" class="legal-slider">
@@ -362,27 +365,27 @@ function showLegalView(startPage) {
             <a class="portfolio-back-link" href="index.html#hero">
                 <img src="./assets/icons/arrow_back.png" alt="Zurück zum Portfolio">
             </a>
-            <h2 class="legal-title">Legal Notice</h2>
+            <h2 class="legal-title">${legal.title}</h2>
             <div class="legal-content">
-                ${LEGAL_NOTICE_TEXT}
+                ${legal.content}
             </div>
         </div>
             </article>
             <article id="privacy" class="legal-page privacy-page">
                 <div class="legal-content">
-                    ${PRIVACY_POLICY_TEXT_ONE}
+                    ${privacy.content}
                 </div>
                 <div class="legal-contact-info">
                     <div class="contact-item">
                         <i class="bi bi-envelope-fill"></i>
                         <a href="mailto:sonja.reimann.thanisch@gmail.com">
-                            E-mail: sonja.reimann.thanisch@gmail.com
+                            ${footerText.legalsEmail}
                         </a>
                     </div>
                     <div class="contact-item">
                         <i class="bi bi-telephone-fill"></i>
                         <a href="tel:+491788286541">
-                            Tel: 0178 828 65 41
+                            ${footerText.legalsPhone}
                         </a>
                     </div>
                 </div>
@@ -411,9 +414,9 @@ function showLegalView(startPage) {
                         </a>
                     </div>
                     <button onclick="backToPortfolio()" target="_blank">
-                        Zurück zum Portfolio
+                        ${footerText.backToPortfolio}
                     </button>
-                    <p>© Sonja Reimann-Thanisch 2026</p>
+                    <p>${footerText.copyright}</p>
                 </aside>
 
             </article>
