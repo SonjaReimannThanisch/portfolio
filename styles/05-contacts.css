@@ -108,9 +108,13 @@
     font-size: 18px;
 }
 
-.contact-form label:has(input:checked) + button {
+.contact-form button.active {
     background-color: var(--highlight-main);
     color: var(--text-dark);
+    cursor: pointer;
+}
+
+.contact-form button.active:hover {
     cursor: pointer;
 }
 
@@ -137,10 +141,6 @@
 
 .contact-form button:hover {
     cursor: not-allowed;
-}
-
-.contact-form label:has(input:checked) + button:hover {
-    cursor: pointer;
 }
 
 .form-message {
@@ -270,4 +270,20 @@
 .contact-form input.valid,
 .contact-form textarea.valid {
     border-color: var(--highlight-main);
+}
+
+.contact-form input.error::placeholder,
+.contact-form textarea.error::placeholder {
+    color: #fd2e12;
+    opacity: 1;
+}
+
+.privacy-error {
+    margin: -12px 0 0 28px;
+    color: #fd2e12;
+    font-size: 15px;
+}
+
+.contact-form input[type="checkbox"].error {
+    border-color: #fd2e12;
 }

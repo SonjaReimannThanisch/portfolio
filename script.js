@@ -131,12 +131,13 @@ function initContactForm() {
     addContactFieldValidation(form);
     form.addEventListener("input", () => {
         updateContactSubmitButton(form, submitButton);
+        updatePrivacyValidationState(form);
     });
     form.addEventListener("submit", submitContactForm);
 }
 
 function addContactFieldValidation(form) {
-    let fields = form.querySelectorAll("input, textarea");
+    let fields = getContactFields(form);
     fields.forEach((field) => {
         field.addEventListener("blur", () => {
             updateFieldValidationState(field);
@@ -147,6 +148,26 @@ function addContactFieldValidation(form) {
 function validateContactForm(form) {
     let fields = getContactFields(form);
     fields.forEach(updateFieldValidationState);
+    updatePrivacyValidationState(form);
+    return form.checkValidity();
+}
+
+function updatePrivacyValidationState(form) {
+    let checkbox = form.querySelector('input[name="privacy"]');
+    let errorElement = form.querySelector(".privacy-error");
+    updatePrivacyErrorText(checkbox, errorElement);
+    updatePrivacyErrorClass(checkbox);
+}
+
+function updatePrivacyErrorText(checkbox, errorElement) {
+    let validationText = translations[currentLanguage].validation;
+    errorElement.textContent = checkbox.checked
+        ? ""
+        : validationText.privacyRequired;
+}
+
+function updatePrivacyErrorClass(checkbox) {
+    checkbox.classList.toggle("error", !checkbox.checked);
 }
 
 function getContactFields(form) {
@@ -158,19 +179,27 @@ function getContactFields(form) {
 function updateFieldValidationState(field) {
     let isValid = field.checkValidity();
 
+    updateFieldValidationClasses(field, isValid);
+    updateFieldPlaceholder(field, isValid);
+}
+
+function updateFieldValidationClasses(field, isValid) {
     field.classList.toggle("valid", isValid);
     field.classList.toggle("error", !isValid);
 }
 
-function isContactFormInvalid(form) {
-    return !form.checkValidity();
+function updateFieldPlaceholder(field, isValid) {
+    field.placeholder = isValid
+        ? field.dataset.defaultPlaceholder
+        : field.dataset.errorMessage;
 }
 
 async function submitContactForm(event) {
     event.preventDefault();
     let form = event.target;
-    validateContactForm(form);
-    isContactFormInvalid(form);
+    if (!validateContactForm(form)) {
+        return;
+    }
     let submitButton = form.querySelector('button[type="submit"]');
     setSubmitButtonLoading(submitButton);
     let success = await sendContactForm(form);
@@ -217,8 +246,10 @@ function showContactSuccess(form, button) {
 
 function updateContactSubmitButton(form, submitButton) {
     let text = translations[currentLanguage].contact.form;
+    let checkbox = form.querySelector('input[name="privacy"]');
     submitButton.textContent = text.send;
-    submitButton.disabled = !form.checkValidity();
+    submitButton.disabled = false;
+    submitButton.classList.toggle("active", checkbox.checked);
 }
 
 initContactForm();

@@ -269,12 +269,12 @@ function renderContact() {
     contactsection.innerHTML = `
         <h2 class="contact-title">${text.title}</h2>
         <div id="contact" class="contact-content">
-            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xwvgagbw" method="POST">
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xwvgagbw" method="POST" novalidate>
                 <div class="form-message form-success" data-fs-success></div>
                 <div class="form-message form-error" data-fs-error></div>
-                <input type="text" name="name" placeholder="${text.form.name}" data-fs-field required>
-                <input type="email" name="email" placeholder="${text.form.email}" data-fs-field required>
-                <textarea name="message" placeholder="${text.form.message}" data-fs-field required></textarea>
+                <input type="text" name="name" placeholder="${text.form.name}" data-default-placeholder="${text.form.name}" data-error-message="${translations[currentLanguage].validation.nameRequired}" data-fs-field required>
+                <input type="email" name="email" placeholder="${text.form.email}" data-default-placeholder="${text.form.email}" data-error-message="${translations[currentLanguage].validation.emailRequired}" data-fs-field required>
+                <textarea name="message" placeholder="${text.form.message}" data-default-placeholder="${text.form.message}" data-error-message="${translations[currentLanguage].validation.messageRequired}" data-fs-field required></textarea>                
                 <label>
                     <input type="checkbox" name="privacy" required>
                     <span>
@@ -285,7 +285,8 @@ function renderContact() {
                         ${text.form.privacyAfter}
                     </span>
                 </label>
-                <button type="submit" data-fs-submit-btn disabled>
+                <p class="privacy-error"></p>
+                <button type="submit" data-fs-submit-btn>
                     ${text.form.send}
                 </button>
             </form>

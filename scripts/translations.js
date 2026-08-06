@@ -209,7 +209,7 @@ const translations = {
                     Die Verarbeitung erfolgt, um die Website sicher, stabil und fehlerfrei bereitzustellen.
                     Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
                 </p>
-            `
+            `,
         },
 
         privacy: {
@@ -249,6 +249,13 @@ const translations = {
                 <p>Stand: 15. Juni 2026</p>
             `
         },
+
+        validation: {
+            nameRequired: "Dein Name ist erforderlich",
+            emailRequired: "Deine E-Mail ist erforderlich",
+            messageRequired: "Deine Nachricht ist erforderlich",
+            privacyRequired: "Bitte akzeptiere die Datenschutzerklärung."
+        }
 
     },
 
@@ -499,6 +506,13 @@ const translations = {
 
             `
         },
+
+        validation: {
+            nameRequired: "Your name is required",
+            emailRequired: "Your email is required",
+            messageRequired: "Your message is required",
+            privacyRequired: "Please accept the privacy policy."
+        }
     }
 
 };
