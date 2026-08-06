@@ -283,3 +283,7 @@ section {
 .mobile-header {
     display: none;
 }
+
+.mobile-menu-overlay nav {
+    display: none;
+}

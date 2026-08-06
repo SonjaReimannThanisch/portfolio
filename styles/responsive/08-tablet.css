@@ -1,0 +1,46 @@
+@media (min-width: 769px) and (max-width: 1280px) {
+    .hero-section,
+    .why-me-section,
+    .skills-section,
+    .work-section,
+    .references-section,
+    .contact-section {
+        width: 100%;
+        max-width: none;
+        min-height: 100vh;
+        padding-left: clamp(48px, 7vw, 90px);
+        padding-right: clamp(48px, 7vw, 90px);
+        overflow: visible;
+    }
+
+    .why-me-section,
+    .skills-section,
+    .work-section,
+    .references-section,
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .why-me-title,
+    .skills-title,
+    .work-title,
+    .references-title,
+    .contact-title {
+        writing-mode: horizontal-tb;
+        transform: none;
+        width: auto;
+        align-self: flex-start;
+        margin: 0 0 32px;
+        font-size: clamp(40px, 5vw, 54px);
+    }
+
+    .why-me-content,
+    .skills-content,
+    .project-grid,
+    .reference-grid,
+    .contact-content {
+        width: 100%;
+        max-width: 100%;
+    }
+}
