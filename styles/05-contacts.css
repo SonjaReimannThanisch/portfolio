@@ -114,10 +114,6 @@
     cursor: pointer;
 }
 
-.contact-form button.active:hover {
-    cursor: pointer;
-}
-
 .contact-form button {
     align-self: flex-end;
     width: 110px;
@@ -137,23 +133,6 @@
 
 .contact-form button:hover {
     cursor: not-allowed;
-}
-
-.contact-form button:hover {
-    cursor: not-allowed;
-}
-
-.form-message {
-    min-height: 24px;
-    font-size: 15px;
-}
-
-.form-success {
-    color: var(--highlight-main);
-}
-
-.form-error {
-    color: #ff8f8f;
 }
 
 .contact-info {
