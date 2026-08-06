@@ -188,8 +188,8 @@ const translations = {
                     E-Mail: sonja.reimann.thanisch@gmail.com
                 </p>
 
-                <h4>Datenschutzerklärung</h4>
-                <h4>Datenschutz auf einen Blick</h4>
+                <h3>Datenschutzerklärung</h3>
+                <h3>Datenschutz auf einen Blick</h3>
                 <p>
                     Diese Website dient der Präsentation meines Portfolios als Frontend-Entwicklerin.
                     Beim Besuch dieser Website werden nur die Daten verarbeitet, die für den technischen Betrieb,
@@ -199,7 +199,7 @@ const translations = {
                     Diese Website verwendet keine Cookies, kein Tracking, keine Analyse-Tools, keinen Newsletter
                     und keine Benutzerkonten.
                 </p>
-                <h4>Hosting</h4>
+                <h3>Hosting</h3>
                 <p>
                     Diese Website wird über Netlify gehostet. Beim Aufruf der Website können durch den Hosting-Anbieter
                     technisch notwendige Daten verarbeitet werden. Dazu gehören zum Beispiel IP-Adresse, Zeitpunkt des Aufrufs,
@@ -224,19 +224,19 @@ const translations = {
                     Ihrer Anfrage auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.
                 </p>
 
-                <h4>GitHub und externe Links</h4>
+                <h3>GitHub und externe Links</h3>
                 <p>
                     Auf dieser Website können Links zu externen Angeboten wie GitHub enthalten sein. Wenn Sie einen solchen Link
                     anklicken, verlassen Sie diese Website. Für die Verarbeitung personenbezogener Daten auf externen Seiten
                     ist der jeweilige Anbieter verantwortlich.
                 </p>
-                <h4>Lokale Schriftarten und Icons</h4>
+                <h3>Lokale Schriftarten und Icons</h3>
                 <p>
                     Die auf dieser Website verwendeten Schriftarten und Icons werden lokal eingebunden oder als lokale Bilddateien
                     genutzt. Beim Laden dieser Inhalte wird keine Verbindung zu externen Schriftanbieter-Servern hergestellt.
                 </p>
 
-                <h4>Ihre Rechte</h4>
+                <h3>Ihre Rechte</h3>
                 <p>
                     Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch
                     gegen die Verarbeitung Ihrer personenbezogenen Daten. Außerdem haben Sie das Recht, sich bei einer zuständigen

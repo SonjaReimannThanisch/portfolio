@@ -93,8 +93,8 @@
     flex-shrink: 0;
 }
 
-.legal-content h4,
-.legal-content h4,
+.legal-content h3,
+.legal-content h3,
 .legal-column h3,
 .legal-column h3 {
     color: var(--highlight-main);

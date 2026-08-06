@@ -351,7 +351,7 @@ function showLegalView(startPage) {
     let footerText = translations[currentLanguage].footer;
     document.getElementById("portfolio").style.display = "none";
     document.getElementById("legal-view").innerHTML = `
-        <section id="legal-slider" class="legal-slider">
+        <main id="legal-slider" class="legal-slider">
             ${getMobileHeader()}
             
             <article id="impressum" class="legal-page">
@@ -419,7 +419,7 @@ function showLegalView(startPage) {
                 </aside>
 
             </article>
-        </section>
+        </main>
     `;
 
     document.getElementById(startPage).scrollIntoView();
