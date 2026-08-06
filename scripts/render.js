@@ -11,24 +11,24 @@ function renderWhyMe() {
             <div class="why-me-facts">
                 <div class="fact-card first" onclick="this.classList.toggle('active')">
                     <div class="fact-icon">
-                        <img class="icon-default" src="./assets/icons/location.png" alt="">
-                        <img class="icon-hover" src="./assets/icons/locationHover.png" alt="">
+                        <img class="icon-default" src="./assets/icons/location.png" alt="Location icon>
+                        <img class="icon-hover" src="./assets/icons/locationHover.png" alt="Location highlighted">
                     </div>
                     <p>${text.location}</p>
                 </div>
 
                 <div class="fact-card second" onclick="this.classList.toggle('active')">
                     <div class="fact-icon">
-                        <img class="icon-default" src="./assets/icons/Icon Remote.png" alt="">
-                        <img class="icon-hover" src="./assets/icons/remoteVector.png" alt="">
+                        <img class="icon-default" src="./assets/icons/Icon Remote.png" alt="Remote work icon">
+                        <img class="icon-hover" src="./assets/icons/remoteVector.png" alt="Remote work highlighted">
                     </div>
                     <p>${text.remote}</p>
                 </div>
 
                 <div class="fact-card third" onclick="this.classList.toggle('active')">
                     <div class="fact-icon">
-                        <img class="icon-default" src="./assets/icons/relocate.png" alt="">
-                        <img class="icon-hover" src="./assets/icons/reloacteHover.png" alt="">
+                        <img class="icon-default" src="./assets/icons/relocate.png" alt="Relocation icon">
+                        <img class="icon-hover" src="./assets/icons/reloacteHover.png" alt="Relocation highlighted">
                     </div>
                     <p>${text.relocation}</p>
                 </div>
@@ -52,17 +52,17 @@ function renderMySkills() {
             ${text.text}
         </p>
         <div class="skills-grid">
-            <img src="./assets/icons/Property 1=Angular.png">
-            <img src="./assets/icons/Property 1=HTML.png">
-            <img src="./assets/icons/Property 1=CSS.png">
-            <img src="./assets/icons/Property 1=JavaScript.png">
-            <img src="./assets/icons/Property 1=TypeScipt.png">
-            <img src="./assets/icons/Property 1=React.png">
-            <img src="./assets/icons/Property 1=Firebase.png">
-            <img src="./assets/icons/Property 1=Rest-Api.png">
-            <img src="./assets/icons/Property 1=GIT.png">
-            <img src="./assets/icons/Property 1=Scrum.png">
-            <img class="challenge-icon" src="./assets/icons/Property 1=Challenge me.png">
+            <img src="./assets/icons/Property 1=Angular.png" alt="Angular">
+            <img src="./assets/icons/Property 1=HTML.png" alt="HTML">
+            <img src="./assets/icons/Property 1=CSS.png" alt="CSS">
+            <img src="./assets/icons/Property 1=JavaScript.png" alt="JavaScript">
+            <img src="./assets/icons/Property 1=TypeScipt.png" alt="TypeScript">
+            <img src="./assets/icons/Property 1=React.png" alt="React">
+            <img src="./assets/icons/Property 1=Firebase.png" alt="Firebase">
+            <img src="./assets/icons/Property 1=Rest-Api.png" alt="REST API">
+            <img src="./assets/icons/Property 1=GIT.png" alt="Git">
+            <img src="./assets/icons/Property 1=Scrum.png" alt="Scrum">
+            <img class="challenge-icon" src="./assets/icons/Property 1=Challenge me.png" alt="Challenge me">
             <p class="skills-side-text">
                 ${text.sideText}
             </p>
@@ -105,7 +105,7 @@ function renderMyWork() {
                 </div>
             </div>
             <div class="project-right">
-                <img src="./assets/img/Property 1=Join.png" alt="Join App">
+                <img src="./assets/img/Property 1=Join.png" alt="Screenshot of the Join project">
                 
                 <div class="project-buttons">
                     <a href="https://github.com/SonjaReimannThanisch/project-join" target="_blank">${text.projectOne.github}</a>
@@ -142,7 +142,7 @@ function renderMyWork() {
                 </div>
             </div>
             <div class="project-right">
-                <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Join App">
+                <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Screenshot of the Sharkie game">
             
                 <div class="project-buttons">
                     <a href="https://github.com/SonjaReimannThanisch/Sharky_recover" target="_blank">${text.projectTwo.github}</a>
@@ -179,7 +179,7 @@ function renderMyWork() {
                 </div>
             </div>
             <div class="project-right">
-                <img src="./assets/img/Screenshot DA Bubble.png" alt="Join App">
+                <img src="./assets/img/Screenshot DA Bubble.png" alt="Screenshot of DA Bubble">
             </div>
             <button
                 class="project-toggle"
