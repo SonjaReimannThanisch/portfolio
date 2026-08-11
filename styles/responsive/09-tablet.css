@@ -1,0 +1,126 @@
+@media (min-width: 769px) and (max-width: 1280px) {
+    .hero-section,
+    .why-me-section,
+    .skills-section,
+    .work-section,
+    .references-section,
+    .contact-section {
+        width: 100%;
+        max-width: none;
+        min-height: 100vh;
+        padding-left: clamp(48px, 7vw, 90px);
+        padding-right: clamp(48px, 7vw, 90px);
+        overflow: visible;
+    }
+
+    .why-me-section,
+    .skills-section,
+    .work-section,
+    .references-section,
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .why-me-title,
+    .skills-title,
+    .work-title,
+    .references-title,
+    .contact-title {
+        writing-mode: horizontal-tb;
+        transform: none;
+        width: auto;
+        align-self: flex-start;
+        margin: 0 0 32px;
+        font-size: clamp(40px, 5vw, 54px);
+    }
+
+    .why-me-content,
+    .skills-content,
+    .project-grid,
+    .reference-grid,
+    .contact-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-section {
+        min-height: 100vh;
+        padding: 80px 48px 48px;
+        overflow: hidden;
+    }
+
+   .hero-content {
+        width: 100%;
+        min-height: calc(100vh - 128px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: visible;
+    }
+
+    .hero-image {
+        position: static;
+        transform: none;
+        width: clamp(300px, 42vw, 420px);
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .hero-naming {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 32px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .designation {
+        order: 1;
+    }
+
+    .name {
+        width: 100%;
+        order: 2;
+    }
+
+    .hero-location {
+        display: block;
+        order: 3;
+        margin-top: 12px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .name h1 {
+        margin: 8px 0 0;
+        font-size: clamp(34px, 4.5vw, 48px);
+        line-height: 1.1;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .designation h2 {
+        margin: 0;
+        font-size: clamp(24px, 3vw, 34px);
+        line-height: 1.15;
+        text-align: center;
+        -webkit-text-stroke-width: 0;
+        color: var(--highlight-main);
+        text-transform: uppercase;
+    }
+
+    .social-links,
+    .next-section-link {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+}
