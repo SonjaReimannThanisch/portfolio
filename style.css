@@ -25,11 +25,12 @@
     --text-light: #FFFFFF;
 
     --border-color: rgba(56, 209, 196, 0.3);
+    --sidebar-width: 172px;
 }
 
 main {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
@@ -43,14 +44,14 @@ body {
 
 .hero-section {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     position: relative;
     overflow: hidden;
 }
 
 .hero-sidebar {
-    width: 172px;
+    width: var(--sidebar-width);
     height: 100vh;
     background-color: var(--highlight-main);
     color: var(--text-dark);
@@ -71,7 +72,7 @@ body {
 }
 
 aside {
-    width: 172px;
+    width: var(--sidebar-width);
     height: 900px;
     background-color: var(--highlight-main);
     color: var(--text-dark);
@@ -95,8 +96,9 @@ aside {
 
 .hero-image {
     position: absolute;
-    height: 90vh;
     width: auto;
+    height: clamp(520px, 82vh, 820px);
+    max-width: min(52vw, 720px);
     left: 48%;
     bottom: 0;
     transform: translateX(-50%);
@@ -188,11 +190,12 @@ section {
 .hero-naming {
     position: absolute;
     left: 50%;
-    bottom: 180px;
+    bottom: clamp(90px, 18vh, 180px);
     transform: translateX(-50%);
     text-align: end;
     z-index: 2;
     width: max-content;
+    max-width: calc(100vw - var(--sidebar-width) - 120px);
 }
 
 .hero-location {
@@ -208,7 +211,7 @@ section {
 .name h1 {
     margin: 0;
     font-family: "Quantico", sans-serif;
-    font-size: 64px;
+    font-size: clamp(42px, 4.5vw, 64px);
     font-weight: 700;
     line-height: 1;
     color: var(--highlight-main);
@@ -216,9 +219,9 @@ section {
 }
 
 .designation h2 {
-    margin-top: 24px;
+    margin-top: clamp(12px, 2vh, 24px);
     font-family: "Quantico", sans-serif;
-    font-size: 48px;
+    font-size: clamp(30px, 3.4vw, 48px);
     font-weight: 400;
     color: transparent;
     -webkit-text-stroke: 1px var(--highlight-main);
@@ -227,7 +230,7 @@ section {
 .social-links {
     position: fixed;
     top: 53px;
-    right: 150px;
+    right: clamp(48px, 8vw, 150px);
     z-index: 100;
 }
 
