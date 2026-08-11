@@ -36,12 +36,12 @@
         height: max-content;
     }
 
-    section {
+    #portfolio > section {
         width: 100%;
         height: auto;
         min-height: auto;
     }
-
+    
     .hero-section,
     .why-me-section,
     .skills-section,
