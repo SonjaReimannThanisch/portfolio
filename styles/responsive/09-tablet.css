@@ -123,6 +123,59 @@
         display: block;
     }
 
+    #portfolio > .skills-section {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 64px;
+    }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .skills-text {
+        max-width: 100%;
+        font-size: clamp(16px, 1.7vw, 20px);
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(70px, 1fr));
+        gap: 22px 24px;
+        width: 100%;
+    }
+
+    .skills-grid img {
+        width: clamp(64px, 7vw, 82px);
+        height: auto;
+        justify-self: center;
+    }
+
+    .skills-side-text {
+        width: 100%;
+        grid-column: 1 / -1;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .skills-btn {
+        width: 180px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-top: 20px;
+        border-radius: 999px;
+        background-color: var(--highlight-main);
+        color: #4A4A4A;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
 }
 
 
@@ -198,6 +251,42 @@
     .next-section-link {
         display: none;
     }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .skills-text {
+        max-width: 100%;
+        font-size: clamp(16px, 1.7vw, 20px);
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(70px, 1fr));
+        gap: 28px 24px;
+        width: 100%;
+    }
+
+    .skills-grid img {
+        width: clamp(64px, 7vw, 82px);
+        height: auto;
+        justify-self: center;
+    }
+
+    .skills-side-text {
+        width: 100%;
+        grid-column: 1 / -1;
+        margin-top: 8px;
+    }
+
+    .skills-btn {
+        display: flex;
+        align-self: center;
+        margin-top: 32px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
@@ -231,5 +320,9 @@
 
     .name h1 {
         white-space: nowrap;
+    }
+
+    .skills-section {
+        padding-top: 48px;
     }
 }

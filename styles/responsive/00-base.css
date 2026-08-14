@@ -18,6 +18,16 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1280px) {
+    .why-me-next-link,
+    .skills-next-link,
+    .projects-next-link,
+    .references-next-link,
+    .next-section-link {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
