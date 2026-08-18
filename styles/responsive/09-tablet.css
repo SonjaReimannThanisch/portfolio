@@ -44,6 +44,16 @@
         max-width: 100%;
     }
 
+    .why-me-section,
+    .skills-section,
+    .work-section,
+    .references-section {
+        min-height: 100vh;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
     .hero-section {
         min-height: 100vh;
         padding: 80px 48px 48px;
@@ -123,12 +133,6 @@
         display: block;
     }
 
-    #portfolio > .skills-section {
-        height: auto;
-        min-height: auto;
-        padding-bottom: 64px;
-    }
-
     .skills-content {
         display: flex;
         flex-direction: column;
@@ -166,7 +170,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        align-self: center;
+        align-self: flex-end;
         margin-top: 20px;
         border-radius: 999px;
         background-color: var(--highlight-main);
@@ -176,9 +180,29 @@
         text-decoration: none;
     }
 
+    .work-section {
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .work-grid {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-grid {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 32px;
+        padding-bottom: 34px;
+        box-sizing: border-box;
+    }
 }
-
-
 
 @media (min-width: 1281px) and (max-width: 1366px) and (min-height: 900px) {
     .hero-sidebar {

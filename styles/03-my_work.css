@@ -49,7 +49,7 @@
     color: var(--highlight-main);
 }
 .work-grid h3 {
-    font-size: 24px;
+    font-size: clamp(18px, 1.5vw, 24px);
     position: relative;
     padding-left: 34px;
     margin: 0 0 12px;
@@ -70,7 +70,7 @@
 .work-grid p,
 .work-grid-last p {
     margin: 0 0 32px;
-    font-size: 16px;
+    font-size: clamp(14px, 1vw, 16px);
     line-height: 1.35;
 }
 
@@ -116,9 +116,9 @@
 
 .project-right {
     position: absolute;
-    top: 128px;
-    right: 48px;
-    width: 360px;
+    top: clamp(88px, 10vw, 128px);
+    right: clamp(24px, 4vw, 48px);
+    /* width: 360px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,13 +126,13 @@
 }
 
 .project-right img {
-    width: 337px;
-    height: 203px;
-    border-radius: 38px;
+    width: clamp(240px, 29vw, 337px);
+    height: auto;
+    border-radius: clamp(24px, 3vw, 38px);
 }
 
 .project-number {
-    font-size: 100px;
+    font-size: clamp(64px, 6vw, 100px);
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px var(--highlight-main);
@@ -144,7 +144,7 @@
 }
 
 .project-header h2 {
-    font-size: 50px;
+    font-size: clamp(32px, 3.5vw, 50px);
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@
 
 .project-left h3,
 .project-left p {
-    max-width: 420px;
+    max-width: clamp(300px, 36vw, 420px);
 }
 
 .project-extra p:last-child {
