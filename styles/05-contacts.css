@@ -70,7 +70,7 @@
 
 .contact-form label span {
     flex: 1;
-    max-width: 484px
+    max-width: 484px;
 }
 
 .contact-form label a {
@@ -132,7 +132,7 @@
     box-shadow: 0 0 0 2px rgba(181, 233, 59, 0.35);
 }
 
-.contact-form button:hover {
+.contact-form button:not(.active):hover {
     cursor: not-allowed;
 }
 

@@ -69,11 +69,6 @@
 .fact-icon img {
     position: absolute;
     inset: 0;
-}
-
-.fact-icon img {
-    position: absolute;
-    inset: 0;
     width: 64px;
     height: 64px;
     object-fit: contain;
@@ -98,10 +93,6 @@
 }
 
 .fact-card:hover .icon-default {
-    opacity: 1;
-}
-
-.fact-card:hover .icon-hover {
     opacity: 1;
 }
 
@@ -151,10 +142,6 @@
     font-size: 18px;
     text-align: center;
     transition: color 125ms ease;
-}
-
-.fact-card:hover p {
-    color: var(--highlight-main);
 }
 
 .contact-button {

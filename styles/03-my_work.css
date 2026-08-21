@@ -98,10 +98,6 @@
     height: 289px;
 }
 
-.work-grid img {
-    width: 130px;
-}
-
 .projects-next-link {
     position: absolute;
     right: 60px;
@@ -118,7 +114,6 @@
     position: absolute;
     top: clamp(88px, 10vw, 128px);
     right: clamp(24px, 4vw, 48px);
-    /* width: 360px; */
     display: flex;
     flex-direction: column;
     align-items: center;
