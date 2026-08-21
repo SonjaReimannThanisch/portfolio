@@ -29,17 +29,6 @@
 }
 
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
-    #portfolio {
-        display: block;
-        width: 100%;
-        min-height: 100vh;
-    }
-
     #portfolio,
     main,
     .contact-section {

@@ -11,8 +11,8 @@ function renderWhyMe() {
             <div class="why-me-facts">
                 <div class="fact-card first" onclick="this.classList.toggle('active')">
                     <div class="fact-icon">
-                        <img class="icon-default" src="./assets/icons/location.png" alt="Location icon>
-                        <img class="icon-hover" src="./assets/icons/locationHover.png" alt="Location highlighted">
+                <img class="icon-default" src="./assets/icons/location.png" alt="Location icon">                        
+                <img class="icon-hover" src="./assets/icons/locationHover.png" alt="Location highlighted">
                     </div>
                     <p>${text.location}</p>
                 </div>
