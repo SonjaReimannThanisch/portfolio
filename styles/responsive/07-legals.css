@@ -48,11 +48,14 @@
 
     .impressum-layout {
         padding-top: 100px;
+        padding-bottom: 2px;
     }
 
     .privacy-page {
         display: flex;
         flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .privacy-page .legal-content {
