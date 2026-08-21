@@ -209,6 +209,10 @@ const translations = {
                     Die Verarbeitung erfolgt, um die Website sicher, stabil und fehlerfrei bereitzustellen.
                     Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
                 </p>
+                <p>
+                    Wenn Sie mir über das Kontaktformular eine Nachricht senden, werden die von Ihnen eingegebenen Daten
+                    zur Bearbeitung Ihrer Anfrage verwendet. Dazu können Name, E-Mail-Adresse und Nachrichtentext gehören.
+                </p>
             `,
         },
 
@@ -216,10 +220,6 @@ const translations = {
             title: "Kontaktformular",
             content: `
                 <p>
-                    Wenn Sie mir über das Kontaktformular eine Nachricht senden, werden die von Ihnen eingegebenen Daten
-                    zur Bearbeitung Ihrer Anfrage verwendet. Dazu können Name, E-Mail-Adresse und Nachrichtentext gehören.
-                </p>
-                <p style="margin-top: 0;">
                     Diese Daten werden nicht ohne Ihre Einwilligung weitergegeben. Die Verarbeitung erfolgt zur Bearbeitung
                     Ihrer Anfrage auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.
                 </p>

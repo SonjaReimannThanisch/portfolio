@@ -129,6 +129,12 @@
     width: clamp(240px, 29vw, 337px);
     height: auto;
     border-radius: clamp(24px, 3vw, 38px);
+    filter: sepia(0.25) saturate(0.75) brightness(1.05);
+    transition: filter 0.2s ease;
+}
+
+.project-right img:hover {
+    filter: none;
 }
 
 .project-number {
