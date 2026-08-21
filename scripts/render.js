@@ -142,7 +142,7 @@ function renderMyWork() {
                 </div>
             </div>
             <div class="project-right">
-                <img src="./assets/img/Screenshot 2026-06-02 160822.png" alt="Screenshot of the Sharkie game">
+                <img src="./assets/img/Screenshot 2026-06-02 160822-u.jpeg" alt="Screenshot of the Sharkie game">
             
                 <div class="project-buttons">
                     <a href="https://github.com/SonjaReimannThanisch/Sharky_recover" target="_blank">${text.projectTwo.github}</a>
