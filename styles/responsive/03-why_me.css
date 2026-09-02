@@ -2,6 +2,7 @@
     .why-me-section {
         min-height: 100vh;
         overflow: visible;
+        padding: 48px 24px;
     }
 
     .why-me-title {

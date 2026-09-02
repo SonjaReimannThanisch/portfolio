@@ -39,6 +39,7 @@
         width: 100%;
         height: auto;
         min-height: auto;
+        /* padding: 32px; */
     }
     
     .hero-section,
@@ -61,7 +62,7 @@
         writing-mode: horizontal-tb;
         transform: none;
         align-self: flex-start;
-        font-size: 40px;
+        font-size: 36px;
         margin: 0;
     }
 

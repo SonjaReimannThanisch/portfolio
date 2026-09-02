@@ -27,7 +27,7 @@
     .skills-grid {
         display: flex;
         flex-wrap: wrap;
-        gap: 16px 89px;
+        gap: 16px 86px;
     }
 
     .skills-grid img {
