@@ -253,3 +253,26 @@ function updateContactSubmitButton(form, submitButton) {
 }
 
 initContactForm();
+
+
+function toggleReference(button) {
+    let card = button.closest(".grid-item");
+    let isExpanded = card.classList.toggle("expanded");
+
+    button.textContent = isExpanded
+        ? button.dataset.showLess
+        : button.dataset.showMore;
+}
+
+function updateRefrenceToggleButtons() {
+    let referenceItems = document.querySelector(".reference-item");
+    referenceItems.forEach((item) => {
+        let text = item.querySelector(".reference-text");
+        let button = item.querySelector(".reference-toggle");
+        if (!text || !button) return;
+        button.hidden = text.scrollHeight <= text.clientHeight;
+    });
+}
+
+initReferenceCarousel();
+updateRefrenceToggleButtons();

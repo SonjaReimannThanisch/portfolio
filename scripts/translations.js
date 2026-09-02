@@ -114,23 +114,26 @@ const translations = {
                 subtitle: "Was meine Kollegen über mich sagen"
             },
 
-                referenceOne: {
-                    text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
-                    name: "Marc Kletzter",
-                    project: "Projekt Join"
-                },
+            showMore: "Mehr anzeigen",
+            showLess: "Weniger anzeigen",
 
-                referenceTwo: {
-                    text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
-                    name: "Liane Schubert",
-                    project: "Projekt Join"
-                },
+            referenceOne: {
+                text: "Bei unserem gemeinsamen Projekt habe ich Sonja als engagierte und teamorientierte Entwicklerin kennengelernt. Unser Team konnte sich jederzeit zuverlässig auf sie verlassen. Sie arbeitet sich mit großer Eigeninitiative in neue Themen ein und bleibt hartnäckig, bis sie eine gute Lösung gefunden hat. Besonders positiv hervorzuheben ist auch ihre ausgeprägte Hilfsbereitschaft. Ich bin sehr dankbar für die gemeinsame Zusammenarbeit und würde jederzeit gerne wieder mit Sonja arbeiten.",
+                name: "Anne Vollmann",
+                project: "Projekt Join"
+            },
 
-                referenceThree: {
-                    text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
-                    name: "Marcel Kleiber",
-                    project: "Projekt Join"
-                }
+            referenceTwo: {
+                text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
+                name: "Liane Schmuhl",
+                project: "Projekt Join"
+            },
+
+            referenceThree: {
+                text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
+                name: "Marcel Kleiber",
+                project: "Projekt Join"
+            }
         },
 
             contact: {
@@ -370,15 +373,18 @@ const translations = {
                     subtitle: "What my colleagues say about me"
                 },
 
+                showMore: "Read more",
+                showLess: "Show less",
+
                 referenceOne: {
-                    text: "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
-                    name: "Marc Kletzter",
+                    text: "During our project together, I got to know Sonja as a committed and team-oriented developer. Our team could always rely on her. She takes great initiative in familiarising herself with new topics and remains persistent until she finds a good solution. Her strong willingness to help others also deserves particular mention. I am very grateful for our collaboration and would be happy to work with Sonja again at any time.",
+                    name: "Anne Vollmann",
                     project: "Project Join"
                 },
 
                 referenceTwo: {
                     text: "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
-                    name: "Liane Schubert",
+                    name: "Liane Schmuhl",
                     project: "Project Join"
                 },
 

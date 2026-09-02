@@ -208,54 +208,121 @@ function renderMyWork() {
 
 renderMyWork();
 
+// function renderReferences() {
+//     let text = translations[currentLanguage].references;
+//     let referencesSection = document.getElementById("references");
+//     referencesSection.classList.add("references-section");
+//     referencesSection.innerHTML = `
+//         <h2 class="references-title">${text.title}</h2>
+//         <div class="mobile-text">
+//             <h3>${text.mobile.title}</h3>
+//             <p>${text.mobile.subtitle}</p>
+//         </div>
+//         <div class="reference-grid">
+//             <div class="grid-item">
+//                 <div class="reference-item">
+//                     <p class="reference-text">
+//                         "${text.referenceOne.text}"
+//                     </p>
+//                     <button class="reference-toggle">
+//                         ${text.showMore}
+//                     </button>
+//                 </div>
+//                 <div class="separator"></div>
+//                 <div class="project-item">
+//                     <p>${text.referenceOne.name}</p>
+//                     <p>${text.referenceOne.project}</p>
+//                 </div>
+//             </div>
+//             <div class="grid-item">
+//                 <div class="reference-item">
+//                     <p>"${text.referenceTwo.text}"</p>
+//                 </div>
+//                 <div class="separator"></div>
+//                 <div class="project-item">
+//                     <p>${text.referenceTwo.name}</p>
+//                     <p>${text.referenceTwo.project}</p>
+//                 </div>
+//             </div>
+//             <div class="grid-item">
+//                 <div class="reference-item">
+//                     <p>"${text.referenceThree.text}"</p>
+//                 </div>
+//                 <div class="separator"></div>
+//                 <div class="project-item">
+//                     <p>${text.referenceThree.name}</p>
+//                     <p>${text.referenceThree.project}</p>
+//                 </div>
+//             </div>
+//         </div>
+//         <div class="reference-dots">
+//             <span class="dot active"></span>
+//             <span class="dot"></span>
+//             <span class="dot"></span>
+//         </div>
+//         <a class="references-next-link" href="#contact"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
+//     `;
+// }
+
+function getReferenceCard(reference, text) {
+    return `
+        <div class="grid-item">
+            <div class="reference-item">
+                <p class="reference-text">
+                    "${reference.text}"
+                </p>
+
+                <button
+                    class="reference-toggle"
+                    type="button"
+                    onclick="toggleReference(this)"
+                    data-show-more="${text.showMore}"
+                    data-show-less="${text.showLess}"
+                >
+                    ${text.showMore}
+                </button>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="project-item">
+                <p>${reference.name}</p>
+                <p>${reference.project}</p>
+            </div>
+        </div>
+    `;
+}
+
+
+
 function renderReferences() {
     let text = translations[currentLanguage].references;
     let referencesSection = document.getElementById("references");
+
     referencesSection.classList.add("references-section");
     referencesSection.innerHTML = `
         <h2 class="references-title">${text.title}</h2>
+
         <div class="mobile-text">
             <h3>${text.mobile.title}</h3>
             <p>${text.mobile.subtitle}</p>
         </div>
+
         <div class="reference-grid">
-            <div class="grid-item">
-                <div class="reference-item">
-                    <p>"${text.referenceOne.text}"</p>
-                </div>
-                <div class="separator"></div>
-                <div class="project-item">
-                    <p>${text.referenceOne.name}</p>
-                    <p>${text.referenceOne.project}</p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="reference-item">
-                    <p>"${text.referenceTwo.text}"</p>
-                </div>
-                <div class="separator"></div>
-                <div class="project-item">
-                    <p>${text.referenceTwo.name}</p>
-                    <p>${text.referenceTwo.project}</p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="reference-item">
-                    <p>"${text.referenceThree.text}"</p>
-                </div>
-                <div class="separator"></div>
-                <div class="project-item">
-                    <p>${text.referenceThree.name}</p>
-                    <p>${text.referenceThree.project}</p>
-                </div>
-            </div>
+            ${getReferenceCard(text.referenceOne, text)}
+            ${getReferenceCard(text.referenceTwo, text)}
+            ${getReferenceCard(text.referenceThree, text)}
         </div>
+
         <div class="reference-dots">
             <span class="dot active"></span>
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-        <a class="references-next-link" href="#contact"><img src="./assets/icons/Property 1=Default.png" alt="Next Page"></a>
+
+        <a class="references-next-link" href="#contact">
+            <img src="./assets/icons/Property 1=Default.png" alt="Next Page">
+        </a>
     `;
 }
 

@@ -1,10 +1,10 @@
 .references-section {
     position: relative;
-    width: 70vw;
+    width: 90vw;
     height: 100vh;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 120px 560px 1fr;
+    grid-template-columns: 120px 760px 1fr;
     align-items: flex-end;
     box-sizing: border-box;
     padding: 80px 20px 20px 172px;
@@ -21,13 +21,13 @@
 }
 
 .reference-grid {
-    width: 500px;
+    width: 700px;
     min-height: 110px;
     gap: 18px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
 
 .grid-item {
@@ -58,12 +58,44 @@
 
 .reference-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 18px;
     line-height: 1.4;
-    padding: 0 10px;
+    padding: 0 16px;
+    min-width: 0;
+}
+
+.reference-text {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.reference-toggle {
+    margin-top: 8px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--highlight-main);
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.grid-item.expanded {
+    height: auto;
+    min-height: 182px;
+    padding: 18px 0;
+}
+
+.grid-item.expanded .reference-text {
+    display: block;
+    overflow: visible;
 }
 
 .project-item p {
