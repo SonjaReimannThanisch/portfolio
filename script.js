@@ -122,8 +122,6 @@ function scrollToReferenceCard(card) {
     });
 }
 
-initReferenceCarousel();
-
 function initContactForm() {
     let form = document.querySelector(".contact-form");
     let submitButton = form?.querySelector('button[type="submit"]');
@@ -265,7 +263,7 @@ function toggleReference(button) {
 }
 
 function updateRefrenceToggleButtons() {
-    let referenceItems = document.querySelector(".reference-item");
+    let referenceItems = document.querySelectorAll(".reference-item");
     referenceItems.forEach((item) => {
         let text = item.querySelector(".reference-text");
         let button = item.querySelector(".reference-toggle");
