@@ -56,7 +56,7 @@
     }
 
     .challenge-icon {
-        width: 81px !important;
+        width: clamp(68px, 21vw, 81px) !important;
     }
 
 }
