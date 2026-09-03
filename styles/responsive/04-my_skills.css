@@ -25,17 +25,21 @@
     } 
 
     .skills-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px 86px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: clamp(12px, 5vw, 32px);
+        row-gap: clamp(12px, 4vw, 20px);
+        width: 100%;
+        justify-items: center;
     }
 
     .skills-grid img {
-        width: 68px;
+        width: clamp(48px, 14vw, 68px);
         height: auto;
     }
 
     .skills-side-text {
+        grid-column: 1 / -1;
         width: 100%;
     }
 
@@ -56,7 +60,7 @@
     }
 
     .challenge-icon {
-        width: clamp(68px, 21vw, 81px) !important;
+        width: clamp(58px, 17vw, 81px) !important;
     }
 
 }

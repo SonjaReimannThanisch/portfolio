@@ -13,7 +13,7 @@
 .skills-title {
     margin: 0 24px 0 0;
     justify-self: end;
-    align-self: start;
+    align-self: end;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 54px;
@@ -43,32 +43,41 @@
     line-height: 1.4;
 }
 
-.skills-grid {
+/* .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: clamp(12px, 5vw, 32px);
     row-gap: clamp(12px, 4vw, 20px);
     width: 100%;
     justify-items: center;
+} */
+
+.skills-grid {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(6, 90px);
+    gap: 48px 50px;
+    width: 100%;
+    justify-items: center;
 }
 
-.skills-grid img {
+/* .skills-grid img {
     width: clamp(48px, 14vw, 68px);
     height: auto;
     object-fit: contain;
     filter: hue-rotate(85deg) saturate(55%) brightness(0.9);
     opacity: 0.99;
     transition: filter .2s ease, transform .2s ease;
-}
+} */
 
-/* .skills-grid img {
+.skills-grid img {
     width: 87px;
     height: 99px;
     object-fit: contain;
     filter: hue-rotate(85deg) saturate(55%) brightness(0.9);
     opacity: 0.99;
     transition: filter .2s ease, transform .2s ease;
-} */
+}
 
 .skills-grid img:hover {
     filter:
@@ -88,7 +97,7 @@
 
 .skills-side-text {
     margin: 0;
-    width: 215px;
+    width: 57px;
     display: flex;
     align-items: flex-end;
 }
