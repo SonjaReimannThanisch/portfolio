@@ -237,8 +237,6 @@ function getReferenceCard(reference, text) {
     `;
 }
 
-
-
 function renderReferences() {
     let text = translations[currentLanguage].references;
     let referencesSection = document.getElementById("references");
@@ -347,7 +345,6 @@ function renderContact() {
             <p class="footer-copyright">
                 ${footerText.copyright}
             </p>
-
         </div>
     `;
 }
@@ -430,10 +427,8 @@ function showLegalView(startPage) {
             </article>
         </main>
     `;
-
     document.getElementById(startPage).scrollIntoView();
 }
-
 
 function backToPortfolio() {
     document.getElementById("legal-view").innerHTML = "";

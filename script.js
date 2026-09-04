@@ -6,15 +6,11 @@ let isScrolling = false;
 
 function updateActiveNav(sectionId) {
     navLinks.forEach((link) => link.classList.remove("active"));
-
     if (sectionId === "hero") return;
-
     let activeLink = document.querySelector(`.nav-item a[href="#${sectionId}"]`);
-
     if (sectionId === "references") {
         activeLink = document.querySelector('.nav-item a[href="#projects"]');
     }
-
     if (activeLink) {
         activeLink.classList.add("active");
     }
@@ -25,7 +21,6 @@ function updateCurrentSection() {
     sections.forEach((section, index) => {
         let sectionStart = section.offsetLeft;
         let sectionEnd = sectionStart + section.offsetWidth;
-
         if (scrollPosition >= sectionStart - window.innerWidth / 2 &&
             scrollPosition < sectionEnd - window.innerWidth / 2) {
             currentSection = index;
@@ -84,12 +79,12 @@ function initReferenceCarousel() {
     let grid = document.querySelector(".reference-grid");
     let cards = grid?.querySelectorAll(".grid-item");
     let dots = document.querySelectorAll(".reference-dots .dot");
-
     if (!grid || !cards?.length || dots.length === 0) return;
-
     addReferenceScrollListener(grid, cards, dots);
     addReferenceDotListeners(cards, dots);
 }
+
+initReferenceCarousel();
 
 function addReferenceScrollListener(grid, cards, dots) {
     grid.addEventListener("scroll", () => {
@@ -100,7 +95,6 @@ function addReferenceScrollListener(grid, cards, dots) {
 function updateActiveReferenceDot(grid, cards, dots) {
     let cardWidth = cards[0].offsetWidth;
     let activeIndex = Math.round(grid.scrollLeft / cardWidth);
-
     dots.forEach((dot, index) => {
         dot.classList.toggle("active", index === activeIndex);
     });
@@ -272,5 +266,15 @@ function updateRefrenceToggleButtons() {
     });
 }
 
-initReferenceCarousel();
 updateRefrenceToggleButtons();
+
+function alignSkillsContent() {
+    let title = document.querySelector(".skills-title");
+    let content = document.querySelector(".skills-content");
+    if (!title || !content) return;
+    let titleTop = title.getBoundingClientRect().top;
+    let contentTop = content.getBoundingClientRect().top;
+    content.style.transform = `translateY(${titleTop - contentTop}px)`;
+}
+
+alignSkillsContent();
