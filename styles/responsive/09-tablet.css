@@ -142,6 +142,7 @@
     .skills-text {
         max-width: 100%;
         font-size: clamp(16px, 1.7vw, 20px);
+        padding-top: 68px;
     }
 
     .skills-grid {

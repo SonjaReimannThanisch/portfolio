@@ -29,38 +29,70 @@ function updateCurrentSection() {
     });
 }
 
-window.addEventListener(
-    "wheel",
-    (event) => {
-        let legalSlider = document.querySelector(".legal-slider");
-        if (legalSlider && document.getElementById("legal-view").innerHTML !== "") {
-            event.preventDefault();
-            legalSlider.scrollBy({
-                left: event.deltaY,
-                behavior: "smooth",
-            });
-            return;
-        }
-        event.preventDefault();
-        if (isScrolling) return;
-        isScrolling = true;
-        if (event.deltaY > 0) {
-            currentSection = Math.min(currentSection + 1, sections.length - 1);
-        } else {
-            currentSection = Math.max(currentSection - 1, 0);
-        }
-        sections[currentSection].scrollIntoView({
-            behavior: "smooth",
-            inline: "start",
-            block: "nearest",
-        });
-        updateActiveNav(sections[currentSection].id);
-        setTimeout(() => {
-            isScrolling = false;
-        }, 700);
-    },
-    { passive: false }
-);
+function handleWheelScroll(event) {
+    if (isTabletOrMobile()) return;
+    if (isLegalViewOpen()) {
+        scrollLegalView(event);
+        return;
+    }
+    scrollPortfolioSection(event);
+}
+
+function isTabletOrMobile() {
+    return window.innerWidth <= 1280;
+}
+
+function isLegalViewOpen() {
+    let legalView = document.getElementById("legal-view");
+    let legalSlider = document.querySelector(".legal-slider");
+    return legalSlider && legalView?.innerHTML !== "";
+}
+
+function scrollLegalView(event) {
+    event.preventDefault();
+    let legalSlider = document.querySelector(".legal-slider");
+    legalSlider.scrollBy({
+        left: event.deltaY,
+        behavior: "smooth",
+    });
+}
+
+function scrollPortfolioSection(event) {
+    event.preventDefault();
+    if (isScrolling) return;
+    isScrolling = true;
+    updateCurrentSectionByWheel(event.deltaY);
+    scrollToCurrentSection();
+    resetScrollLock();
+}
+
+function updateCurrentSectionByWheel(deltaY) {
+    if (deltaY > 0) {
+        currentSection = Math.min(currentSection + 1, sections.length - 1);
+        return;
+    }
+    currentSection = Math.max(currentSection - 1, 0);
+}
+
+function scrollToCurrentSection() {
+    let section = sections[currentSection];
+    section.scrollIntoView({
+        behavior: "smooth",
+        inline: "start",
+        block: "nearest",
+    });
+    updateActiveNav(section.id);
+}
+
+function resetScrollLock() {
+    setTimeout(() => {
+        isScrolling = false;
+    }, 700);
+}
+
+window.addEventListener("wheel", handleWheelScroll, {
+    passive: false,
+});
 
 window.addEventListener("scroll", updateCurrentSection);
 
