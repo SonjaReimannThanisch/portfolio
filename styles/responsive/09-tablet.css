@@ -293,6 +293,25 @@
     }
 }
 
+@media (min-width: 600px) and (max-width: 768px) {
+
+    .why-me-section,
+    .skills-section,
+    .references-section {
+        padding-top: 48px;
+        padding-bottom: 56px;
+    }
+
+    .skills-btn {
+        align-self: flex-end;
+    }
+
+    .contact-form button {
+        align-self: flex-end;
+    }
+
+}
+
 @media (min-width: 1281px) and (max-width: 1366px) and (min-height: 900px) {
     .hero-sidebar {
         display: none;

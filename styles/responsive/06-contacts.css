@@ -62,7 +62,6 @@
 
     .contact-form {
         order: 2;
-        margin-bottom: 32px;
     }
 
     .contact-section::after {
@@ -120,7 +119,6 @@
         justify-content: center;
         transform: rotate(90deg);
         position: static;
-        margin: 32px 0 24px;
     }
 
     .contact-back-link img {
