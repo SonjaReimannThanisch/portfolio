@@ -1,5 +1,8 @@
 let currentLanguage = "de";
 
+/**
+ * Renders the localized hero section.
+ */
 function renderHero() {
     let heroSection = document.getElementById("hero");
     let text = translations[currentLanguage];
@@ -40,6 +43,10 @@ function renderHero() {
 
 renderHero();
 
+/**
+ * Returns the HTML markup for the desktop sidebar navigation.
+ * @returns {string} The sidebar HTML markup.
+ */
 function getSidebar() {
     let text = translations[currentLanguage].sidebar;
     return `
@@ -81,6 +88,10 @@ function getSidebar() {
     `;
 }
 
+/**
+ * Returns the HTML markup for social links and language controls.
+ * @returns {string} The social links HTML markup.
+ */
 function getSocialLinks() {
     let text = translations[currentLanguage];
     let activeDe = currentLanguage === "de" ? "active" : "";
@@ -115,6 +126,10 @@ function getSocialLinks() {
     `;
 }
 
+/**
+ * Returns the HTML markup for the mobile header.
+ * @returns {string} The mobile header HTML markup.
+ */
 function getMobileHeader() {
     return`
         <header class="mobile-header">
@@ -143,11 +158,18 @@ function getMobileHeader() {
     `;
 }
 
+/**
+ * Refreshes the legal view after a language change if it is currently open.
+ */
 function switchLanguageLegals() {
-    if (document.getElementById("legal-view"). innerHTML) 
+    if (document.getElementById("legal-view").innerHTML) 
         openLegalFromUrl();
 }
 
+/**
+ * Switches the portfolio language and rerenders localized sections.
+ * @param {string} language - The selected language code.
+ */
 function switchLanguage(language) {
     currentLanguage = language;
     renderHero();

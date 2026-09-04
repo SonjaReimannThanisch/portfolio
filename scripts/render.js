@@ -1,3 +1,6 @@
+/**
+ * Renders the localized Why Me section.
+ */
 function renderWhyMe() {
     let text = translations[currentLanguage].about;
     let aboutSection = document.getElementById("about");
@@ -41,6 +44,9 @@ function renderWhyMe() {
 
 renderWhyMe();
 
+/**
+ * Renders the localized skills section.
+ */
 function renderMySkills() {
     let text = translations[currentLanguage].skills;
     let skillsSection = document.getElementById("skills");
@@ -77,6 +83,9 @@ function renderMySkills() {
 
 renderMySkills();
 
+/**
+ * Renders the localized projects section.
+ */
 function renderMyWork() {
     let text = translations[currentLanguage].projects;
     let workSection = document.getElementById("projects");
@@ -208,6 +217,12 @@ function renderMyWork() {
 
 renderMyWork();
 
+/**
+ * Creates the HTML markup for a reference card.
+ * @param {Object} reference - The reference data.
+ * @param {Object} text - The localized reference texts.
+ * @returns {string} The reference card HTML markup.
+ */
 function getReferenceCard(reference, text) {
     return `
         <div class="grid-item">
@@ -237,6 +252,9 @@ function getReferenceCard(reference, text) {
     `;
 }
 
+/**
+ * Renders the localized references section.
+ */
 function renderReferences() {
     let text = translations[currentLanguage].references;
     let referencesSection = document.getElementById("references");
@@ -268,6 +286,9 @@ function renderReferences() {
 
 renderReferences();
 
+/**
+ * Renders the localized contact section and footer.
+ */
 function renderContact() {
     let text = translations[currentLanguage].contact;
     let footerText = translations[currentLanguage].footer;
