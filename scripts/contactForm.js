@@ -6,6 +6,7 @@ function initContactForm() {
     let submitButton = form?.querySelector('button[type="submit"]');
     if (!form || !submitButton) return;
     addContactFieldValidation(form);
+    updateContactSubmitButton(form, submitButton);
     form.addEventListener("input", () => {
         updateContactSubmitButton(form, submitButton);
         updatePrivacyValidationState(form);
@@ -197,10 +198,10 @@ function showContactSuccess(form, button) {
  */
 function updateContactSubmitButton(form, submitButton) {
     let text = translations[currentLanguage].contact.form;
-    let checkbox = form.querySelector('input[name="privacy"]');
+    let isValid = form.checkValidity();
     submitButton.textContent = text.send;
-    submitButton.disabled = false;
-    submitButton.classList.toggle("active", checkbox.checked);
+    submitButton.disabled = !isValid;
+    submitButton.classList.toggle("active", isValid);
 }
 
 initContactForm();

@@ -175,6 +175,7 @@ function switchLanguage(language) {
     renderHero();
     renderWhyMe();
     renderMySkills();
+    renderMyWork();
     alignSkillsContent();
     renderReferences();
     renderContact();
