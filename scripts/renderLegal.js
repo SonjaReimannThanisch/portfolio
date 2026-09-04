@@ -1,3 +1,7 @@
+/**
+ * Renders the legal view and opens the requested legal page.
+ * @param {string} startPage - The ID of the legal page to display first.
+ */
 function showLegalView(startPage) {
     let legal = translations[currentLanguage].legal;
     let privacy = translations[currentLanguage].privacy;
@@ -77,11 +81,17 @@ function showLegalView(startPage) {
     document.getElementById(startPage).scrollIntoView();
 }
 
+/**
+ * Closes the legal view and returns to the portfolio.
+ */
 function backToPortfolio() {
     document.getElementById("legal-view").innerHTML = "";
     document.getElementById("portfolio").style.display = "flex";
 }
 
+/**
+ * Opens the legal page specified in the current URL.
+ */
 function openLegalFromUrl() {
     let params = new URLSearchParams(window.location.search);
     let legal = params.get("legal");
