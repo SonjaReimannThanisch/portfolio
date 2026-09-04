@@ -4,6 +4,10 @@ const navLinks = document.querySelectorAll(".nav-item a");
 let currentSection = 0;
 let isScrolling = false;
 
+/**
+ * Updates the active navigation link for the current section.
+ * @param {string} sectionId - ID of the current section.
+ */
 function updateActiveNav(sectionId) {
     navLinks.forEach((link) => link.classList.remove("active"));
     if (sectionId === "hero") return;
@@ -16,6 +20,9 @@ function updateActiveNav(sectionId) {
     }
 }
 
+/**
+ * Updates the current section based on the horizontal scroll position.
+ */
 function updateCurrentSection() {
     let scrollPosition = window.scrollX;
     sections.forEach((section, index) => {
@@ -29,6 +36,10 @@ function updateCurrentSection() {
     });
 }
 
+/**
+ * Handles wheel scrolling for the portfolio.
+ * @param {WheelEvent} event - The wheel event.
+ */
 function handleWheelScroll(event) {
     if (isTabletOrMobile()) return;
     if (isLegalViewOpen()) {
@@ -38,16 +49,28 @@ function handleWheelScroll(event) {
     scrollPortfolioSection(event);
 }
 
+/**
+ * Checks whether the current viewport is tablet or mobile size.
+ * @returns {boolean} True if the viewport width is 1280px or smaller.
+ */
 function isTabletOrMobile() {
     return window.innerWidth <= 1280;
 }
 
+/**
+ * Checks whether the legal view is currently open.
+ * @returns {boolean} True if the legal view is visible.
+ */
 function isLegalViewOpen() {
     let legalView = document.getElementById("legal-view");
     let legalSlider = document.querySelector(".legal-slider");
     return legalSlider && legalView?.innerHTML !== "";
 }
 
+/**
+ * Scrolls horizontally inside the legal view.
+ * @param {WheelEvent} event - The wheel event.
+ */
 function scrollLegalView(event) {
     event.preventDefault();
     let legalSlider = document.querySelector(".legal-slider");
@@ -57,6 +80,10 @@ function scrollLegalView(event) {
     });
 }
 
+/**
+ * Handles section-based scrolling on desktop.
+ * @param {WheelEvent} event - The wheel event.
+ */
 function scrollPortfolioSection(event) {
     event.preventDefault();
     if (isScrolling) return;
@@ -66,6 +93,10 @@ function scrollPortfolioSection(event) {
     resetScrollLock();
 }
 
+/**
+ * Updates the current section index based on the wheel direction.
+ * @param {number} deltaY - Vertical wheel movement.
+ */
 function updateCurrentSectionByWheel(deltaY) {
     if (deltaY > 0) {
         currentSection = Math.min(currentSection + 1, sections.length - 1);
@@ -74,6 +105,9 @@ function updateCurrentSectionByWheel(deltaY) {
     currentSection = Math.max(currentSection - 1, 0);
 }
 
+/**
+ * Scrolls to the currently selected portfolio section.
+ */
 function scrollToCurrentSection() {
     let section = sections[currentSection];
     section.scrollIntoView({
@@ -84,6 +118,9 @@ function scrollToCurrentSection() {
     updateActiveNav(section.id);
 }
 
+/**
+ * Resets the scroll lock after the scroll animation.
+ */
 function resetScrollLock() {
     setTimeout(() => {
         isScrolling = false;
@@ -103,10 +140,17 @@ navLinks.forEach((link) => {
     });
 });
 
+/**
+ * Toggles the expanded state of a project card.
+ * @param {HTMLElement} project - The project element to toggle.
+ */
 function toggleProject(project) {
     project.classList.toggle("open");
 }
 
+/**
+ * Initializes the reference carousel and its controls.
+ */
 function initReferenceCarousel() {
     let grid = document.querySelector(".reference-grid");
     let cards = grid?.querySelectorAll(".grid-item");
@@ -118,12 +162,24 @@ function initReferenceCarousel() {
 
 initReferenceCarousel();
 
+/**
+ * Adds the scroll listener used to update the active reference dot.
+ * @param {HTMLElement} grid - The reference carousel container.
+ * @param {NodeList} cards - The reference cards.
+ * @param {NodeList} dots - The navigation dots.
+ */
 function addReferenceScrollListener(grid, cards, dots) {
     grid.addEventListener("scroll", () => {
         updateActiveReferenceDot(grid, cards, dots);
     });
 }
 
+/**
+ * Updates the active navigation dot based on the carousel position.
+ * @param {HTMLElement} grid - The reference carousel container.
+ * @param {NodeList} cards - The reference cards.
+ * @param {NodeList} dots - The navigation dots.
+ */
 function updateActiveReferenceDot(grid, cards, dots) {
     let cardWidth = cards[0].offsetWidth;
     let activeIndex = Math.round(grid.scrollLeft / cardWidth);
@@ -132,6 +188,11 @@ function updateActiveReferenceDot(grid, cards, dots) {
     });
 }
 
+/**
+ * Adds click listeners to the reference navigation dots.
+ * @param {NodeList} cards - The reference cards.
+ * @param {NodeList} dots - The navigation dots.
+ */
 function addReferenceDotListeners(cards, dots) {
     dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
@@ -140,6 +201,10 @@ function addReferenceDotListeners(cards, dots) {
     });
 }
 
+/**
+ * Scrolls the selected reference card into view.
+ * @param {HTMLElement} card - The reference card to display.
+ */
 function scrollToReferenceCard(card) {
     card.scrollIntoView({
         behavior: "smooth",
@@ -148,137 +213,10 @@ function scrollToReferenceCard(card) {
     });
 }
 
-function initContactForm() {
-    let form = document.querySelector(".contact-form");
-    let submitButton = form?.querySelector('button[type="submit"]');
-    if (!form || !submitButton) return;
-    addContactFieldValidation(form);
-    form.addEventListener("input", () => {
-        updateContactSubmitButton(form, submitButton);
-        updatePrivacyValidationState(form);
-    });
-    form.addEventListener("submit", submitContactForm);
-}
-
-function addContactFieldValidation(form) {
-    let fields = getContactFields(form);
-    fields.forEach((field) => {
-        field.addEventListener("blur", () => {
-            updateFieldValidationState(field);
-        });
-    });
-}
-
-function validateContactForm(form) {
-    let fields = getContactFields(form);
-    fields.forEach(updateFieldValidationState);
-    updatePrivacyValidationState(form);
-    return form.checkValidity();
-}
-
-function updatePrivacyValidationState(form) {
-    let checkbox = form.querySelector('input[name="privacy"]');
-    let errorElement = form.querySelector(".privacy-error");
-    updatePrivacyErrorText(checkbox, errorElement);
-    updatePrivacyErrorClass(checkbox);
-}
-
-function updatePrivacyErrorText(checkbox, errorElement) {
-    let validationText = translations[currentLanguage].validation;
-    errorElement.textContent = checkbox.checked
-        ? ""
-        : validationText.privacyRequired;
-}
-
-function updatePrivacyErrorClass(checkbox) {
-    checkbox.classList.toggle("error", !checkbox.checked);
-}
-
-function getContactFields(form) {
-    return form.querySelectorAll(
-        'input:not([type="checkbox"]), textarea'
-    );
-}
-
-function updateFieldValidationState(field) {
-    let isValid = field.checkValidity();
-
-    updateFieldValidationClasses(field, isValid);
-    updateFieldPlaceholder(field, isValid);
-}
-
-function updateFieldValidationClasses(field, isValid) {
-    field.classList.toggle("valid", isValid);
-    field.classList.toggle("error", !isValid);
-}
-
-function updateFieldPlaceholder(field, isValid) {
-    field.placeholder = isValid
-        ? field.dataset.defaultPlaceholder
-        : field.dataset.errorMessage;
-}
-
-async function submitContactForm(event) {
-    event.preventDefault();
-    let form = event.target;
-    if (!validateContactForm(form)) {
-        return;
-    }
-    let submitButton = form.querySelector('button[type="submit"]');
-    setSubmitButtonLoading(submitButton);
-    let success = await sendContactForm(form);
-    handleContactFormResponse(success, form, submitButton);
-}
-
-async function sendContactForm(form) {
-    let response = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: {
-            Accept: "application/json",
-        },
-    });
-    return response.ok;
-}
-
-function handleContactFormResponse(success, form, submitButton) {
-    if (success) {
-        showContactSuccess(form, submitButton);
-        return;
-    }
-    showContactError(submitButton);
-}
-
-function setSubmitButtonLoading(button) {
-    let text = translations[currentLanguage].contact.form;
-    button.disabled = true;
-    button.textContent = text.sending;
-}
-
-function showContactError(button) {
-    let text = translations[currentLanguage].contact.form;
-    button.disabled = false;
-    button.textContent = text.send;
-}
-
-function showContactSuccess(form, button) {
-    let text = translations[currentLanguage].contact.form;
-    form.reset();
-    button.textContent = text.success;
-    button.disabled = true;
-}
-
-function updateContactSubmitButton(form, submitButton) {
-    let text = translations[currentLanguage].contact.form;
-    let checkbox = form.querySelector('input[name="privacy"]');
-    submitButton.textContent = text.send;
-    submitButton.disabled = false;
-    submitButton.classList.toggle("active", checkbox.checked);
-}
-
-initContactForm();
-
-
+/**
+ * Toggles the expanded state of a reference card.
+ * @param {HTMLButtonElement} button - The reference toggle button.
+ */
 function toggleReference(button) {
     let card = button.closest(".grid-item");
     let isExpanded = card.classList.toggle("expanded");
@@ -288,7 +226,10 @@ function toggleReference(button) {
         : button.dataset.showMore;
 }
 
-function updateRefrenceToggleButtons() {
+/**
+ * Shows or hides reference toggle buttons depending on text overflow.
+ */
+function updateReferenceToggleButtons() {
     let referenceItems = document.querySelectorAll(".reference-item");
     referenceItems.forEach((item) => {
         let text = item.querySelector(".reference-text");
@@ -298,8 +239,11 @@ function updateRefrenceToggleButtons() {
     });
 }
 
-updateRefrenceToggleButtons();
+updateReferenceToggleButtons();
 
+/**
+ * Aligns the skills content with the top of the vertical skills title.
+ */
 function alignSkillsContent() {
     let title = document.querySelector(".skills-title");
     let content = document.querySelector(".skills-content");
