@@ -1,3 +1,7 @@
+/**
+ * Returns the currently available mobile menu overlay.
+ * @returns {HTMLElement|null} The mobile menu overlay or null if none exists.
+ */
 function getMobileMenuOverlay() {
     return (
         document.querySelector("#legal-view .mobile-menu-overlay") ||
@@ -5,6 +9,10 @@ function getMobileMenuOverlay() {
     );
 }
 
+/**
+ * Returns the currently available mobile menu button.
+ * @returns {HTMLElement|null} The mobile menu button or null if none exists.
+ */
 function getMobileMenuButton() {
     return (
         document.querySelector("#legal-view .mobile-menu-button") ||
@@ -12,12 +20,18 @@ function getMobileMenuButton() {
     );
 }
 
+/**
+ * Opens the mobile menu overlay.
+ */
 function openMobileMenu() {
     const overlay = getMobileMenuOverlay();
-    if (!overlay) {return;}
+    if (!overlay) return;
     overlay.classList.add("open");
 }
 
+/**
+ * Closes the mobile menu overlay and resets the menu button state.
+ */
 function closeMobileMenu() {
     const overlay = getMobileMenuOverlay();
     const button = getMobileMenuButton();
@@ -26,6 +40,9 @@ function closeMobileMenu() {
     button?.setAttribute("aria-expanded", "false");
 }
 
+/**
+ * Toggles the mobile menu between open and closed states.
+ */
 function toggleMobileMenu() {
     const overlay = getMobileMenuOverlay();
     if (!overlay) return;
@@ -36,6 +53,10 @@ function toggleMobileMenu() {
     }
 }
 
+/**
+ * Returns the HTML markup for the mobile burger menu overlay.
+ * @returns {string} The mobile menu markup.
+ */
 function getBurgerMenuOverlay() {
     let text = translations[currentLanguage].sidebar;
     let activeDe = currentLanguage === "de" ? "active" : "";
@@ -43,7 +64,7 @@ function getBurgerMenuOverlay() {
     return `
         <div class="mobile-menu-overlay">
 
-            <button class="mobile-menu-close" type="button" aria-label="Menü schließen"onclick="closeMobileMenu()">
+            <button class="mobile-menu-close" type="button" aria-label="Menü schließen" onclick="closeMobileMenu()">
                 <span></span>
                 <span></span>
             </button>
@@ -74,6 +95,9 @@ function getBurgerMenuOverlay() {
     `;
 }
 
+/**
+ * Renders the burger menu overlay into the mobile menu root.
+ */
 function renderBurgerMenuOverlay() {
     const root = document.getElementById("mobile-menu-root");
     if (!root || root.innerHTML.trim()) return;
