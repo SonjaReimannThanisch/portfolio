@@ -1,5 +1,7 @@
+/**
+ * Contains all localized portfolio content for German and English.
+ */
 const translations = {
-
     de: {
 
         sidebar: {
