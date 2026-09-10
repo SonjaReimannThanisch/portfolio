@@ -126,7 +126,7 @@ const translations = {
             },
 
             referenceTwo: {
-                text: "Michael ist ein zuverlässiger und freundlicher Mensch. Er arbeitet strukturiert und schreibt übersichtlichen Code. Ich kann ihn als Kollegen nur empfehlen.",
+                text: "Die Zusammenarbeit mit Sonja am „Join“-Projekt war eine großartige Erfahrung. Sie ist äußerst gut organisiert, zuverlässig und immer bereit, einzuspringen, wenn jemand aus dem Team Hilfe braucht. Dank ihrer konsequenten Konzentration konnten wir unser Projekt reibungslos zum Abschluss bringen. Ich bin wirklich dankbar für die gute Teamarbeit!",
                 name: "Liane Schmuhl",
                 project: "Projekt Join"
             },
@@ -379,7 +379,7 @@ const translations = {
                 },
 
                 referenceTwo: {
-                    text: "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
+                    text: "Working with Sonja on the 'Join' project was such a great experience. She’s super organized, reliable, and always ready to jump in whenever someone on the team needs a hand. Her steady focus really helped get our project across the finish line smoothly. I'm truly grateful for the teamwork!",
                     name: "Liane Schmuhl",
                     project: "Project Join"
                 },
