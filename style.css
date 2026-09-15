@@ -97,8 +97,8 @@ aside {
 .hero-image {
     position: absolute;
     width: auto;
-    height: clamp(520px, 82vh, 820px);
-    max-width: min(52vw, 720px);
+    height: clamp(520px, 55vw, 1200px);
+    max-width: none;
     left: 48%;
     bottom: 0;
     transform: translateX(-50%);
@@ -211,7 +211,7 @@ section {
 .name h1 {
     margin: 0;
     font-family: "Quantico", sans-serif;
-    font-size: clamp(42px, 4.5vw, 64px);
+    font-size: clamp(42px, 4.5vw, 100px);
     font-weight: 700;
     line-height: 1;
     color: var(--highlight-main);
@@ -221,7 +221,7 @@ section {
 .designation h2 {
     margin-top: clamp(12px, 2vh, 24px);
     font-family: "Quantico", sans-serif;
-    font-size: clamp(30px, 3.4vw, 48px);
+    font-size: clamp(30px, 3.4vw, 76px);
     font-weight: 400;
     color: transparent;
     -webkit-text-stroke: 1px var(--highlight-main);
